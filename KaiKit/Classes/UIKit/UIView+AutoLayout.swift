@@ -22,6 +22,18 @@ public extension UIView {
 		]
 	}
 	
+	public func constraintsEqualToSafeAreaLayoutGuideOfSuperview() -> [NSLayoutConstraint] {
+		guard let superview = superview else {
+			return []
+		}
+		return [
+			leftAnchor.constraint(equalTo: superview.safeAreaLayoutGuide.leftAnchor),
+			rightAnchor.constraint(equalTo: superview.safeAreaLayoutGuide.rightAnchor),
+			topAnchor.constraint(equalTo: superview.safeAreaLayoutGuide.topAnchor),
+			bottomAnchor.constraint(equalTo: superview.safeAreaLayoutGuide.bottomAnchor),
+		]
+	}
+	
 }
 
 public extension NSLayoutYAxisAnchor {
