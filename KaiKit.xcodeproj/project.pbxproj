@@ -12,6 +12,8 @@
 		5E0A28111F91476C00B8EB5F /* UITableViewController+FetchedResultsControllerDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A280F1F91476C00B8EB5F /* UITableViewController+FetchedResultsControllerDataProvider.swift */; };
 		5E0A28151F91486D00B8EB5F /* UIViewController+PresentationAndDismissalQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A28131F91486D00B8EB5F /* UIViewController+PresentationAndDismissalQueries.swift */; };
 		5E0A28161F91486D00B8EB5F /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A28141F91486D00B8EB5F /* UIView+AutoLayout.swift */; };
+		5E0A28231F915BDA00B8EB5F /* CGSize+Conversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A28221F915BDA00B8EB5F /* CGSize+Conversions.swift */; };
+		5E0A28251F9163EA00B8EB5F /* CGPoint+Conversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A28241F9163EA00B8EB5F /* CGPoint+Conversions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		5E0A280F1F91476C00B8EB5F /* UITableViewController+FetchedResultsControllerDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewController+FetchedResultsControllerDataProvider.swift"; sourceTree = "<group>"; };
 		5E0A28131F91486D00B8EB5F /* UIViewController+PresentationAndDismissalQueries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+PresentationAndDismissalQueries.swift"; sourceTree = "<group>"; };
 		5E0A28141F91486D00B8EB5F /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
+		5E0A28221F915BDA00B8EB5F /* CGSize+Conversions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Conversions.swift"; sourceTree = "<group>"; };
+		5E0A28241F9163EA00B8EB5F /* CGPoint+Conversions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Conversions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 		5E0A280C1F91473800B8EB5F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5E0A28211F915BCB00B8EB5F /* Foundation */,
 				5E0A28121F9147A400B8EB5F /* UIKit */,
 				5E0A280D1F91475C00B8EB5F /* Core Data */,
 			);
@@ -94,6 +99,15 @@
 				5E0A28131F91486D00B8EB5F /* UIViewController+PresentationAndDismissalQueries.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		5E0A28211F915BCB00B8EB5F /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				5E0A28221F915BDA00B8EB5F /* CGSize+Conversions.swift */,
+				5E0A28241F9163EA00B8EB5F /* CGPoint+Conversions.swift */,
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,7 +191,9 @@
 			files = (
 				5E0A28151F91486D00B8EB5F /* UIViewController+PresentationAndDismissalQueries.swift in Sources */,
 				5E0A28161F91486D00B8EB5F /* UIView+AutoLayout.swift in Sources */,
+				5E0A28231F915BDA00B8EB5F /* CGSize+Conversions.swift in Sources */,
 				5E0A28111F91476C00B8EB5F /* UITableViewController+FetchedResultsControllerDataProvider.swift in Sources */,
+				5E0A28251F9163EA00B8EB5F /* CGPoint+Conversions.swift in Sources */,
 				5E0A28101F91476C00B8EB5F /* FetchedResultsControllerDataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
