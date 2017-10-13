@@ -46,10 +46,26 @@
 		5E0A28021F91423800B8EB5F /* KaiKit */ = {
 			isa = PBXGroup;
 			children = (
+				5E0A280C1F91473800B8EB5F /* Classes */,
+				5E0A280B1F91447800B8EB5F /* Resources */,
+			);
+			path = KaiKit;
+			sourceTree = "<group>";
+		};
+		5E0A280B1F91447800B8EB5F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				5E0A28031F91423800B8EB5F /* KaiKit.h */,
 				5E0A28041F91423900B8EB5F /* Info.plist */,
 			);
-			path = KaiKit;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5E0A280C1F91473800B8EB5F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +276,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = KaiKit/Info.plist;
+				INFOPLIST_FILE = KaiKit/Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kaiengelhardt.KaiKit;
@@ -281,7 +297,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = KaiKit/Info.plist;
+				INFOPLIST_FILE = KaiKit/Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kaiengelhardt.KaiKit;
