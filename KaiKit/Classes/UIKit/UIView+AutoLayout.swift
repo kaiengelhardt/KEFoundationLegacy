@@ -11,26 +11,34 @@ public struct AutoLayout {
 public extension UIView {
 	
 	public func constraintsEqualToEdgesOfSuperview() -> [NSLayoutConstraint] {
-		guard let superview = superview else {
+		return constraintsEqualToEdgesOf(view: superview)
+	}
+	
+	public func constraintsEqualToEdgesOf(view: UIView?) -> [NSLayoutConstraint] {
+		guard let view = view else {
 			return []
 		}
 		return [
-			leftAnchor.constraint(equalTo: superview.leftAnchor),
-			rightAnchor.constraint(equalTo: superview.rightAnchor),
-			topAnchor.constraint(equalTo: superview.topAnchor),
-			bottomAnchor.constraint(equalTo: superview.bottomAnchor),
+			leftAnchor.constraint(equalTo: view.leftAnchor),
+			rightAnchor.constraint(equalTo: view.rightAnchor),
+			topAnchor.constraint(equalTo: view.topAnchor),
+			bottomAnchor.constraint(equalTo: view.bottomAnchor),
 		]
 	}
 	
 	public func constraintsEqualToSafeAreaLayoutGuideOfSuperview() -> [NSLayoutConstraint] {
-		guard let superview = superview else {
+		return constraintsEqualTo(layoutGuide: superview?.safeAreaLayoutGuide)
+	}
+	
+	public func constraintsEqualTo(layoutGuide: UILayoutGuide?) -> [NSLayoutConstraint] {
+		guard let layoutGuide = layoutGuide else {
 			return []
 		}
 		return [
-			leftAnchor.constraint(equalTo: superview.safeAreaLayoutGuide.leftAnchor),
-			rightAnchor.constraint(equalTo: superview.safeAreaLayoutGuide.rightAnchor),
-			topAnchor.constraint(equalTo: superview.safeAreaLayoutGuide.topAnchor),
-			bottomAnchor.constraint(equalTo: superview.safeAreaLayoutGuide.bottomAnchor),
+			leadingAnchor.constraint(equalTo: layoutGuide.leadingAnchor),
+			trailingAnchor.constraint(equalTo: layoutGuide.trailingAnchor),
+			topAnchor.constraint(equalTo: layoutGuide.topAnchor),
+			bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor),
 		]
 	}
 	
