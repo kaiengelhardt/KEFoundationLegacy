@@ -117,8 +117,8 @@
 			children = (
 				5ED781DF1F94FA6700400F17 /* Int.swift */,
 				5ED781E11F94FA9600400F17 /* Array.swift */,
-				5E0A28221F915BDA00B8EB5F /* CGSize.swift */,
 				5E0A28241F9163EA00B8EB5F /* CGPoint.swift */,
+				5E0A28221F915BDA00B8EB5F /* CGSize.swift */,
 				5ED781D91F94F1F900400F17 /* NSPreciate.swift */,
 				5ED781DB1F94F27F00400F17 /* NSSortDescriptor.swift */,
 			);
