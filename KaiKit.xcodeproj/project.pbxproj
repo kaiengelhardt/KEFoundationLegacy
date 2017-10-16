@@ -17,6 +17,8 @@
 		5ED781DA1F94F1F900400F17 /* NSPreciate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED781D91F94F1F900400F17 /* NSPreciate.swift */; };
 		5ED781DC1F94F27F00400F17 /* NSSortDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED781DB1F94F27F00400F17 /* NSSortDescriptor.swift */; };
 		5ED781DE1F94F9B200400F17 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED781DD1F94F9B200400F17 /* UIAlertController.swift */; };
+		5ED781E01F94FA6700400F17 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED781DF1F94FA6700400F17 /* Int.swift */; };
+		5ED781E21F94FA9600400F17 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED781E11F94FA9600400F17 /* Array.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		5ED781D91F94F1F900400F17 /* NSPreciate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSPreciate.swift; sourceTree = "<group>"; };
 		5ED781DB1F94F27F00400F17 /* NSSortDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSSortDescriptor.swift; sourceTree = "<group>"; };
 		5ED781DD1F94F9B200400F17 /* UIAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
+		5ED781DF1F94FA6700400F17 /* Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		5ED781E11F94FA9600400F17 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 		5E0A28211F915BCB00B8EB5F /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				5ED781DF1F94FA6700400F17 /* Int.swift */,
+				5ED781E11F94FA9600400F17 /* Array.swift */,
 				5E0A28221F915BDA00B8EB5F /* CGSize.swift */,
 				5E0A28241F9163EA00B8EB5F /* CGPoint.swift */,
 				5ED781D91F94F1F900400F17 /* NSPreciate.swift */,
@@ -199,7 +205,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ED781DA1F94F1F900400F17 /* NSPreciate.swift in Sources */,
+				5ED781E21F94FA9600400F17 /* Array.swift in Sources */,
 				5E0A28151F91486D00B8EB5F /* UIViewController.swift in Sources */,
+				5ED781E01F94FA6700400F17 /* Int.swift in Sources */,
 				5E0A28161F91486D00B8EB5F /* UIView.swift in Sources */,
 				5E0A28231F915BDA00B8EB5F /* CGSize.swift in Sources */,
 				5ED781DE1F94F9B200400F17 /* UIAlertController.swift in Sources */,
