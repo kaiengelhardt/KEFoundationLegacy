@@ -10,10 +10,10 @@
 		5E0A28051F91423900B8EB5F /* KaiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E0A28031F91423800B8EB5F /* KaiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E0A28101F91476C00B8EB5F /* FetchedResultsControllerDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A280E1F91476C00B8EB5F /* FetchedResultsControllerDataProvider.swift */; };
 		5E0A28111F91476C00B8EB5F /* UITableViewController+FetchedResultsControllerDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A280F1F91476C00B8EB5F /* UITableViewController+FetchedResultsControllerDataProvider.swift */; };
-		5E0A28151F91486D00B8EB5F /* UIViewController+PresentationAndDismissalQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A28131F91486D00B8EB5F /* UIViewController+PresentationAndDismissalQueries.swift */; };
-		5E0A28161F91486D00B8EB5F /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A28141F91486D00B8EB5F /* UIView+AutoLayout.swift */; };
-		5E0A28231F915BDA00B8EB5F /* CGSize+Conversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A28221F915BDA00B8EB5F /* CGSize+Conversions.swift */; };
-		5E0A28251F9163EA00B8EB5F /* CGPoint+Conversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A28241F9163EA00B8EB5F /* CGPoint+Conversions.swift */; };
+		5E0A28151F91486D00B8EB5F /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A28131F91486D00B8EB5F /* UIViewController.swift */; };
+		5E0A28161F91486D00B8EB5F /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A28141F91486D00B8EB5F /* UIView.swift */; };
+		5E0A28231F915BDA00B8EB5F /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A28221F915BDA00B8EB5F /* CGSize.swift */; };
+		5E0A28251F9163EA00B8EB5F /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A28241F9163EA00B8EB5F /* CGPoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +22,10 @@
 		5E0A28041F91423900B8EB5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E0A280E1F91476C00B8EB5F /* FetchedResultsControllerDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedResultsControllerDataProvider.swift; sourceTree = "<group>"; };
 		5E0A280F1F91476C00B8EB5F /* UITableViewController+FetchedResultsControllerDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewController+FetchedResultsControllerDataProvider.swift"; sourceTree = "<group>"; };
-		5E0A28131F91486D00B8EB5F /* UIViewController+PresentationAndDismissalQueries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+PresentationAndDismissalQueries.swift"; sourceTree = "<group>"; };
-		5E0A28141F91486D00B8EB5F /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
-		5E0A28221F915BDA00B8EB5F /* CGSize+Conversions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Conversions.swift"; sourceTree = "<group>"; };
-		5E0A28241F9163EA00B8EB5F /* CGPoint+Conversions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Conversions.swift"; sourceTree = "<group>"; };
+		5E0A28131F91486D00B8EB5F /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		5E0A28141F91486D00B8EB5F /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		5E0A28221F915BDA00B8EB5F /* CGSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSize.swift; sourceTree = "<group>"; };
+		5E0A28241F9163EA00B8EB5F /* CGPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +95,8 @@
 		5E0A28121F9147A400B8EB5F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				5E0A28141F91486D00B8EB5F /* UIView+AutoLayout.swift */,
-				5E0A28131F91486D00B8EB5F /* UIViewController+PresentationAndDismissalQueries.swift */,
+				5E0A28141F91486D00B8EB5F /* UIView.swift */,
+				5E0A28131F91486D00B8EB5F /* UIViewController.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -104,8 +104,8 @@
 		5E0A28211F915BCB00B8EB5F /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				5E0A28221F915BDA00B8EB5F /* CGSize+Conversions.swift */,
-				5E0A28241F9163EA00B8EB5F /* CGPoint+Conversions.swift */,
+				5E0A28221F915BDA00B8EB5F /* CGSize.swift */,
+				5E0A28241F9163EA00B8EB5F /* CGPoint.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -189,11 +189,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E0A28151F91486D00B8EB5F /* UIViewController+PresentationAndDismissalQueries.swift in Sources */,
-				5E0A28161F91486D00B8EB5F /* UIView+AutoLayout.swift in Sources */,
-				5E0A28231F915BDA00B8EB5F /* CGSize+Conversions.swift in Sources */,
+				5E0A28151F91486D00B8EB5F /* UIViewController.swift in Sources */,
+				5E0A28161F91486D00B8EB5F /* UIView.swift in Sources */,
+				5E0A28231F915BDA00B8EB5F /* CGSize.swift in Sources */,
 				5E0A28111F91476C00B8EB5F /* UITableViewController+FetchedResultsControllerDataProvider.swift in Sources */,
-				5E0A28251F9163EA00B8EB5F /* CGPoint+Conversions.swift in Sources */,
+				5E0A28251F9163EA00B8EB5F /* CGPoint.swift in Sources */,
 				5E0A28101F91476C00B8EB5F /* FetchedResultsControllerDataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
