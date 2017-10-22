@@ -10,4 +10,4 @@ FOUNDATION_EXPORT const unsigned char KaiKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <KaiKit/PublicHeader.h>
 
-
+#import "UIResponder+FirstResponder.h"
