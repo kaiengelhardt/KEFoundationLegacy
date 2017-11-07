@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5E0A28051F91423900B8EB5F /* KaiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E0A28031F91423800B8EB5F /* KaiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E0A28101F91476C00B8EB5F /* FetchedResultsControllerDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A280E1F91476C00B8EB5F /* FetchedResultsControllerDataProvider.swift */; };
-		5E0A28111F91476C00B8EB5F /* UITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A280F1F91476C00B8EB5F /* UITableViewController.swift */; };
 		5E0A28151F91486D00B8EB5F /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A28131F91486D00B8EB5F /* UIViewController.swift */; };
 		5E0A28161F91486D00B8EB5F /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A28141F91486D00B8EB5F /* UIView.swift */; };
 		5E0A28231F915BDA00B8EB5F /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A28221F915BDA00B8EB5F /* CGSize.swift */; };
@@ -33,7 +32,6 @@
 		5E0A28031F91423800B8EB5F /* KaiKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KaiKit.h; sourceTree = "<group>"; };
 		5E0A28041F91423900B8EB5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E0A280E1F91476C00B8EB5F /* FetchedResultsControllerDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedResultsControllerDataProvider.swift; sourceTree = "<group>"; };
-		5E0A280F1F91476C00B8EB5F /* UITableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewController.swift; sourceTree = "<group>"; };
 		5E0A28131F91486D00B8EB5F /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		5E0A28141F91486D00B8EB5F /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		5E0A28221F915BDA00B8EB5F /* CGSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSize.swift; sourceTree = "<group>"; };
@@ -121,11 +119,10 @@
 				5E0A28141F91486D00B8EB5F /* UIView.swift */,
 				5E0A28131F91486D00B8EB5F /* UIViewController.swift */,
 				5ED781DD1F94F9B200400F17 /* UIAlertController.swift */,
-				5E0A280F1F91476C00B8EB5F /* UITableViewController.swift */,
+				5E0CE2D71F9DEF0600A58AA5 /* UITableView.swift */,
 				5EA40A431F97FA3800E14552 /* KETextField.swift */,
 				5EA40A491F9A497B00E14552 /* UIResponder+FirstResponder.h */,
 				5EA40A4A1F9A497B00E14552 /* UIResponder+FirstResponder.m */,
-				5E0CE2D71F9DEF0600A58AA5 /* UITableView.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -237,7 +234,6 @@
 				5E0A28231F915BDA00B8EB5F /* CGSize.swift in Sources */,
 				5ED781DE1F94F9B200400F17 /* UIAlertController.swift in Sources */,
 				5EE270FC1F96579F00A6A7A1 /* Date.swift in Sources */,
-				5E0A28111F91476C00B8EB5F /* UITableViewController.swift in Sources */,
 				5E0CE2D81F9DEF0600A58AA5 /* UITableView.swift in Sources */,
 				5EA40A441F97FA3800E14552 /* KETextField.swift in Sources */,
 				5EA40A4C1F9A497B00E14552 /* UIResponder+FirstResponder.m in Sources */,
