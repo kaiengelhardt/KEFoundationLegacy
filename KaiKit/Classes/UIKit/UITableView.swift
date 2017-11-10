@@ -53,4 +53,16 @@ extension UITableView : FetchedResultsControllerDataProviderDelegate {
 		}, completion: nil)
 	}
 	
+	public func deselectCurrentlySelectRow(with transitionCoordinator: UIViewControllerTransitionCoordinator?) {
+		let indexPath = indexPathForSelectedRow
+		if let indexPath = indexPath {
+			deselectRow(at: indexPath, animated: true)
+			transitionCoordinator?.notifyWhenInteractionChanges { [weak self] (context) in
+				if context.isCancelled {
+					self?.selectRow(at: indexPath, animated: false, scrollPosition: .none)
+				}
+			}
+		}
+	}
+	
 }
