@@ -46,8 +46,7 @@ extension UITableView : FetchedResultsControllerDataProviderDelegate {
 				case .update(let indexPath):
 					reloadRows(at: [indexPath], with: .automatic)
 				case .move(let fromIndexPath, let toIndexPath):
-					reloadRows(at: [fromIndexPath], with: .automatic)
-					moveRow(at: fromIndexPath, to: toIndexPath)
+					reloadRows(at: [fromIndexPath, toIndexPath], with: .automatic)
 				}
 			}
 		}, completion: nil)
