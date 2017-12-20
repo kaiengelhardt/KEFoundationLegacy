@@ -21,3 +21,11 @@ public extension Array {
 	}
 	
 }
+
+public extension Array where Element : Hashable {
+	
+	public func unique() -> [Element] {
+		return Array(Set(self))
+	}
+	
+}
