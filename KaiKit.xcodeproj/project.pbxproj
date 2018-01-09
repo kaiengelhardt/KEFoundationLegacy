@@ -22,6 +22,8 @@
 		5EA40A441F97FA3800E14552 /* KETextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA40A431F97FA3800E14552 /* KETextField.swift */; };
 		5EA40A4B1F9A497B00E14552 /* UIResponder+FirstResponder.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EA40A491F9A497B00E14552 /* UIResponder+FirstResponder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5EA40A4C1F9A497B00E14552 /* UIResponder+FirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA40A4A1F9A497B00E14552 /* UIResponder+FirstResponder.m */; };
+		5ECAA1F120056B3400AC4C6B /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECAA1F020056B3400AC4C6B /* ContainerViewController.swift */; };
+		5ECAA1F220056B3400AC4C6B /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECAA1F020056B3400AC4C6B /* ContainerViewController.swift */; };
 		5ECDE2182003F5CA005FB807 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECDE2172003F5CA005FB807 /* FileManager.swift */; };
 		5ECDE2192003F5CA005FB807 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECDE2172003F5CA005FB807 /* FileManager.swift */; };
 		5ED781DA1F94F1F900400F17 /* NSPreciate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED781D91F94F1F900400F17 /* NSPreciate.swift */; };
@@ -83,6 +85,7 @@
 		5EA40A431F97FA3800E14552 /* KETextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KETextField.swift; sourceTree = "<group>"; };
 		5EA40A491F9A497B00E14552 /* UIResponder+FirstResponder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+FirstResponder.h"; sourceTree = "<group>"; };
 		5EA40A4A1F9A497B00E14552 /* UIResponder+FirstResponder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+FirstResponder.m"; sourceTree = "<group>"; };
+		5ECAA1F020056B3400AC4C6B /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		5ECDE2172003F5CA005FB807 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		5ED781D91F94F1F900400F17 /* NSPreciate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSPreciate.swift; sourceTree = "<group>"; };
 		5ED781DB1F94F27F00400F17 /* NSSortDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSSortDescriptor.swift; sourceTree = "<group>"; };
@@ -181,6 +184,7 @@
 				5EA40A4A1F9A497B00E14552 /* UIResponder+FirstResponder.m */,
 				5E2653931FB66ECB00F3994F /* EmbeddableTableView.swift */,
 				5E05301A1FB76E6700C2EE87 /* NSLayoutConstraint.swift */,
+				5ECAA1F020056B3400AC4C6B /* ContainerViewController.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -377,6 +381,7 @@
 				5E05301B1FB76E6700C2EE87 /* NSLayoutConstraint.swift in Sources */,
 				5EA40A4C1F9A497B00E14552 /* UIResponder+FirstResponder.m in Sources */,
 				5ECDE2182003F5CA005FB807 /* FileManager.swift in Sources */,
+				5ECAA1F120056B3400AC4C6B /* ContainerViewController.swift in Sources */,
 				5E0A28251F9163EA00B8EB5F /* CGPoint.swift in Sources */,
 				5ED781DC1F94F27F00400F17 /* NSSortDescriptor.swift in Sources */,
 				5E606CFF1FBB4BF900785D15 /* NSKeyValueObservation.swift in Sources */,
@@ -404,6 +409,7 @@
 				5EEC3C131FDB5140003F8A73 /* NSPreciate.swift in Sources */,
 				5EEC3C1F1FDB5140003F8A73 /* NSLayoutConstraint.swift in Sources */,
 				5ECDE2192003F5CA005FB807 /* FileManager.swift in Sources */,
+				5ECAA1F220056B3400AC4C6B /* ContainerViewController.swift in Sources */,
 				5EEC3C1D1FDB5140003F8A73 /* UIResponder+FirstResponder.m in Sources */,
 				5EEC3C141FDB5140003F8A73 /* NSSortDescriptor.swift in Sources */,
 				5EEC3C1A1FDB5140003F8A73 /* UIAlertController.swift in Sources */,
