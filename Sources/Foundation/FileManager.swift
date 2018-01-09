@@ -10,6 +10,12 @@ public extension FileManager {
 		return self.default.urls(for: .libraryDirectory, in: .userDomainMask).first!
 	}
 	
+	public class var cachesDirectoryURL: URL {
+		return self.default.urls(for: .cachesDirectory, in: .userDomainMask).first!
+	}
+	
+	// MARK: - App Group Container Directories
+	
 	public class func groupContainerURL(for groupIdentifier: String) -> URL {
 		return self.default.containerURL(forSecurityApplicationGroupIdentifier: groupIdentifier)!
 	}
@@ -18,12 +24,8 @@ public extension FileManager {
 		return groupContainerURL(for: groupIdentifier).appendingPathComponent("Library")
 	}
 	
-	public class func groupContainerDatabaseDirectoryURL(for groupIdentifier: String) -> URL {
-		let url = groupContainerLibraryDirectoryURL(for: groupIdentifier).appendingPathComponent("Database")
-		if !self.default.fileExists(atPath: url.absoluteString, isDirectory: nil) {
-			try! self.default.createDirectory(at: url, withIntermediateDirectories: true, attributes: nil)
-		}
-		return url
+	public class func groupContainerCachesDirectoryURL(for groupIdentifier: String) -> URL {
+		return groupContainerLibraryDirectoryURL(for: groupIdentifier).appendingPathComponent("Caches")
 	}
 	
 }
