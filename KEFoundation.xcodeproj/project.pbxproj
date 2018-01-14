@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5E05301B1FB76E6700C2EE87 /* NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E05301A1FB76E6700C2EE87 /* NSLayoutConstraint.swift */; };
-		5E0A28051F91423900B8EB5F /* KaiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E0A28031F91423800B8EB5F /* KaiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E0A28051F91423900B8EB5F /* KEFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E0A28031F91423800B8EB5F /* KEFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E0A28101F91476C00B8EB5F /* FetchedResultsControllerDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A280E1F91476C00B8EB5F /* FetchedResultsControllerDataProvider.swift */; };
 		5E0A28151F91486D00B8EB5F /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A28131F91486D00B8EB5F /* UIViewController.swift */; };
 		5E0A28161F91486D00B8EB5F /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A28141F91486D00B8EB5F /* UIView.swift */; };
@@ -32,7 +32,7 @@
 		5ED781E01F94FA6700400F17 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED781DF1F94FA6700400F17 /* Int.swift */; };
 		5ED781E21F94FA9600400F17 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED781E11F94FA9600400F17 /* Array.swift */; };
 		5EE270FC1F96579F00A6A7A1 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE270FB1F96579F00A6A7A1 /* Date.swift */; };
-		5EEC3C0D1FDB50D1003F8A73 /* KaiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E0A28031F91423800B8EB5F /* KaiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EEC3C0D1FDB50D1003F8A73 /* KEFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E0A28031F91423800B8EB5F /* KEFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5EEC3C0E1FDB5140003F8A73 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED781DF1F94FA6700400F17 /* Int.swift */; };
 		5EEC3C0F1FDB5140003F8A73 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED781E11F94FA9600400F17 /* Array.swift */; };
 		5EEC3C101FDB5140003F8A73 /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A28241F9163EA00B8EB5F /* CGPoint.swift */; };
@@ -64,13 +64,13 @@
 		5EEFB60C1FE5C71B0028BEEA /* NSRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7DE2381F9BE56F0051B623 /* NSRange.swift */; };
 		5EEFB60D1FE5C71B0028BEEA /* NSKeyValueObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E606CFE1FBB4BF900785D15 /* NSKeyValueObservation.swift */; };
 		5EEFB60E1FE5C72B0028BEEA /* FetchedResultsControllerDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A280E1F91476C00B8EB5F /* FetchedResultsControllerDataProvider.swift */; };
-		5EEFB60F1FE5C7400028BEEA /* KaiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E0A28031F91423800B8EB5F /* KaiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EEFB60F1FE5C7400028BEEA /* KEFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E0A28031F91423800B8EB5F /* KEFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5E05301A1FB76E6700C2EE87 /* NSLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraint.swift; sourceTree = "<group>"; };
-		5E0A28001F91423800B8EB5F /* KaiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KaiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E0A28031F91423800B8EB5F /* KaiKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KaiKit.h; sourceTree = "<group>"; };
+		5E0A28001F91423800B8EB5F /* KEFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KEFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E0A28031F91423800B8EB5F /* KEFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KEFoundation.h; sourceTree = "<group>"; };
 		5E0A28041F91423900B8EB5F /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		5E0A280E1F91476C00B8EB5F /* FetchedResultsControllerDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedResultsControllerDataProvider.swift; sourceTree = "<group>"; };
 		5E0A28131F91486D00B8EB5F /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
@@ -93,9 +93,9 @@
 		5ED781DF1F94FA6700400F17 /* Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		5ED781E11F94FA9600400F17 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		5EE270FB1F96579F00A6A7A1 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
-		5EEC3C051FDB50B6003F8A73 /* KaiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KaiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EEC3C051FDB50B6003F8A73 /* KEFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KEFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EEC3C081FDB50B7003F8A73 /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
-		5EEFB5FC1FE5BD540028BEEA /* KaiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KaiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EEFB5FC1FE5BD540028BEEA /* KEFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KEFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EEFB5FF1FE5BD540028BEEA /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,9 +136,9 @@
 		5E0A28011F91423800B8EB5F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5E0A28001F91423800B8EB5F /* KaiKit.framework */,
-				5EEC3C051FDB50B6003F8A73 /* KaiKit.framework */,
-				5EEFB5FC1FE5BD540028BEEA /* KaiKit.framework */,
+				5E0A28001F91423800B8EB5F /* KEFoundation.framework */,
+				5EEC3C051FDB50B6003F8A73 /* KEFoundation.framework */,
+				5EEFB5FC1FE5BD540028BEEA /* KEFoundation.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,7 +146,7 @@
 		5E0A280B1F91447800B8EB5F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5E0A28031F91423800B8EB5F /* KaiKit.h */,
+				5E0A28031F91423800B8EB5F /* KEFoundation.h */,
 				5E0A28041F91423900B8EB5F /* Info-iOS.plist */,
 				5EEC3C081FDB50B7003F8A73 /* Info-tvOS.plist */,
 				5EEFB5FF1FE5BD540028BEEA /* Info-macOS.plist */,
@@ -214,7 +214,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E0A28051F91423900B8EB5F /* KaiKit.h in Headers */,
+				5E0A28051F91423900B8EB5F /* KEFoundation.h in Headers */,
 				5EA40A4B1F9A497B00E14552 /* UIResponder+FirstResponder.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,7 +223,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EEC3C0D1FDB50D1003F8A73 /* KaiKit.h in Headers */,
+				5EEC3C0D1FDB50D1003F8A73 /* KEFoundation.h in Headers */,
 				5EEC3C211FDB514A003F8A73 /* UIResponder+FirstResponder.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,16 +232,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EEFB60F1FE5C7400028BEEA /* KaiKit.h in Headers */,
+				5EEFB60F1FE5C7400028BEEA /* KEFoundation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5E0A27FF1F91423800B8EB5F /* KaiKit iOS */ = {
+		5E0A27FF1F91423800B8EB5F /* KEFoundation iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5E0A28081F91423900B8EB5F /* Build configuration list for PBXNativeTarget "KaiKit iOS" */;
+			buildConfigurationList = 5E0A28081F91423900B8EB5F /* Build configuration list for PBXNativeTarget "KEFoundation iOS" */;
 			buildPhases = (
 				5E0A27FB1F91423800B8EB5F /* Sources */,
 				5E0A27FC1F91423800B8EB5F /* Frameworks */,
@@ -252,14 +252,14 @@
 			);
 			dependencies = (
 			);
-			name = "KaiKit iOS";
+			name = "KEFoundation iOS";
 			productName = KaiKit;
-			productReference = 5E0A28001F91423800B8EB5F /* KaiKit.framework */;
+			productReference = 5E0A28001F91423800B8EB5F /* KEFoundation.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5EEC3C041FDB50B6003F8A73 /* KaiKit tvOS */ = {
+		5EEC3C041FDB50B6003F8A73 /* KEFoundation tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5EEC3C0A1FDB50B7003F8A73 /* Build configuration list for PBXNativeTarget "KaiKit tvOS" */;
+			buildConfigurationList = 5EEC3C0A1FDB50B7003F8A73 /* Build configuration list for PBXNativeTarget "KEFoundation tvOS" */;
 			buildPhases = (
 				5EEC3C001FDB50B6003F8A73 /* Sources */,
 				5EEC3C011FDB50B6003F8A73 /* Frameworks */,
@@ -270,14 +270,14 @@
 			);
 			dependencies = (
 			);
-			name = "KaiKit tvOS";
+			name = "KEFoundation tvOS";
 			productName = "KaiKit tvOS";
-			productReference = 5EEC3C051FDB50B6003F8A73 /* KaiKit.framework */;
+			productReference = 5EEC3C051FDB50B6003F8A73 /* KEFoundation.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5EEFB5FB1FE5BD540028BEEA /* KaiKit macOS */ = {
+		5EEFB5FB1FE5BD540028BEEA /* KEFoundation macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5EEFB6031FE5BD540028BEEA /* Build configuration list for PBXNativeTarget "KaiKit macOS" */;
+			buildConfigurationList = 5EEFB6031FE5BD540028BEEA /* Build configuration list for PBXNativeTarget "KEFoundation macOS" */;
 			buildPhases = (
 				5EEFB5F71FE5BD540028BEEA /* Sources */,
 				5EEFB5F81FE5BD540028BEEA /* Frameworks */,
@@ -288,9 +288,9 @@
 			);
 			dependencies = (
 			);
-			name = "KaiKit macOS";
+			name = "KEFoundation macOS";
 			productName = "KaiKit macOS";
-			productReference = 5EEFB5FC1FE5BD540028BEEA /* KaiKit.framework */;
+			productReference = 5EEFB5FC1FE5BD540028BEEA /* KEFoundation.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -317,7 +317,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5E0A27FA1F91423800B8EB5F /* Build configuration list for PBXProject "KaiKit" */;
+			buildConfigurationList = 5E0A27FA1F91423800B8EB5F /* Build configuration list for PBXProject "KEFoundation" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -329,9 +329,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5E0A27FF1F91423800B8EB5F /* KaiKit iOS */,
-				5EEC3C041FDB50B6003F8A73 /* KaiKit tvOS */,
-				5EEFB5FB1FE5BD540028BEEA /* KaiKit macOS */,
+				5E0A27FF1F91423800B8EB5F /* KEFoundation iOS */,
+				5EEC3C041FDB50B6003F8A73 /* KEFoundation tvOS */,
+				5EEFB5FB1FE5BD540028BEEA /* KEFoundation macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -565,7 +565,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KaiKit-iOS";
-				PRODUCT_NAME = KaiKit;
+				PRODUCT_NAME = KEFoundation;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -589,7 +589,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KaiKit-iOS";
-				PRODUCT_NAME = KaiKit;
+				PRODUCT_NAME = KEFoundation;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -611,7 +611,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KaiKit-tvOS";
-				PRODUCT_NAME = KaiKit;
+				PRODUCT_NAME = KEFoundation;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -634,7 +634,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KaiKit-tvOS";
-				PRODUCT_NAME = KaiKit;
+				PRODUCT_NAME = KEFoundation;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -660,7 +660,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KaiKit-macOS";
-				PRODUCT_NAME = KaiKit;
+				PRODUCT_NAME = KEFoundation;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -685,7 +685,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KaiKit-macOS";
-				PRODUCT_NAME = KaiKit;
+				PRODUCT_NAME = KEFoundation;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -695,7 +695,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5E0A27FA1F91423800B8EB5F /* Build configuration list for PBXProject "KaiKit" */ = {
+		5E0A27FA1F91423800B8EB5F /* Build configuration list for PBXProject "KEFoundation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5E0A28061F91423900B8EB5F /* Debug */,
@@ -704,7 +704,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5E0A28081F91423900B8EB5F /* Build configuration list for PBXNativeTarget "KaiKit iOS" */ = {
+		5E0A28081F91423900B8EB5F /* Build configuration list for PBXNativeTarget "KEFoundation iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5E0A28091F91423900B8EB5F /* Debug */,
@@ -713,7 +713,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5EEC3C0A1FDB50B7003F8A73 /* Build configuration list for PBXNativeTarget "KaiKit tvOS" */ = {
+		5EEC3C0A1FDB50B7003F8A73 /* Build configuration list for PBXNativeTarget "KEFoundation tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5EEC3C0B1FDB50B7003F8A73 /* Debug */,
@@ -722,7 +722,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5EEFB6031FE5BD540028BEEA /* Build configuration list for PBXNativeTarget "KaiKit macOS" */ = {
+		5EEFB6031FE5BD540028BEEA /* Build configuration list for PBXNativeTarget "KEFoundation macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5EEFB6011FE5BD540028BEEA /* Debug */,

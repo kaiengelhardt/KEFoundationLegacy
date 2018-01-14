@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5EEFB5FB1FE5BD540028BEEA"
-               BuildableName = "KaiKit.framework"
-               BlueprintName = "KaiKit macOS"
-               ReferencedContainer = "container:KaiKit.xcodeproj">
+               BlueprintIdentifier = "5E0A27FF1F91423800B8EB5F"
+               BuildableName = "KEFoundation.framework"
+               BlueprintName = "KEFoundation iOS"
+               ReferencedContainer = "container:KEFoundation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,10 +47,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5EEFB5FB1FE5BD540028BEEA"
-            BuildableName = "KaiKit.framework"
-            BlueprintName = "KaiKit macOS"
-            ReferencedContainer = "container:KaiKit.xcodeproj">
+            BlueprintIdentifier = "5E0A27FF1F91423800B8EB5F"
+            BuildableName = "KEFoundation.framework"
+            BlueprintName = "KEFoundation iOS"
+            ReferencedContainer = "container:KEFoundation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,10 +65,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5EEFB5FB1FE5BD540028BEEA"
-            BuildableName = "KaiKit.framework"
-            BlueprintName = "KaiKit macOS"
-            ReferencedContainer = "container:KaiKit.xcodeproj">
+            BlueprintIdentifier = "5E0A27FF1F91423800B8EB5F"
+            BuildableName = "KEFoundation.framework"
+            BlueprintName = "KEFoundation iOS"
+            ReferencedContainer = "container:KEFoundation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
