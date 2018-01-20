@@ -16,6 +16,8 @@
 		5E0A28251F9163EA00B8EB5F /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A28241F9163EA00B8EB5F /* CGPoint.swift */; };
 		5E0CE2D81F9DEF0600A58AA5 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0CE2D71F9DEF0600A58AA5 /* UITableView.swift */; };
 		5E16E2761F97BAA700D44BF4 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E16E2751F97BAA700D44BF4 /* CGRect.swift */; };
+		5E1E0C112013AEFF0075629D /* UICollectionView+FetchedResultsDataUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E0C102013AEFF0075629D /* UICollectionView+FetchedResultsDataUpdater.swift */; };
+		5E1E0C122013AEFF0075629D /* UICollectionView+FetchedResultsDataUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E0C102013AEFF0075629D /* UICollectionView+FetchedResultsDataUpdater.swift */; };
 		5E1E0C142013AFDE0075629D /* UITableView+FetchedResultsDataUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E0C132013AFDE0075629D /* UITableView+FetchedResultsDataUpdater.swift */; };
 		5E1E0C152013AFDE0075629D /* UITableView+FetchedResultsDataUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E0C132013AFDE0075629D /* UITableView+FetchedResultsDataUpdater.swift */; };
 		5E2653941FB66ECB00F3994F /* EmbeddableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2653931FB66ECB00F3994F /* EmbeddableTableView.swift */; };
@@ -173,6 +175,7 @@
 			children = (
 				5E0A280E1F91476C00B8EB5F /* FetchedResultsUpdater.swift */,
 				5E1E0C132013AFDE0075629D /* UITableView+FetchedResultsDataUpdater.swift */,
+				5E1E0C102013AEFF0075629D /* UICollectionView+FetchedResultsDataUpdater.swift */,
 			);
 			path = "Core Data";
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				5E606CFF1FBB4BF900785D15 /* NSKeyValueObservation.swift in Sources */,
 				5E1E0C142013AFDE0075629D /* UITableView+FetchedResultsDataUpdater.swift in Sources */,
 				5E1E0C112013AEFF0075629D /* UICollectionView+FetchedResultsDataUpdater.swift in Sources */,
+				5E0A28101F91476C00B8EB5F /* FetchedResultsUpdater.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +424,7 @@
 				5EEC3C141FDB5140003F8A73 /* NSSortDescriptor.swift in Sources */,
 				5EEC3C1A1FDB5140003F8A73 /* UIAlertController.swift in Sources */,
 				5E1E0C152013AFDE0075629D /* UITableView+FetchedResultsDataUpdater.swift in Sources */,
+				5E1E0C122013AEFF0075629D /* UICollectionView+FetchedResultsDataUpdater.swift in Sources */,
 				5EEC3C1B1FDB5140003F8A73 /* UITableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
