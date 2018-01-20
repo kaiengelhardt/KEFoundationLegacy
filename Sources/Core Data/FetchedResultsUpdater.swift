@@ -1,6 +1,6 @@
 import CoreData
 
-public class FetchedResultsControllerDataProvider : NSObject {
+public class FetchedResultsUpdater : NSObject {
 	
 	public enum SectionUpdate {
 		case insert(Int)
@@ -14,7 +14,7 @@ public class FetchedResultsControllerDataProvider : NSObject {
 		case move(IndexPath, IndexPath)
 	}
 	
-	public weak var delegate: FetchedResultsControllerDataProviderDelegate?
+	public weak var delegate: FetchedResultsUpdaterDelegate?
 	
 	private var sectionUpdates: [SectionUpdate] = []
 	private var rowUpdates: [RowUpdate] = []
@@ -29,7 +29,7 @@ public class FetchedResultsControllerDataProvider : NSObject {
 	
 }
 
-extension FetchedResultsControllerDataProvider : NSFetchedResultsControllerDelegate {
+extension FetchedResultsUpdater : NSFetchedResultsControllerDelegate {
 	
 	public func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
 		sectionUpdates = []
@@ -64,13 +64,13 @@ extension FetchedResultsControllerDataProvider : NSFetchedResultsControllerDeleg
 		guard updatesEnabled else {
 			return
 		}
-		delegate?.dataProvider(self, didUpdateWithSectionUpdates: sectionUpdates, rowUpdates: rowUpdates)
+		delegate?.updater(self, didUpdateWithSectionUpdates: sectionUpdates, rowUpdates: rowUpdates)
 	}
 	
 }
 
-public protocol FetchedResultsControllerDataProviderDelegate : class {
+public protocol FetchedResultsUpdaterDelegate : class {
 	
-	func dataProvider(_ dataProvider: FetchedResultsControllerDataProvider, didUpdateWithSectionUpdates sectionUpdates: [FetchedResultsControllerDataProvider.SectionUpdate], rowUpdates: [FetchedResultsControllerDataProvider.RowUpdate])
+	func updater(_ updater: FetchedResultsUpdater, didUpdateWithSectionUpdates sectionUpdates: [FetchedResultsUpdater.SectionUpdate], rowUpdates: [FetchedResultsUpdater.RowUpdate])
 	
 }
