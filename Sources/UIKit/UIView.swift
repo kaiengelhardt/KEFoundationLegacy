@@ -1,13 +1,5 @@
 import UIKit
 
-public struct AutoLayout {
-	
-	public static let standardVerticalEdgeSpacing = 8
-	public static let standardHorizontalEdgeSpacing = 16
-	public static let standardSpacing = 8
-	
-}
-
 public extension UIView {
 	
 	public func constraintsEqualToEdgesOfSuperview() -> [NSLayoutConstraint] {
