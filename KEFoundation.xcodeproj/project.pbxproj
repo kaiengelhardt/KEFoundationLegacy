@@ -15,6 +15,9 @@
 		5E0A28231F915BDA00B8EB5F /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A28221F915BDA00B8EB5F /* CGSize.swift */; };
 		5E0A28251F9163EA00B8EB5F /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A28241F9163EA00B8EB5F /* CGPoint.swift */; };
 		5E0CE2D81F9DEF0600A58AA5 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0CE2D71F9DEF0600A58AA5 /* UITableView.swift */; };
+		5E0D5ADE20176573004E6949 /* CGPoint_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0D5ADD20176573004E6949 /* CGPoint_Tests.swift */; };
+		5E0D5AE020176573004E6949 /* KEFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0A28001F91423800B8EB5F /* KEFoundation.framework */; };
+		5E0D5AE920176AF8004E6949 /* NSLayoutConstraint_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0D5AE820176AF8004E6949 /* NSLayoutConstraint_Tests.swift */; };
 		5E16E2761F97BAA700D44BF4 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E16E2751F97BAA700D44BF4 /* CGRect.swift */; };
 		5E1E0C112013AEFF0075629D /* UICollectionView+FetchedResultsDataUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E0C102013AEFF0075629D /* UICollectionView+FetchedResultsDataUpdater.swift */; };
 		5E1E0C122013AEFF0075629D /* UICollectionView+FetchedResultsDataUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E0C102013AEFF0075629D /* UICollectionView+FetchedResultsDataUpdater.swift */; };
@@ -74,6 +77,16 @@
 		5EF619EF2013E23E006BCD62 /* Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF619EC2013E23E006BCD62 /* Managed.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5E0D5AE120176573004E6949 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E0A27F71F91423800B8EB5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E0A27FF1F91423800B8EB5F;
+			remoteInfo = "KEFoundation iOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		5E05301A1FB76E6700C2EE87 /* NSLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraint.swift; sourceTree = "<group>"; };
 		5E0A28001F91423800B8EB5F /* KEFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KEFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +98,10 @@
 		5E0A28221F915BDA00B8EB5F /* CGSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSize.swift; sourceTree = "<group>"; };
 		5E0A28241F9163EA00B8EB5F /* CGPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
 		5E0CE2D71F9DEF0600A58AA5 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		5E0D5ADB20176572004E6949 /* KEFoundation Unit Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KEFoundation Unit Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E0D5ADD20176573004E6949 /* CGPoint_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPoint_Tests.swift; sourceTree = "<group>"; };
+		5E0D5ADF20176573004E6949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E0D5AE820176AF8004E6949 /* NSLayoutConstraint_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraint_Tests.swift; sourceTree = "<group>"; };
 		5E16E2751F97BAA700D44BF4 /* CGRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
 		5E1E0C102013AEFF0075629D /* UICollectionView+FetchedResultsDataUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+FetchedResultsDataUpdater.swift"; sourceTree = "<group>"; };
 		5E1E0C132013AFDE0075629D /* UITableView+FetchedResultsDataUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+FetchedResultsDataUpdater.swift"; sourceTree = "<group>"; };
@@ -117,6 +134,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5E0D5AD820176572004E6949 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E0D5AE020176573004E6949 /* KEFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5EEC3C011FDB50B6003F8A73 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -139,6 +164,7 @@
 			children = (
 				5E0A280C1F91473800B8EB5F /* Sources */,
 				5E0A280B1F91447800B8EB5F /* Resources */,
+				5E0D5ADC20176573004E6949 /* Unit Tests */,
 				5E0A28011F91423800B8EB5F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -149,6 +175,7 @@
 				5E0A28001F91423800B8EB5F /* KEFoundation.framework */,
 				5EEC3C051FDB50B6003F8A73 /* KEFoundation.framework */,
 				5EEFB5FC1FE5BD540028BEEA /* KEFoundation.framework */,
+				5E0D5ADB20176572004E6949 /* KEFoundation Unit Tests iOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -220,6 +247,48 @@
 			path = Foundation;
 			sourceTree = "<group>";
 		};
+		5E0D5ADC20176573004E6949 /* Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D5AE7201765BF004E6949 /* Sources */,
+				5E0D5AE6201765B9004E6949 /* Resources */,
+			);
+			path = "Unit Tests";
+			sourceTree = "<group>";
+		};
+		5E0D5AE6201765B9004E6949 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D5ADF20176573004E6949 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5E0D5AE7201765BF004E6949 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D5AEA20176B1A004E6949 /* Foundation */,
+				5E0D5AEB20176B21004E6949 /* UIKit */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5E0D5AEA20176B1A004E6949 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D5ADD20176573004E6949 /* CGPoint_Tests.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		5E0D5AEB20176B21004E6949 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D5AE820176AF8004E6949 /* NSLayoutConstraint_Tests.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -270,6 +339,24 @@
 			productReference = 5E0A28001F91423800B8EB5F /* KEFoundation.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		5E0D5ADA20176572004E6949 /* KEFoundation Unit Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E0D5AE320176573004E6949 /* Build configuration list for PBXNativeTarget "KEFoundation Unit Tests iOS" */;
+			buildPhases = (
+				5E0D5AD720176572004E6949 /* Sources */,
+				5E0D5AD820176572004E6949 /* Frameworks */,
+				5E0D5AD920176572004E6949 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E0D5AE220176573004E6949 /* PBXTargetDependency */,
+			);
+			name = "KEFoundation Unit Tests iOS";
+			productName = "KEFoundation Unit Tests iOS";
+			productReference = 5E0D5ADB20176572004E6949 /* KEFoundation Unit Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		5EEC3C041FDB50B6003F8A73 /* KEFoundation tvOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EEC3C0A1FDB50B7003F8A73 /* Build configuration list for PBXNativeTarget "KEFoundation tvOS" */;
@@ -312,12 +399,17 @@
 		5E0A27F71F91423800B8EB5F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Kai Engelhardt";
 				TargetAttributes = {
 					5E0A27FF1F91423800B8EB5F = {
 						CreatedOnToolsVersion = 9.1;
 						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+					5E0D5ADA20176572004E6949 = {
+						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 					5EEC3C041FDB50B6003F8A73 = {
@@ -345,12 +437,20 @@
 				5E0A27FF1F91423800B8EB5F /* KEFoundation iOS */,
 				5EEC3C041FDB50B6003F8A73 /* KEFoundation tvOS */,
 				5EEFB5FB1FE5BD540028BEEA /* KEFoundation macOS */,
+				5E0D5ADA20176572004E6949 /* KEFoundation Unit Tests iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5E0A27FE1F91423800B8EB5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E0D5AD920176572004E6949 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -405,6 +505,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5E0D5AD720176572004E6949 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E0D5ADE20176573004E6949 /* CGPoint_Tests.swift in Sources */,
+				5E0D5AE920176AF8004E6949 /* NSLayoutConstraint_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5EEC3C001FDB50B6003F8A73 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -456,6 +565,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E0D5AE220176573004E6949 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E0A27FF1F91423800B8EB5F /* KEFoundation iOS */;
+			targetProxy = 5E0D5AE120176573004E6949 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5E0A28061F91423900B8EB5F /* Debug */ = {
@@ -618,6 +735,36 @@
 			};
 			name = Release;
 		};
+		5E0D5AE420176573004E6949 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2RZ5XH923S;
+				INFOPLIST_FILE = "Unit Tests/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KEFoundation-Unit-Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E0D5AE520176573004E6949 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2RZ5XH923S;
+				INFOPLIST_FILE = "Unit Tests/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KEFoundation-Unit-Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		5EEC3C0B1FDB50B7003F8A73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -733,6 +880,15 @@
 			buildConfigurations = (
 				5E0A28091F91423900B8EB5F /* Debug */,
 				5E0A280A1F91423900B8EB5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E0D5AE320176573004E6949 /* Build configuration list for PBXNativeTarget "KEFoundation Unit Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E0D5AE420176573004E6949 /* Debug */,
+				5E0D5AE520176573004E6949 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
