@@ -21,6 +21,7 @@
 		5E0D5AED20176C08004E6949 /* NSLayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0D5AEC20176C08004E6949 /* NSLayoutAnchor.swift */; };
 		5E0D5AEE20176C08004E6949 /* NSLayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0D5AEC20176C08004E6949 /* NSLayoutAnchor.swift */; };
 		5E0D5AEF20176C08004E6949 /* NSLayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0D5AEC20176C08004E6949 /* NSLayoutAnchor.swift */; };
+		5E0D5AF420176CFE004E6949 /* CGRect_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0D5AF320176CFE004E6949 /* CGRect_Tests.swift */; };
 		5E16E2761F97BAA700D44BF4 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E16E2751F97BAA700D44BF4 /* CGRect.swift */; };
 		5E1E0C112013AEFF0075629D /* UICollectionView+FetchedResultsDataUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E0C102013AEFF0075629D /* UICollectionView+FetchedResultsDataUpdater.swift */; };
 		5E1E0C122013AEFF0075629D /* UICollectionView+FetchedResultsDataUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E0C102013AEFF0075629D /* UICollectionView+FetchedResultsDataUpdater.swift */; };
@@ -106,6 +107,7 @@
 		5E0D5ADF20176573004E6949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E0D5AE820176AF8004E6949 /* NSLayoutConstraint_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraint_Tests.swift; sourceTree = "<group>"; };
 		5E0D5AEC20176C08004E6949 /* NSLayoutAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutAnchor.swift; sourceTree = "<group>"; };
+		5E0D5AF320176CFE004E6949 /* CGRect_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRect_Tests.swift; sourceTree = "<group>"; };
 		5E16E2751F97BAA700D44BF4 /* CGRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
 		5E1E0C102013AEFF0075629D /* UICollectionView+FetchedResultsDataUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+FetchedResultsDataUpdater.swift"; sourceTree = "<group>"; };
 		5E1E0C132013AFDE0075629D /* UITableView+FetchedResultsDataUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+FetchedResultsDataUpdater.swift"; sourceTree = "<group>"; };
@@ -282,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				5E0D5ADD20176573004E6949 /* CGPoint_Tests.swift */,
+				5E0D5AF320176CFE004E6949 /* CGRect_Tests.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -517,6 +520,7 @@
 			files = (
 				5E0D5ADE20176573004E6949 /* CGPoint_Tests.swift in Sources */,
 				5E0D5AE920176AF8004E6949 /* NSLayoutConstraint_Tests.swift in Sources */,
+				5E0D5AF420176CFE004E6949 /* CGRect_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
