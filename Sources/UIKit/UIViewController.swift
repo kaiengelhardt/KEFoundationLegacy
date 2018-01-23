@@ -22,16 +22,16 @@ public extension UIViewController {
 		return isBeingDismissed
 	}
 	
-	public func add(childViewController: UIViewController) {
-		addChildViewController(childViewController)
-		view.addSubview(childViewController.view)
-		childViewController.didMove(toParentViewController: self)
+	public func addChild(viewController: UIViewController) {
+		addChildViewController(viewController)
+		view.addSubview(viewController.view)
+		viewController.didMove(toParentViewController: self)
 	}
 	
-	public func remove(childViewController: UIViewController) {
-		childViewController.willMove(toParentViewController: nil)
-		childViewController.view.removeFromSuperview()
-		childViewController.removeFromParentViewController()
+	public func removeChild(viewController: UIViewController) {
+		viewController.willMove(toParentViewController: nil)
+		viewController.view.removeFromSuperview()
+		viewController.removeFromParentViewController()
 	}
 	
 }

@@ -8,10 +8,10 @@ open class ContainerViewController : UIViewController {
 				return
 			}
 			if let oldViewController = oldValue {
-				remove(childViewController: oldViewController)
+				removeChild(viewController: oldViewController)
 			}
 			if let newViewController = embeddedViewController {
-				add(childViewController: newViewController)
+				addChild(viewController: newViewController)
 				NSLayoutConstraint.activate(newViewController.view.constraintsEqualToEdgesOfSuperview())
 			}
 		}
