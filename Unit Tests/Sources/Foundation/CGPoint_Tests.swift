@@ -1,5 +1,3 @@
-// Created by Kai Engelhardt on 23.01.18.
-
 import XCTest
 @testable import KEFoundation
 
