@@ -25,7 +25,7 @@ public extension Array {
 	///
 	/// - returns:
 	///   The shuffled array.
-	public func shuffledBeginningWithItemAtIndex(index: Int) -> [Element] {
+	public func shuffledBeginningWithItem(at index: Int) -> [Element] {
 		var array = self
 		let item = array.remove(at: index)
 		var shuffledArray = array.shuffled()
