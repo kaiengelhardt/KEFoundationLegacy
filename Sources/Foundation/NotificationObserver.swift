@@ -17,7 +17,6 @@ public class NotificationObserver {
 		}
 	}
 	
-	// MARK: - Action
 	/// Adds an entry to the notification center's dispatch table that includes a notification name and a block to add to the queue.
 	/// All observers will be removed when the `NotificationObserver` is released.
 	///
