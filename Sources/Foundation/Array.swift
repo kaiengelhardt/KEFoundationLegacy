@@ -18,7 +18,6 @@ public extension Array {
 		return shuffledArray
 	}
 	
-	
 	/**
 	Returns an array containing the same items with their positions shuffled.
 	The item at `index` will be first in the returned array.
