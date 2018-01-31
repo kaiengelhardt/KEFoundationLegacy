@@ -3,7 +3,7 @@ import Foundation
 public extension Array {
 	
 	public func shuffled() -> [Element] {
-		var shuffledArray = [Element]()
+		var shuffledArray: [Element] = []
 		shuffledArray.reserveCapacity(count)
 		for item in self {
 			let index = Int.randomNumber(between: 0, and: shuffledArray.count + 1)
