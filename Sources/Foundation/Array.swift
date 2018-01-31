@@ -2,6 +2,11 @@ import Foundation
 
 public extension Array {
 	
+	/// Returns an array containing the same items with their positions shuffled.
+	///
+	/// - returns:
+	///   The shuffled array.
+	///
 	public func shuffled() -> [Element] {
 		var shuffledArray: [Element] = []
 		shuffledArray.reserveCapacity(count)
@@ -12,6 +17,14 @@ public extension Array {
 		return shuffledArray
 	}
 	
+	/// Returns an array containing the same items with their positions shuffled.
+	/// The item at `index` will be first in the returned array.
+	///
+	/// - parameters:
+	///   - index: The position of the item which should be first in the resulting array.
+	///
+	/// - returns:
+	///   The shuffled array.
 	public func shuffledBeginningWithItemAtIndex(index: Int) -> [Element] {
 		var array = self
 		let item = array.remove(at: index)
@@ -24,6 +37,7 @@ public extension Array {
 
 public extension Array where Element : Hashable {
 	
+	/// Returns an array containing the unique elements from the current array.
 	public func unique() -> [Element] {
 		var result: [Element] = []
 		var memory: Set<Element> = []
