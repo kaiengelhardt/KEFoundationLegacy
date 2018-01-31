@@ -1,3 +1,6 @@
+// Created by Kai Engelhardt on 30.01.18.
+// Based on ZSContextWatcher https://github.com/mzarra/MSZ_Shared
+
 import CoreData
 
 public class ContextWatcher {
