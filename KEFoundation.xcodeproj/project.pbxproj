@@ -34,6 +34,9 @@
 		5EA40A441F97FA3800E14552 /* KETextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA40A431F97FA3800E14552 /* KETextField.swift */; };
 		5EA40A4B1F9A497B00E14552 /* UIResponder+FirstResponder.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EA40A491F9A497B00E14552 /* UIResponder+FirstResponder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5EA40A4C1F9A497B00E14552 /* UIResponder+FirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA40A4A1F9A497B00E14552 /* UIResponder+FirstResponder.m */; };
+		5EAB17962022166E008A5369 /* ContextWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB17952022166E008A5369 /* ContextWatcher.swift */; };
+		5EAB17972022166E008A5369 /* ContextWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB17952022166E008A5369 /* ContextWatcher.swift */; };
+		5EAB17982022166E008A5369 /* ContextWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB17952022166E008A5369 /* ContextWatcher.swift */; };
 		5ECAA1F120056B3400AC4C6B /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECAA1F020056B3400AC4C6B /* ContainerViewController.swift */; };
 		5ECAA1F220056B3400AC4C6B /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECAA1F020056B3400AC4C6B /* ContainerViewController.swift */; };
 		5ECDE2182003F5CA005FB807 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECDE2172003F5CA005FB807 /* FileManager.swift */; };
@@ -119,6 +122,7 @@
 		5EA40A431F97FA3800E14552 /* KETextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KETextField.swift; sourceTree = "<group>"; };
 		5EA40A491F9A497B00E14552 /* UIResponder+FirstResponder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+FirstResponder.h"; sourceTree = "<group>"; };
 		5EA40A4A1F9A497B00E14552 /* UIResponder+FirstResponder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+FirstResponder.m"; sourceTree = "<group>"; };
+		5EAB17952022166E008A5369 /* ContextWatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextWatcher.swift; sourceTree = "<group>"; };
 		5ECAA1F020056B3400AC4C6B /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		5ECDE2172003F5CA005FB807 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		5ED781D91F94F1F900400F17 /* NSPreciate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSPreciate.swift; sourceTree = "<group>"; };
@@ -216,6 +220,7 @@
 				5E0A280E1F91476C00B8EB5F /* FetchedResultsUpdater.swift */,
 				5E1E0C132013AFDE0075629D /* UITableView+FetchedResultsDataUpdater.swift */,
 				5E1E0C102013AEFF0075629D /* UICollectionView+FetchedResultsDataUpdater.swift */,
+				5EAB17952022166E008A5369 /* ContextWatcher.swift */,
 			);
 			path = "Core Data";
 			sourceTree = "<group>";
@@ -495,6 +500,7 @@
 				5E0A28151F91486D00B8EB5F /* UIViewController.swift in Sources */,
 				5ED781E01F94FA6700400F17 /* Int.swift in Sources */,
 				5E0A28161F91486D00B8EB5F /* UIView.swift in Sources */,
+				5EAB17962022166E008A5369 /* ContextWatcher.swift in Sources */,
 				5E7DE2391F9BE56F0051B623 /* NSRange.swift in Sources */,
 				5E0A28231F915BDA00B8EB5F /* CGSize.swift in Sources */,
 				5E2653941FB66ECB00F3994F /* EmbeddableTableView.swift in Sources */,
@@ -538,6 +544,7 @@
 				5EEC3C191FDB5140003F8A73 /* UIViewController.swift in Sources */,
 				5EEC3C181FDB5140003F8A73 /* UIView.swift in Sources */,
 				5EEC3C0E1FDB5140003F8A73 /* Int.swift in Sources */,
+				5EAB17972022166E008A5369 /* ContextWatcher.swift in Sources */,
 				5EEC3C121FDB5140003F8A73 /* CGRect.swift in Sources */,
 				5EEC3C151FDB5140003F8A73 /* Date.swift in Sources */,
 				5EEC3C101FDB5140003F8A73 /* CGPoint.swift in Sources */,
@@ -576,6 +583,7 @@
 				5EEFB6051FE5C71B0028BEEA /* Array.swift in Sources */,
 				5EEFB60D1FE5C71B0028BEEA /* NSKeyValueObservation.swift in Sources */,
 				5EEFB6091FE5C71B0028BEEA /* NSPreciate.swift in Sources */,
+				5EAB17982022166E008A5369 /* ContextWatcher.swift in Sources */,
 				5EEFB60A1FE5C71B0028BEEA /* NSSortDescriptor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
