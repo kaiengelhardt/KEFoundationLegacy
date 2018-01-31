@@ -37,6 +37,9 @@
 		5EAB17962022166E008A5369 /* ContextWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB17952022166E008A5369 /* ContextWatcher.swift */; };
 		5EAB17972022166E008A5369 /* ContextWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB17952022166E008A5369 /* ContextWatcher.swift */; };
 		5EAB17982022166E008A5369 /* ContextWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB17952022166E008A5369 /* ContextWatcher.swift */; };
+		5EAB179E20222E08008A5369 /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB179D20222E08008A5369 /* NotificationObserver.swift */; };
+		5EAB179F20222E08008A5369 /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB179D20222E08008A5369 /* NotificationObserver.swift */; };
+		5EAB17A020222E08008A5369 /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB179D20222E08008A5369 /* NotificationObserver.swift */; };
 		5ECAA1F120056B3400AC4C6B /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECAA1F020056B3400AC4C6B /* ContainerViewController.swift */; };
 		5ECAA1F220056B3400AC4C6B /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECAA1F020056B3400AC4C6B /* ContainerViewController.swift */; };
 		5ECDE2182003F5CA005FB807 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECDE2172003F5CA005FB807 /* FileManager.swift */; };
@@ -123,6 +126,7 @@
 		5EA40A491F9A497B00E14552 /* UIResponder+FirstResponder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+FirstResponder.h"; sourceTree = "<group>"; };
 		5EA40A4A1F9A497B00E14552 /* UIResponder+FirstResponder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+FirstResponder.m"; sourceTree = "<group>"; };
 		5EAB17952022166E008A5369 /* ContextWatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextWatcher.swift; sourceTree = "<group>"; };
+		5EAB179D20222E08008A5369 /* NotificationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationObserver.swift; sourceTree = "<group>"; };
 		5ECAA1F020056B3400AC4C6B /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		5ECDE2172003F5CA005FB807 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		5ED781D91F94F1F900400F17 /* NSPreciate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSPreciate.swift; sourceTree = "<group>"; };
@@ -257,6 +261,7 @@
 				5E7DE2381F9BE56F0051B623 /* NSRange.swift */,
 				5E606CFE1FBB4BF900785D15 /* NSKeyValueObservation.swift */,
 				5ECDE2172003F5CA005FB807 /* FileManager.swift */,
+				5EAB179D20222E08008A5369 /* NotificationObserver.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -520,6 +525,7 @@
 				5E1E0C142013AFDE0075629D /* UITableView+FetchedResultsDataUpdater.swift in Sources */,
 				5E1E0C112013AEFF0075629D /* UICollectionView+FetchedResultsDataUpdater.swift in Sources */,
 				5E0A28101F91476C00B8EB5F /* FetchedResultsUpdater.swift in Sources */,
+				5EAB179E20222E08008A5369 /* NotificationObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,6 +570,7 @@
 				5E1E0C152013AFDE0075629D /* UITableView+FetchedResultsDataUpdater.swift in Sources */,
 				5E1E0C122013AEFF0075629D /* UICollectionView+FetchedResultsDataUpdater.swift in Sources */,
 				5EEC3C1B1FDB5140003F8A73 /* UITableView.swift in Sources */,
+				5EAB179F20222E08008A5369 /* NotificationObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,6 +592,7 @@
 				5EEFB6091FE5C71B0028BEEA /* NSPreciate.swift in Sources */,
 				5EAB17982022166E008A5369 /* ContextWatcher.swift in Sources */,
 				5EEFB60A1FE5C71B0028BEEA /* NSSortDescriptor.swift in Sources */,
+				5EAB17A020222E08008A5369 /* NotificationObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
