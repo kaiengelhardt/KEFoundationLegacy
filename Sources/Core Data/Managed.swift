@@ -8,8 +8,6 @@ public protocol Managed : AnyObject, NSFetchRequestResult {
 	
 }
 
-extension NSManagedObject : Managed {}
-
 public extension Managed where Self : NSManagedObject {
 	
 	public static var entityName: String {
