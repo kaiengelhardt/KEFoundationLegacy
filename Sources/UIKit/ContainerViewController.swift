@@ -11,6 +11,7 @@ open class ContainerViewController : UIViewController {
 				removeChild(viewController: oldViewController)
 			}
 			if let newViewController = embeddedViewController {
+				newViewController.view.translatesAutoresizingMaskIntoConstraints = false
 				addChild(viewController: newViewController)
 				NSLayoutConstraint.activate(newViewController.view.constraintsEqualToEdgesOfSuperview())
 			}
