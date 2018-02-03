@@ -40,6 +40,8 @@
 		5EAB179E20222E08008A5369 /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB179D20222E08008A5369 /* NotificationObserver.swift */; };
 		5EAB179F20222E08008A5369 /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB179D20222E08008A5369 /* NotificationObserver.swift */; };
 		5EAB17A020222E08008A5369 /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB179D20222E08008A5369 /* NotificationObserver.swift */; };
+		5EAB17A820229DA5008A5369 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB17A720229DA5008A5369 /* ContainerView.swift */; };
+		5EAB17A920229DA5008A5369 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB17A720229DA5008A5369 /* ContainerView.swift */; };
 		5ECAA1F120056B3400AC4C6B /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECAA1F020056B3400AC4C6B /* ContainerViewController.swift */; };
 		5ECAA1F220056B3400AC4C6B /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECAA1F020056B3400AC4C6B /* ContainerViewController.swift */; };
 		5ECDE2182003F5CA005FB807 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECDE2172003F5CA005FB807 /* FileManager.swift */; };
@@ -127,6 +129,7 @@
 		5EA40A4A1F9A497B00E14552 /* UIResponder+FirstResponder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+FirstResponder.m"; sourceTree = "<group>"; };
 		5EAB17952022166E008A5369 /* ContextWatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextWatcher.swift; sourceTree = "<group>"; };
 		5EAB179D20222E08008A5369 /* NotificationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationObserver.swift; sourceTree = "<group>"; };
+		5EAB17A720229DA5008A5369 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		5ECAA1F020056B3400AC4C6B /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		5ECDE2172003F5CA005FB807 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		5ED781D91F94F1F900400F17 /* NSPreciate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSPreciate.swift; sourceTree = "<group>"; };
@@ -243,6 +246,7 @@
 				5E05301A1FB76E6700C2EE87 /* NSLayoutConstraint.swift */,
 				5E0D5AEC20176C08004E6949 /* NSLayoutAnchor.swift */,
 				5ECAA1F020056B3400AC4C6B /* ContainerViewController.swift */,
+				5EAB17A720229DA5008A5369 /* ContainerView.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -511,6 +515,7 @@
 				5E2653941FB66ECB00F3994F /* EmbeddableTableView.swift in Sources */,
 				5ED781DE1F94F9B200400F17 /* UIAlertController.swift in Sources */,
 				5E0D5AED20176C08004E6949 /* NSLayoutAnchor.swift in Sources */,
+				5EAB17A820229DA5008A5369 /* ContainerView.swift in Sources */,
 				5EE270FC1F96579F00A6A7A1 /* Date.swift in Sources */,
 				5E0CE2D81F9DEF0600A58AA5 /* UITableView.swift in Sources */,
 				5EA40A441F97FA3800E14552 /* KETextField.swift in Sources */,
@@ -556,6 +561,7 @@
 				5EEC3C101FDB5140003F8A73 /* CGPoint.swift in Sources */,
 				5EEC3C1E1FDB5140003F8A73 /* EmbeddableTableView.swift in Sources */,
 				5E0D5AEE20176C08004E6949 /* NSLayoutAnchor.swift in Sources */,
+				5EAB17A920229DA5008A5369 /* ContainerView.swift in Sources */,
 				5EEC3C1C1FDB5140003F8A73 /* KETextField.swift in Sources */,
 				5EEC3C0F1FDB5140003F8A73 /* Array.swift in Sources */,
 				5EEC3C171FDB5140003F8A73 /* NSKeyValueObservation.swift in Sources */,
