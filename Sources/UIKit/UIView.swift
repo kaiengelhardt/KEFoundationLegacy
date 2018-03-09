@@ -11,8 +11,8 @@ public extension UIView {
 			return []
 		}
 		return [
-			leftAnchor.constraint(equalTo: view.leftAnchor),
-			rightAnchor.constraint(equalTo: view.rightAnchor),
+			leadingAnchor.constraint(equalTo: view.leadingAnchor),
+			trailingAnchor.constraint(equalTo: view.trailingAnchor),
 			topAnchor.constraint(equalTo: view.topAnchor),
 			bottomAnchor.constraint(equalTo: view.bottomAnchor),
 		]
