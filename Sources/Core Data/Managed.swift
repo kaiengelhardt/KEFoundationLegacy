@@ -52,6 +52,13 @@ public extension Managed where Self : NSManagedObject {
 		}
 	}
 	
+	/// Searches for an object matching the predicate. If none was found, a new object is created and the `configuration` closure is applied to it.
+	///
+	/// - Parameters:
+	///   - context: The context in which to search or create the object.
+	///   - predicate: The predicate with which to search.
+	///   - configure: If no object was found this closure gets called with the newly created object passed in.
+	/// - Returns: The found or created object.
 	public static func findOrCreate(in context: NSManagedObjectContext, matching predicate: NSPredicate, configure: (Self) -> ()) -> Self {
 		if let object = findOrFetch(in: context, matching: predicate) {
 			return object
@@ -62,6 +69,14 @@ public extension Managed where Self : NSManagedObject {
 		}
 	}
 	
+	
+	/// Searches for an object matching the predicate. If none was found, a new object is created. In both cases the `configure` closure is applied to it.
+	///
+	/// - Parameters:
+	///   - context: The context in which to search or create the object.
+	///   - predicate: The predicate with which to search.
+	///   - configure: This closure gets called with the found or created object passed in.
+	/// - Returns: The found or created object.
 	@discardableResult
 	public static func updateOrCreate(in context: NSManagedObjectContext, matching predicate: NSPredicate, configure: (Self) -> ()) -> Self {
 		if let object = findOrFetch(in: context, matching: predicate) {
