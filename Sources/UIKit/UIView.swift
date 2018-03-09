@@ -36,4 +36,12 @@ public extension UIView {
 	
 }
 
-
+extension Array where Element: UIView {
+	
+	public func disableTranslatesAutoresizingMaskIntoConstraints() {
+		for view in self {
+			view.translatesAutoresizingMaskIntoConstraints = false
+		}
+	}
+	
+}
