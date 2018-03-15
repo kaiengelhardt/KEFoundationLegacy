@@ -8,3 +8,14 @@ public extension NSLayoutConstraint {
 	}
 	
 }
+
+public extension Array where Element == NSLayoutConstraint {
+	
+	public func with(priority: UILayoutPriority) -> [NSLayoutConstraint] {
+		for constraint in self {
+			constraint.priority = priority
+		}
+		return self
+	}
+	
+}
