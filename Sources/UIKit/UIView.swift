@@ -35,6 +35,20 @@ public extension UIView {
 		]
 	}
 	
+	public func constraintsEqualToCenterOfSuperView() -> [NSLayoutConstraint] {
+		return constraintsEqualToCenter(of: superview)
+	}
+	
+	public func constraintsEqualToCenter(of view: UIView?) -> [NSLayoutConstraint] {
+		guard let view = view else {
+			return []
+		}
+		return [
+			centerXAnchor.constraint(equalTo: view.centerXAnchor),
+			centerYAnchor.constraint(equalTo: view.centerYAnchor),
+		]
+	}
+	
 }
 
 extension Array where Element: UIView {
