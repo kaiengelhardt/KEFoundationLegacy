@@ -3,10 +3,10 @@ import UIKit
 public extension UIView {
 	
 	public func constraintsEqualToEdgesOfSuperview() -> [NSLayoutConstraint] {
-		return constraintsEqualToEdgesOf(view: superview)
+		return constraintsEqualToEdges(of: superview)
 	}
 	
-	public func constraintsEqualToEdgesOf(view: UIView?) -> [NSLayoutConstraint] {
+	public func constraintsEqualToEdges(of view: UIView?) -> [NSLayoutConstraint] {
 		guard let view = view else {
 			return []
 		}
@@ -18,11 +18,12 @@ public extension UIView {
 		]
 	}
 	
-	public func constraintsEqualToSafeAreaLayoutGuideOfSuperview() -> [NSLayoutConstraint] {
-		return constraintsEqualTo(layoutGuide: superview?.safeAreaLayoutGuide)
+	@available(iOS 11, *)
+	public func constraintsEqualToEdgesOfSafeAreaLayoutGuideOfSuperview() -> [NSLayoutConstraint] {
+		return constraintsEqualToEdges(of: superview?.safeAreaLayoutGuide)
 	}
 	
-	public func constraintsEqualTo(layoutGuide: UILayoutGuide?) -> [NSLayoutConstraint] {
+	public func constraintsEqualToEdges(of layoutGuide: UILayoutGuide?) -> [NSLayoutConstraint] {
 		guard let layoutGuide = layoutGuide else {
 			return []
 		}
