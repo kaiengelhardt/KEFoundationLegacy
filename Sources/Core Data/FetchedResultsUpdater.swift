@@ -14,6 +14,8 @@ public class FetchedResultsUpdater : NSObject {
 		case move(IndexPath, IndexPath)
 	}
 	
+	public var indexPathOffset: IndexPath = IndexPath(row: 0, section: 0)
+	
 	public weak var delegate: FetchedResultsUpdaterDelegate?
 	
 	private var sectionUpdates: [SectionUpdate] = []
@@ -36,7 +38,8 @@ extension FetchedResultsUpdater : NSFetchedResultsControllerDelegate {
 		rowUpdates = []
 	}
 	
-	public func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange sectionInfo: NSFetchedResultsSectionInfo, atSectionIndex sectionIndex: Int, for type: NSFetchedResultsChangeType) {
+	public func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange sectionInfo: NSFetchedResultsSectionInfo, atSectionIndex _sectionIndex: Int, for type: NSFetchedResultsChangeType) {
+		let sectionIndex = _sectionIndex + indexPathOffset.section
 		switch type {
 		case .insert:
 			sectionUpdates.append(.insert(sectionIndex))
@@ -47,7 +50,20 @@ extension FetchedResultsUpdater : NSFetchedResultsControllerDelegate {
 		}
 	}
 	
-	public func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
+	public func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at _indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath _newIndexPath: IndexPath?) {
+		let indexPath: IndexPath?
+		if let _indexPath = _indexPath {
+			indexPath = IndexPath(row: _indexPath.row + indexPathOffset.row, section: _indexPath.section + indexPathOffset.section)
+		} else {
+			indexPath = nil
+		}
+		let newIndexPath: IndexPath?
+		if let _newIndexPath = _newIndexPath {
+			newIndexPath = IndexPath(row: _newIndexPath.row + indexPathOffset.row, section: _newIndexPath.section + indexPathOffset.section)
+		} else {
+			newIndexPath = nil
+		}
+		
 		switch type {
 		case .insert:
 			rowUpdates.append(.insert(newIndexPath!))
