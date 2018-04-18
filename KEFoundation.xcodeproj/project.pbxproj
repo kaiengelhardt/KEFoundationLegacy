@@ -24,10 +24,10 @@
 		5E0D5AF420176CFE004E6949 /* CGRect_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0D5AF320176CFE004E6949 /* CGRect_Tests.swift */; };
 		5E0D5AF620176E5C004E6949 /* NSDate_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0D5AF520176E5C004E6949 /* NSDate_Tests.swift */; };
 		5E16E2761F97BAA700D44BF4 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E16E2751F97BAA700D44BF4 /* CGRect.swift */; };
-		5E1E0C112013AEFF0075629D /* UICollectionView+FetchedResultsDataUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E0C102013AEFF0075629D /* UICollectionView+FetchedResultsDataUpdater.swift */; };
-		5E1E0C122013AEFF0075629D /* UICollectionView+FetchedResultsDataUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E0C102013AEFF0075629D /* UICollectionView+FetchedResultsDataUpdater.swift */; };
-		5E1E0C142013AFDE0075629D /* UITableView+FetchedResultsDataUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E0C132013AFDE0075629D /* UITableView+FetchedResultsDataUpdater.swift */; };
-		5E1E0C152013AFDE0075629D /* UITableView+FetchedResultsDataUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E0C132013AFDE0075629D /* UITableView+FetchedResultsDataUpdater.swift */; };
+		5E1E0C112013AEFF0075629D /* UICollectionView+FetchedResultsUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E0C102013AEFF0075629D /* UICollectionView+FetchedResultsUpdater.swift */; };
+		5E1E0C122013AEFF0075629D /* UICollectionView+FetchedResultsUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E0C102013AEFF0075629D /* UICollectionView+FetchedResultsUpdater.swift */; };
+		5E1E0C142013AFDE0075629D /* UITableView+FetchedResultsUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E0C132013AFDE0075629D /* UITableView+FetchedResultsUpdater.swift */; };
+		5E1E0C152013AFDE0075629D /* UITableView+FetchedResultsUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E0C132013AFDE0075629D /* UITableView+FetchedResultsUpdater.swift */; };
 		5E2653941FB66ECB00F3994F /* EmbeddableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2653931FB66ECB00F3994F /* EmbeddableTableView.swift */; };
 		5E5E693E20406E4400B5E746 /* KELabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5E693D20406E4400B5E746 /* KELabel.swift */; };
 		5E5E693F20406E4400B5E746 /* KELabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5E693D20406E4400B5E746 /* KELabel.swift */; };
@@ -123,8 +123,8 @@
 		5E0D5AF320176CFE004E6949 /* CGRect_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRect_Tests.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5E0D5AF520176E5C004E6949 /* NSDate_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDate_Tests.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5E16E2751F97BAA700D44BF4 /* CGRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; usesTabs = 1; };
-		5E1E0C102013AEFF0075629D /* UICollectionView+FetchedResultsDataUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+FetchedResultsDataUpdater.swift"; sourceTree = "<group>"; usesTabs = 1; };
-		5E1E0C132013AFDE0075629D /* UITableView+FetchedResultsDataUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+FetchedResultsDataUpdater.swift"; sourceTree = "<group>"; usesTabs = 1; };
+		5E1E0C102013AEFF0075629D /* UICollectionView+FetchedResultsUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+FetchedResultsUpdater.swift"; sourceTree = "<group>"; usesTabs = 1; };
+		5E1E0C132013AFDE0075629D /* UITableView+FetchedResultsUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+FetchedResultsUpdater.swift"; sourceTree = "<group>"; usesTabs = 1; };
 		5E2653931FB66ECB00F3994F /* EmbeddableTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddableTableView.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5E5E693D20406E4400B5E746 /* KELabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KELabel.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5E5E694020407C6500B5E746 /* UIEdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsets.swift; sourceTree = "<group>"; usesTabs = 1; };
@@ -231,8 +231,8 @@
 			children = (
 				5EF619EC2013E23E006BCD62 /* Managed.swift */,
 				5E0A280E1F91476C00B8EB5F /* FetchedResultsUpdater.swift */,
-				5E1E0C132013AFDE0075629D /* UITableView+FetchedResultsDataUpdater.swift */,
-				5E1E0C102013AEFF0075629D /* UICollectionView+FetchedResultsDataUpdater.swift */,
+				5E1E0C132013AFDE0075629D /* UITableView+FetchedResultsUpdater.swift */,
+				5E1E0C102013AEFF0075629D /* UICollectionView+FetchedResultsUpdater.swift */,
 				5EAB17952022166E008A5369 /* ContextWatcher.swift */,
 			);
 			path = "Core Data";
@@ -535,8 +535,8 @@
 				5E0A28251F9163EA00B8EB5F /* CGPoint.swift in Sources */,
 				5ED781DC1F94F27F00400F17 /* NSSortDescriptor.swift in Sources */,
 				5E606CFF1FBB4BF900785D15 /* NSKeyValueObservation.swift in Sources */,
-				5E1E0C142013AFDE0075629D /* UITableView+FetchedResultsDataUpdater.swift in Sources */,
-				5E1E0C112013AEFF0075629D /* UICollectionView+FetchedResultsDataUpdater.swift in Sources */,
+				5E1E0C142013AFDE0075629D /* UITableView+FetchedResultsUpdater.swift in Sources */,
+				5E1E0C112013AEFF0075629D /* UICollectionView+FetchedResultsUpdater.swift in Sources */,
 				5E5E694120407C6500B5E746 /* UIEdgeInsets.swift in Sources */,
 				5E5E693E20406E4400B5E746 /* KELabel.swift in Sources */,
 				5E0A28101F91476C00B8EB5F /* FetchedResultsUpdater.swift in Sources */,
@@ -583,8 +583,8 @@
 				5EEC3C1D1FDB5140003F8A73 /* UIResponder+FirstResponder.m in Sources */,
 				5EEC3C141FDB5140003F8A73 /* NSSortDescriptor.swift in Sources */,
 				5EEC3C1A1FDB5140003F8A73 /* UIAlertController.swift in Sources */,
-				5E1E0C152013AFDE0075629D /* UITableView+FetchedResultsDataUpdater.swift in Sources */,
-				5E1E0C122013AEFF0075629D /* UICollectionView+FetchedResultsDataUpdater.swift in Sources */,
+				5E1E0C152013AFDE0075629D /* UITableView+FetchedResultsUpdater.swift in Sources */,
+				5E1E0C122013AEFF0075629D /* UICollectionView+FetchedResultsUpdater.swift in Sources */,
 				5E5E694220407C6500B5E746 /* UIEdgeInsets.swift in Sources */,
 				5E5E693F20406E4400B5E746 /* KELabel.swift in Sources */,
 				5EEC3C1B1FDB5140003F8A73 /* UITableView.swift in Sources */,
