@@ -44,6 +44,9 @@
 		5E5E694220407C6500B5E746 /* UIEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5E694020407C6500B5E746 /* UIEdgeInsets.swift */; };
 		5E606CFF1FBB4BF900785D15 /* NSKeyValueObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E606CFE1FBB4BF900785D15 /* NSKeyValueObservation.swift */; };
 		5E7DE2391F9BE56F0051B623 /* NSRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7DE2381F9BE56F0051B623 /* NSRange.swift */; };
+		5E8269522093A57800FFA69D /* ClosureValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8269512093A57800FFA69D /* ClosureValueTransformer.swift */; };
+		5E8269532093A57800FFA69D /* ClosureValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8269512093A57800FFA69D /* ClosureValueTransformer.swift */; };
+		5E8269542093A57800FFA69D /* ClosureValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8269512093A57800FFA69D /* ClosureValueTransformer.swift */; };
 		5EA40A441F97FA3800E14552 /* KETextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA40A431F97FA3800E14552 /* KETextField.swift */; };
 		5EA40A4B1F9A497B00E14552 /* UIResponder+FirstResponder.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EA40A491F9A497B00E14552 /* UIResponder+FirstResponder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5EA40A4C1F9A497B00E14552 /* UIResponder+FirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA40A4A1F9A497B00E14552 /* UIResponder+FirstResponder.m */; };
@@ -142,6 +145,7 @@
 		5E5E694020407C6500B5E746 /* UIEdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsets.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5E606CFE1FBB4BF900785D15 /* NSKeyValueObservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSKeyValueObservation.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5E7DE2381F9BE56F0051B623 /* NSRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSRange.swift; sourceTree = "<group>"; usesTabs = 1; };
+		5E8269512093A57800FFA69D /* ClosureValueTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureValueTransformer.swift; sourceTree = "<group>"; };
 		5EA40A431F97FA3800E14552 /* KETextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KETextField.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5EA40A491F9A497B00E14552 /* UIResponder+FirstResponder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+FirstResponder.h"; sourceTree = "<group>"; };
 		5EA40A4A1F9A497B00E14552 /* UIResponder+FirstResponder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+FirstResponder.m"; sourceTree = "<group>"; };
@@ -289,6 +293,7 @@
 				5ECDE2172003F5CA005FB807 /* FileManager.swift */,
 				5EAB179D20222E08008A5369 /* NotificationObserver.swift */,
 				5E2E37352087B164009803F9 /* URLSession.swift */,
+				5E8269512093A57800FFA69D /* ClosureValueTransformer.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -573,6 +578,7 @@
 				5E1E0C112013AEFF0075629D /* UICollectionView+FetchedResultsUpdater.swift in Sources */,
 				5E5E694120407C6500B5E746 /* UIEdgeInsets.swift in Sources */,
 				5E5E693E20406E4400B5E746 /* KELabel.swift in Sources */,
+				5E8269522093A57800FFA69D /* ClosureValueTransformer.swift in Sources */,
 				5E0A28101F91476C00B8EB5F /* FetchedResultsUpdater.swift in Sources */,
 				5EAB179E20222E08008A5369 /* NotificationObserver.swift in Sources */,
 			);
@@ -624,6 +630,7 @@
 				5E1E0C122013AEFF0075629D /* UICollectionView+FetchedResultsUpdater.swift in Sources */,
 				5E5E694220407C6500B5E746 /* UIEdgeInsets.swift in Sources */,
 				5E5E693F20406E4400B5E746 /* KELabel.swift in Sources */,
+				5E8269532093A57800FFA69D /* ClosureValueTransformer.swift in Sources */,
 				5EEC3C1B1FDB5140003F8A73 /* UITableView.swift in Sources */,
 				5EAB179F20222E08008A5369 /* NotificationObserver.swift in Sources */,
 			);
@@ -648,6 +655,7 @@
 				5EEFB6051FE5C71B0028BEEA /* Array.swift in Sources */,
 				5EEFB60D1FE5C71B0028BEEA /* NSKeyValueObservation.swift in Sources */,
 				5EEFB6091FE5C71B0028BEEA /* NSPreciate.swift in Sources */,
+				5E8269542093A57800FFA69D /* ClosureValueTransformer.swift in Sources */,
 				5EAB17982022166E008A5369 /* ContextWatcher.swift in Sources */,
 				5EEFB60A1FE5C71B0028BEEA /* NSSortDescriptor.swift in Sources */,
 				5EAB17A020222E08008A5369 /* NotificationObserver.swift in Sources */,
