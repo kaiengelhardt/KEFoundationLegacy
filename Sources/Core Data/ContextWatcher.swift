@@ -1,5 +1,5 @@
 //
-//  UICollectionView+FetchedResultsUpdater.swift
+//  ContextWatcher.swift
 //  KEFoundation
 //
 //  Created by Kai Engelhardt on 30.01.18
@@ -31,7 +31,7 @@
 
 import CoreData
 
-/// Based on ZSContextWatcher https://github.com/mzarra/MSZ_Shared
+/// Based on [ZSContextWatcher](https://github.com/mzarra/MSZ_Shared) by Marcus Zarra
 public class ContextWatcher {
 	
 	public weak var delegate: ContextWatcherDelegate?
