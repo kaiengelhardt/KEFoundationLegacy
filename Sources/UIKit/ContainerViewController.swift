@@ -49,11 +49,11 @@ open class ContainerViewController : UIViewController {
 		}
 	}
 	
-	public init() {
-		super.init(nibName: nil, bundle: nil)
+	convenience public init() {
+		self.init(nibName: nil, bundle: nil)
 	}
 	
-	private override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+	override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
 		super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 	}
 	
