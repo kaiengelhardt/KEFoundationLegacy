@@ -120,4 +120,9 @@ public extension Managed where Self : NSManagedObject {
 		}
 	}
 	
+	public func fetched(in managedObjectContext: NSManagedObjectContext) -> Self {
+		let object = managedObjectContext.object(with: self.objectID) as! Self
+		return object
+	}
+	
 }
