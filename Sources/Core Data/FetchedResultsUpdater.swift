@@ -116,7 +116,7 @@ extension FetchedResultsUpdater : NSFetchedResultsControllerDelegate {
 	
 }
 
-public protocol FetchedResultsUpdaterDelegate : class {
+public protocol FetchedResultsUpdaterDelegate : AnyObject {
 	
 	func updater(_ updater: FetchedResultsUpdater, didUpdateWithSectionUpdates sectionUpdates: [FetchedResultsUpdater.SectionUpdate], rowUpdates: [FetchedResultsUpdater.RowUpdate])
 	
