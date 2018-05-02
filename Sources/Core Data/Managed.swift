@@ -1,3 +1,34 @@
+//
+//  Managed.swift
+//  KEFoundation
+//
+//  Created by Kai Engelhardt on 21.01.18
+//  Copyright © 2018 Kai Engelhardt. All rights reserved.
+//
+//  Distributed under the permissive MIT license
+//  Get the latest version from here:
+//
+//  https://github.com/kaiengelhardt/KEFoundation
+//
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in all
+//  copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+//  SOFTWARE.
+//
+
 import CoreData
 
 public protocol Managed : AnyObject, NSFetchRequestResult {
@@ -7,8 +38,6 @@ public protocol Managed : AnyObject, NSFetchRequestResult {
 	static var defaultSortDescriptors: [NSSortDescriptor] { get }
 	
 }
-
-extension NSManagedObject : Managed {}
 
 public extension Managed where Self : NSManagedObject {
 	
@@ -54,6 +83,13 @@ public extension Managed where Self : NSManagedObject {
 		}
 	}
 	
+	/// Searches for an object matching the predicate. If none was found, a new object is created and the `configuration` closure is applied to it.
+	///
+	/// - Parameters:
+	///   - context: The context in which to search or create the object.
+	///   - predicate: The predicate with which to search.
+	///   - configure: If no object was found this closure gets called with the newly created object passed in.
+	/// - Returns: The found or created object.
 	public static func findOrCreate(in context: NSManagedObjectContext, matching predicate: NSPredicate, configure: (Self) -> ()) -> Self {
 		if let object = findOrFetch(in: context, matching: predicate) {
 			return object
@@ -64,6 +100,14 @@ public extension Managed where Self : NSManagedObject {
 		}
 	}
 	
+	
+	/// Searches for an object matching the predicate. If none was found, a new object is created. In both cases the `configure` closure is applied to it.
+	///
+	/// - Parameters:
+	///   - context: The context in which to search or create the object.
+	///   - predicate: The predicate with which to search.
+	///   - configure: This closure gets called with the found or created object passed in.
+	/// - Returns: The found or created object.
 	@discardableResult
 	public static func updateOrCreate(in context: NSManagedObjectContext, matching predicate: NSPredicate, configure: (Self) -> ()) -> Self {
 		if let object = findOrFetch(in: context, matching: predicate) {

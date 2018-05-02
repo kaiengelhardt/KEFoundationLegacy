@@ -1,8 +1,8 @@
 //
-//  NSDate_Tests.swift
+//  UICollectionView+FetchedResultsUpdater.swift
 //  KEFoundation
 //
-//  Created by Kai Engelhardt on 24.01.18
+//  Created by Kai Engelhardt on 13.10.17
 //  Copyright © 2018 Kai Engelhardt. All rights reserved.
 //
 //  Distributed under the permissive MIT license
@@ -29,33 +29,34 @@
 //  SOFTWARE.
 //
 
-import XCTest
-@testable import KEFoundation
+import UIKit
 
-class NSDate_Tests: XCTestCase {
+extension UICollectionView : FetchedResultsUpdaterDelegate {
 	
-	func testNormalized() {
-		var calendar = Calendar(identifier: .gregorian)
-		calendar.timeZone = TimeZone(secondsFromGMT: 0)!
-		
-		var dateComponents = DateComponents()
-		dateComponents.year = 1993
-		dateComponents.month = 1
-		dateComponents.day = 26
-		dateComponents.hour = 12
-		dateComponents.minute = 37
-		dateComponents.second = 15
-		
-		let date = calendar.date(from: dateComponents)!
-		let normalizedDate = date.normalized
-		let resultDateComponents = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: normalizedDate)
-		
-		XCTAssertEqual(resultDateComponents.year, 1993)
-		XCTAssertEqual(resultDateComponents.month, 1)
-		XCTAssertEqual(resultDateComponents.day, 26)
-		XCTAssertEqual(resultDateComponents.hour, 0)
-		XCTAssertEqual(resultDateComponents.minute, 0)
-		XCTAssertEqual(resultDateComponents.second, 0)
+	public func updater(_ updater: FetchedResultsUpdater, didUpdateWithSectionUpdates sectionUpdates: [FetchedResultsUpdater.SectionUpdate], rowUpdates: [FetchedResultsUpdater.RowUpdate]) {
+		performBatchUpdates({
+			for update in sectionUpdates {
+				switch update {
+				case .insert(let sectionIndex):
+					insertSections(IndexSet(integer: sectionIndex))
+				case .delete(let sectionIndex):
+					deleteSections(IndexSet(integer: sectionIndex))
+				}
+			}
+			
+			for update in rowUpdates {
+				switch update {
+				case .insert(let indexPath):
+					insertItems(at: [indexPath])
+				case .delete(let indexPath):
+					deleteItems(at: [indexPath])
+				case .update(let indexPath):
+					reloadItems(at: [indexPath])
+				case .move(let fromIndexPath, let toIndexPath):
+					reloadItems(at: [fromIndexPath, toIndexPath])
+				}
+			}
+		}, completion: nil)
 	}
 	
 }

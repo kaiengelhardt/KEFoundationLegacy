@@ -1,8 +1,8 @@
 //
-//  NSDate_Tests.swift
+//  NotificationObserver.swift
 //  KEFoundation
 //
-//  Created by Kai Engelhardt on 24.01.18
+//  Created by Kai Engelhardt on 31.01.18
 //  Copyright © 2018 Kai Engelhardt. All rights reserved.
 //
 //  Distributed under the permissive MIT license
@@ -29,33 +29,35 @@
 //  SOFTWARE.
 //
 
-import XCTest
-@testable import KEFoundation
+import Foundation
 
-class NSDate_Tests: XCTestCase {
+/// Based on this [tweet](https://twitter.com/jaredsinclair/status/951536021459619840) by Jared Sinclair.
+public class NotificationObserver {
 	
-	func testNormalized() {
-		var calendar = Calendar(identifier: .gregorian)
-		calendar.timeZone = TimeZone(secondsFromGMT: 0)!
-		
-		var dateComponents = DateComponents()
-		dateComponents.year = 1993
-		dateComponents.month = 1
-		dateComponents.day = 26
-		dateComponents.hour = 12
-		dateComponents.minute = 37
-		dateComponents.second = 15
-		
-		let date = calendar.date(from: dateComponents)!
-		let normalizedDate = date.normalized
-		let resultDateComponents = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: normalizedDate)
-		
-		XCTAssertEqual(resultDateComponents.year, 1993)
-		XCTAssertEqual(resultDateComponents.month, 1)
-		XCTAssertEqual(resultDateComponents.day, 26)
-		XCTAssertEqual(resultDateComponents.hour, 0)
-		XCTAssertEqual(resultDateComponents.minute, 0)
-		XCTAssertEqual(resultDateComponents.second, 0)
+	private var observers: [NSObjectProtocol] = []
+	private let notificationCenter: NotificationCenter
+	private let queue: OperationQueue
+	
+	public init(notificationCenter: NotificationCenter = .default, queue: OperationQueue = .main) {
+		self.notificationCenter = notificationCenter
+		self.queue = queue
+	}
+	
+	deinit {
+		for observer in observers {
+			notificationCenter.removeObserver(observer)
+		}
+	}
+	
+	/// Adds an entry to the notification center's dispatch table that includes a notification name and a block to add to the queue.
+	/// All observers will be removed when the `NotificationObserver` is released.
+	///
+	/// - Parameters:
+	///   - name: The notification name.
+	///   - handler: The block to be executed when the notification is received.
+	public func when(_ name: Notification.Name, perform handler: @escaping (Notification) -> Void) {
+		let observer = notificationCenter.addObserver(forName: name, object: nil, queue: queue, using: handler)
+		observers.append(observer)
 	}
 	
 }

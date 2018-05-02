@@ -1,8 +1,8 @@
 //
-//  NSDate_Tests.swift
+//  KELabel.swift
 //  KEFoundation
 //
-//  Created by Kai Engelhardt on 24.01.18
+//  Created by Kai Engelhardt on 23.02.18
 //  Copyright © 2018 Kai Engelhardt. All rights reserved.
 //
 //  Distributed under the permissive MIT license
@@ -29,33 +29,25 @@
 //  SOFTWARE.
 //
 
-import XCTest
-@testable import KEFoundation
+import UIKit
 
-class NSDate_Tests: XCTestCase {
+public class KELabel : UILabel {
 	
-	func testNormalized() {
-		var calendar = Calendar(identifier: .gregorian)
-		calendar.timeZone = TimeZone(secondsFromGMT: 0)!
-		
-		var dateComponents = DateComponents()
-		dateComponents.year = 1993
-		dateComponents.month = 1
-		dateComponents.day = 26
-		dateComponents.hour = 12
-		dateComponents.minute = 37
-		dateComponents.second = 15
-		
-		let date = calendar.date(from: dateComponents)!
-		let normalizedDate = date.normalized
-		let resultDateComponents = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: normalizedDate)
-		
-		XCTAssertEqual(resultDateComponents.year, 1993)
-		XCTAssertEqual(resultDateComponents.month, 1)
-		XCTAssertEqual(resultDateComponents.day, 26)
-		XCTAssertEqual(resultDateComponents.hour, 0)
-		XCTAssertEqual(resultDateComponents.minute, 0)
-		XCTAssertEqual(resultDateComponents.second, 0)
+	public var textInsets: UIEdgeInsets = .zero {
+		didSet {
+			invalidateIntrinsicContentSize()
+		}
+	}
+	
+	public override func textRect(forBounds bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
+		let insetRect = bounds.insetBy(insets: textInsets)
+		let textRect = super.textRect(forBounds: insetRect, limitedToNumberOfLines: numberOfLines)
+		let invertedInsets = -textInsets
+		return textRect.insetBy(insets: invertedInsets)
+	}
+	
+	public override func drawText(in rect: CGRect) {
+		super.drawText(in: UIEdgeInsetsInsetRect(rect, textInsets))
 	}
 	
 }

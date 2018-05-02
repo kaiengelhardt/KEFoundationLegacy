@@ -1,8 +1,8 @@
 //
-//  NSDate_Tests.swift
+//  Throttler.swift
 //  KEFoundation
 //
-//  Created by Kai Engelhardt on 24.01.18
+//  Created by Kai Engelhardt on 26.04.18
 //  Copyright © 2018 Kai Engelhardt. All rights reserved.
 //
 //  Distributed under the permissive MIT license
@@ -29,33 +29,37 @@
 //  SOFTWARE.
 //
 
-import XCTest
-@testable import KEFoundation
+import Foundation
 
-class NSDate_Tests: XCTestCase {
+/// Based on this [tweet](https://twitter.com/_inside/status/984827954432798723) by Guilherme Rambo.
+public final class Throttler<Event> {
 	
-	func testNormalized() {
-		var calendar = Calendar(identifier: .gregorian)
-		calendar.timeZone = TimeZone(secondsFromGMT: 0)!
-		
-		var dateComponents = DateComponents()
-		dateComponents.year = 1993
-		dateComponents.month = 1
-		dateComponents.day = 26
-		dateComponents.hour = 12
-		dateComponents.minute = 37
-		dateComponents.second = 15
-		
-		let date = calendar.date(from: dateComponents)!
-		let normalizedDate = date.normalized
-		let resultDateComponents = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: normalizedDate)
-		
-		XCTAssertEqual(resultDateComponents.year, 1993)
-		XCTAssertEqual(resultDateComponents.month, 1)
-		XCTAssertEqual(resultDateComponents.day, 26)
-		XCTAssertEqual(resultDateComponents.hour, 0)
-		XCTAssertEqual(resultDateComponents.minute, 0)
-		XCTAssertEqual(resultDateComponents.second, 0)
+	public typealias Handler = (Event) -> Void
+	
+	public let interval: TimeInterval
+	public let queue: DispatchQueue
+	public var handler: Handler?
+	
+	private var workItem: DispatchWorkItem?
+	
+	public init(interval: TimeInterval = 0.333, queue: DispatchQueue = .main, handler: Handler? = nil) {
+		self.interval = interval
+		self.queue = queue
+		self.handler = handler
+	}
+	
+	public func send(event: Event) {
+		invalidatePendingEvents()
+		workItem = DispatchWorkItem { [weak self] in
+			self?.handler?(event)
+		}
+		if let workItem = workItem {
+			queue.asyncAfter(deadline: .now() + interval, execute: workItem)
+		}
+	}
+	
+	public func invalidatePendingEvents() {
+		workItem?.cancel()
 	}
 	
 }

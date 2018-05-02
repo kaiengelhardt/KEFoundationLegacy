@@ -1,8 +1,8 @@
 //
-//  NSDate_Tests.swift
+//  ContainerView.swift
 //  KEFoundation
 //
-//  Created by Kai Engelhardt on 24.01.18
+//  Created by Kai Engelhardt on 01.02.18
 //  Copyright © 2018 Kai Engelhardt. All rights reserved.
 //
 //  Distributed under the permissive MIT license
@@ -29,33 +29,22 @@
 //  SOFTWARE.
 //
 
-import XCTest
-@testable import KEFoundation
+import UIKit
 
-class NSDate_Tests: XCTestCase {
+public class ContainerView : UIView {
 	
-	func testNormalized() {
-		var calendar = Calendar(identifier: .gregorian)
-		calendar.timeZone = TimeZone(secondsFromGMT: 0)!
-		
-		var dateComponents = DateComponents()
-		dateComponents.year = 1993
-		dateComponents.month = 1
-		dateComponents.day = 26
-		dateComponents.hour = 12
-		dateComponents.minute = 37
-		dateComponents.second = 15
-		
-		let date = calendar.date(from: dateComponents)!
-		let normalizedDate = date.normalized
-		let resultDateComponents = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: normalizedDate)
-		
-		XCTAssertEqual(resultDateComponents.year, 1993)
-		XCTAssertEqual(resultDateComponents.month, 1)
-		XCTAssertEqual(resultDateComponents.day, 26)
-		XCTAssertEqual(resultDateComponents.hour, 0)
-		XCTAssertEqual(resultDateComponents.minute, 0)
-		XCTAssertEqual(resultDateComponents.second, 0)
+	public var embeddedView: UIView? {
+		didSet {
+			guard oldValue != embeddedView else {
+				return
+			}
+			oldValue?.removeFromSuperview()
+			if let newView = embeddedView {
+				newView.translatesAutoresizingMaskIntoConstraints = false
+				addSubview(newView)
+				NSLayoutConstraint.activate(newView.constraintsEqualToEdgesOfSuperview())
+			}
+		}
 	}
 	
 }
