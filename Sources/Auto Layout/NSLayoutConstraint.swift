@@ -29,11 +29,29 @@
 //  SOFTWARE.
 //
 
+#if canImport(UIKit)
+
 import UIKit
+
+#elseif canImport(AppKit)
+
+import AppKit
+
+#endif
 
 public extension NSLayoutConstraint {
 	
-	public func with(priority: UILayoutPriority) -> NSLayoutConstraint {
+	#if canImport(UIKit)
+	
+	typealias LayoutPriority = UILayoutPriority
+	
+	#elseif canImport(AppKit)
+	
+	typealias LayoutPriority = NSLayoutConstraint.Priority
+	
+	#endif
+	
+	public func with(priority: LayoutPriority) -> NSLayoutConstraint {
 		self.priority = priority
 		return self
 	}
@@ -42,7 +60,17 @@ public extension NSLayoutConstraint {
 
 public extension Array where Element == NSLayoutConstraint {
 	
-	public func with(priority: UILayoutPriority) -> [NSLayoutConstraint] {
+	#if canImport(UIKit)
+	
+	typealias LayoutPriority = UILayoutPriority
+	
+	#elseif canImport(AppKit)
+	
+	typealias LayoutPriority = NSLayoutConstraint.Priority
+	
+	#endif
+	
+	public func with(priority: LayoutPriority) -> [NSLayoutConstraint] {
 		for constraint in self {
 			constraint.priority = priority
 		}

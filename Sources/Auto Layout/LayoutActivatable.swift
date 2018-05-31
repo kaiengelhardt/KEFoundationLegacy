@@ -1,8 +1,8 @@
 //
-//  ContainerView.swift
+//  LayoutActivatable.swift
 //  KEFoundation
 //
-//  Created by Kai Engelhardt on 01.02.18
+//  Created by Kai Engelhardt on 31.05.18
 //  Copyright © 2018 Kai Engelhardt. All rights reserved.
 //
 //  Distributed under the permissive MIT license
@@ -29,22 +29,39 @@
 //  SOFTWARE.
 //
 
+#if canImport(UIKit)
+
 import UIKit
 
-public class ContainerView : UIView {
+#elseif canImport(AppKit)
+
+import AppKit
+
+#endif
+
+public protocol LayoutActivatable {
 	
-	public var embeddedView: UIView? {
-		didSet {
-			guard oldValue != embeddedView else {
-				return
-			}
-			oldValue?.removeFromSuperview()
-			if let newView = embeddedView {
-				newView.translatesAutoresizingMaskIntoConstraints = false
-				addSubview(newView)
-				NSLayoutConstraint.activate(newView.constraintsMatchingEdgesOfSuperview())
-			}
-		}
+	var constraints: [NSLayoutConstraint] { get }
+	
+}
+
+extension NSLayoutConstraint : LayoutActivatable {
+	
+	public var constraints: [NSLayoutConstraint] {
+		return [self]
+	}
+	
+	public class func activate(_ items: LayoutActivatable) {
+		let constraints = items.constraints
+		NSLayoutConstraint.activate(constraints)
+	}
+	
+}
+
+extension Array : LayoutActivatable where Element : LayoutActivatable {
+	
+	public var constraints: [NSLayoutConstraint] {
+		return flatMap { $0.constraints }
 	}
 	
 }

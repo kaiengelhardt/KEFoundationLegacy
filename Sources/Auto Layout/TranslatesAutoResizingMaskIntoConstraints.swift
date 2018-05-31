@@ -1,8 +1,8 @@
 //
-//  ContainerView.swift
+//  TranslatesAutoResizingMaskIntoConstraints.swift
 //  KEFoundation
 //
-//  Created by Kai Engelhardt on 01.02.18
+//  Created by Kai Engelhardt on 31.05.18
 //  Copyright © 2018 Kai Engelhardt. All rights reserved.
 //
 //  Distributed under the permissive MIT license
@@ -29,22 +29,32 @@
 //  SOFTWARE.
 //
 
+#if canImport(UIKit)
+
 import UIKit
 
-public class ContainerView : UIView {
+extension Array where Element: UIView {
 	
-	public var embeddedView: UIView? {
-		didSet {
-			guard oldValue != embeddedView else {
-				return
-			}
-			oldValue?.removeFromSuperview()
-			if let newView = embeddedView {
-				newView.translatesAutoresizingMaskIntoConstraints = false
-				addSubview(newView)
-				NSLayoutConstraint.activate(newView.constraintsMatchingEdgesOfSuperview())
-			}
+	public func disableTranslatesAutoresizingMaskIntoConstraints() {
+		for view in self {
+			view.translatesAutoresizingMaskIntoConstraints = false
 		}
 	}
 	
 }
+
+#elseif canImport(AppKit)
+
+import AppKit
+
+extension Array where Element: NSView {
+	
+	public func disableTranslatesAutoresizingMaskIntoConstraints() {
+		for view in self {
+			view.translatesAutoresizingMaskIntoConstraints = false
+		}
+	}
+	
+}
+
+#endif
