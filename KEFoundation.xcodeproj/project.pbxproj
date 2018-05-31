@@ -101,6 +101,7 @@
 		5EEFB60D1FE5C71B0028BEEA /* NSKeyValueObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E606CFE1FBB4BF900785D15 /* NSKeyValueObservation.swift */; };
 		5EEFB60E1FE5C72B0028BEEA /* FetchedResultsUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A280E1F91476C00B8EB5F /* FetchedResultsUpdater.swift */; };
 		5EEFB60F1FE5C7400028BEEA /* KEFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E0A28031F91423800B8EB5F /* KEFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EF20943209CE3D000151055 /* UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF20942209CE3D000151055 /* UISearchBar.swift */; };
 		5EF619ED2013E23E006BCD62 /* Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF619EC2013E23E006BCD62 /* Managed.swift */; };
 		5EF619EE2013E23E006BCD62 /* Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF619EC2013E23E006BCD62 /* Managed.swift */; };
 		5EF619EF2013E23E006BCD62 /* Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF619EC2013E23E006BCD62 /* Managed.swift */; };
@@ -164,6 +165,7 @@
 		5EEC3C081FDB50B7003F8A73 /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		5EEFB5FC1FE5BD540028BEEA /* KEFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KEFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EEFB5FF1FE5BD540028BEEA /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
+		5EF20942209CE3D000151055 /* UISearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchBar.swift; sourceTree = "<group>"; };
 		5EF619EC2013E23E006BCD62 /* Managed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Managed.swift; sourceTree = "<group>"; usesTabs = 1; };
 /* End PBXFileReference section */
 
@@ -263,6 +265,7 @@
 				5E0A28131F91486D00B8EB5F /* UIViewController.swift */,
 				5ED781DD1F94F9B200400F17 /* UIAlertController.swift */,
 				5E0CE2D71F9DEF0600A58AA5 /* UITableView.swift */,
+				5EF20942209CE3D000151055 /* UISearchBar.swift */,
 				5E5E693D20406E4400B5E746 /* KELabel.swift */,
 				5EA40A431F97FA3800E14552 /* KETextField.swift */,
 				5EA40A491F9A497B00E14552 /* UIResponder+FirstResponder.h */,
@@ -566,6 +569,7 @@
 				5EF619ED2013E23E006BCD62 /* Managed.swift in Sources */,
 				5E2E37362087B164009803F9 /* URLSession.swift in Sources */,
 				5E1150CD2091E3CD005C36F2 /* Throttler.swift in Sources */,
+				5EF20943209CE3D000151055 /* UISearchBar.swift in Sources */,
 				5E05301B1FB76E6700C2EE87 /* NSLayoutConstraint.swift in Sources */,
 				5EA40A4C1F9A497B00E14552 /* UIResponder+FirstResponder.m in Sources */,
 				5E1150D12092027F005C36F2 /* Result.swift in Sources */,
