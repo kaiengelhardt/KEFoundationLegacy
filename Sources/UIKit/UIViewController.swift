@@ -62,9 +62,9 @@ public extension UIViewController {
 	/// 
 	/// Discussion: This method calls 'didMove(toParentViewController:)' immediately after the view is added as a subview.
 	public func addChild(viewController: UIViewController) {
-		addChildViewController(viewController)
+		addChild(viewController)
 		view.addSubview(viewController.view)
-		viewController.didMove(toParentViewController: self)
+		viewController.didMove(toParent: self)
 	}
 	
 	/// Removes the specified child view controller from the current view controller and removes the specified view controllers view from the current view controllers view.
@@ -74,9 +74,9 @@ public extension UIViewController {
 	/// 
 	/// Discussion: This method calls 'willMove(toParentViewController:)' before the view is removed.
 	public func removeChild(viewController: UIViewController) {
-		viewController.willMove(toParentViewController: nil)
+		viewController.willMove(toParent: nil)
 		viewController.view.removeFromSuperview()
-		viewController.removeFromParentViewController()
+		viewController.removeFromParent()
 	}
 	
 }

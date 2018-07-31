@@ -51,8 +51,8 @@ extension NSLayoutConstraint : LayoutActivatable {
 		return [self]
 	}
 	
-	public class func activate(_ items: LayoutActivatable) {
-		let constraints = items.constraints
+	public class func activate(_ item: LayoutActivatable) {
+		let constraints = item.constraints
 		NSLayoutConstraint.activate(constraints)
 	}
 	

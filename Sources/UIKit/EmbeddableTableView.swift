@@ -40,10 +40,10 @@ public class EmbeddableTableView : UITableView {
 	}
 	
 	public override var intrinsicContentSize: CGSize {
-		return CGSize(width: UIViewNoIntrinsicMetric, height: contentSize.height)
+		return CGSize(width: UIView.noIntrinsicMetric, height: contentSize.height)
 	}
 	
-	public override init(frame: CGRect, style: UITableViewStyle) {
+	public override init(frame: CGRect, style: UITableView.Style) {
 		super.init(frame: frame, style: style)
 		setUp()
 	}

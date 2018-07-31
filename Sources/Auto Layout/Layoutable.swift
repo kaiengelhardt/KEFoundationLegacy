@@ -67,7 +67,7 @@ public extension Layoutable {
 	
 	#endif
 	
-	public func constraintsMatchingEdges(of layoutable: Layoutable?, insetBy inset: EdgeInsets = .zero, relation: NSLayoutRelation = .equal) -> [NSLayoutConstraint] {
+	public func constraintsMatchingEdges(of layoutable: Layoutable?, insetBy inset: EdgeInsets = .zero, relation: NSLayoutConstraint.Relation = .equal) -> [NSLayoutConstraint] {
 		guard let layoutable = layoutable else {
 			return []
 		}
@@ -103,7 +103,7 @@ public extension Layoutable {
 		return constraints
 	}
 	
-	public func constraintsMatchingCenter(of layoutable: Layoutable?, offsetBy offset: CGSize = .zero, relation: NSLayoutRelation = .equal) -> [NSLayoutConstraint] {
+	public func constraintsMatchingCenter(of layoutable: Layoutable?, offsetBy offset: CGSize = .zero, relation: NSLayoutConstraint.Relation = .equal) -> [NSLayoutConstraint] {
 		guard let layoutable = layoutable else {
 			return []
 		}
@@ -131,7 +131,7 @@ public extension Layoutable {
 		return constraints
 	}
 	
-	public func constraintsMatchingSize(of layoutable: Layoutable?, resizedBy size: CGSize = .zero, multipliedBy multiplier: CGSize = CGSize(width: 1, height: 1), relation: NSLayoutRelation = .equal) -> [NSLayoutConstraint] {
+	public func constraintsMatchingSize(of layoutable: Layoutable?, resizedBy size: CGSize = .zero, multipliedBy multiplier: CGSize = CGSize(width: 1, height: 1), relation: NSLayoutConstraint.Relation = .equal) -> [NSLayoutConstraint] {
 		guard let layoutable = layoutable else {
 			return []
 		}
@@ -188,15 +188,15 @@ extension View : Layoutable {
 	
 	#endif
 	
-	public func constraintsMatchingEdgesOfSuperview(insetBy insets: EdgeInsets = .zero, relation: NSLayoutRelation = .equal) -> [NSLayoutConstraint] {
+	public func constraintsMatchingEdgesOfSuperview(insetBy insets: EdgeInsets = .zero, relation: NSLayoutConstraint.Relation = .equal) -> [NSLayoutConstraint] {
 		return constraintsMatchingEdges(of: superview, insetBy: insets, relation: relation)
 	}
 	
-	public func constraintsMatchingCenterOfSuperview(offsetBy offset: CGSize = .zero, relation: NSLayoutRelation = .equal) -> [NSLayoutConstraint] {
+	public func constraintsMatchingCenterOfSuperview(offsetBy offset: CGSize = .zero, relation: NSLayoutConstraint.Relation = .equal) -> [NSLayoutConstraint] {
 		return constraintsMatchingCenter(of: superview, offsetBy: offset, relation: relation)
 	}
 	
-	public func constraintsMatchingSizeOfSuperview(resizedBy size: CGSize = .zero, multipliedBy multiplier: CGSize = CGSize(width: 1, height: 1), relation: NSLayoutRelation = .equal) -> [NSLayoutConstraint] {
+	public func constraintsMatchingSizeOfSuperview(resizedBy size: CGSize = .zero, multipliedBy multiplier: CGSize = CGSize(width: 1, height: 1), relation: NSLayoutConstraint.Relation = .equal) -> [NSLayoutConstraint] {
 		return constraintsMatchingSize(of: superview, resizedBy: size, multipliedBy: multiplier, relation: relation)
 	}
 	

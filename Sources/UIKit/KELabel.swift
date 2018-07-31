@@ -47,7 +47,7 @@ public class KELabel : UILabel {
 	}
 	
 	public override func drawText(in rect: CGRect) {
-		super.drawText(in: UIEdgeInsetsInsetRect(rect, textInsets))
+		super.drawText(in: rect.inset(by: textInsets))
 	}
 	
 }
