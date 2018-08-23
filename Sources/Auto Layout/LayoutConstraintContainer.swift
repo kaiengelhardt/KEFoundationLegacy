@@ -1,8 +1,8 @@
 //
-//  LayoutActivatable.swift
+//  LayoutConstraintContainer.swift
 //  KEFoundation
 //
-//  Created by Kai Engelhardt on 31.05.18
+//  Created by Kai Engelhardt on 24.08.18
 //  Copyright © 2018 Kai Engelhardt. All rights reserved.
 //
 //  Distributed under the permissive MIT license
@@ -39,26 +39,29 @@ import AppKit
 
 #endif
 
-public protocol LayoutActivatable {
+public protocol LayoutConstraintContainer {
 	
 	var constraints: [NSLayoutConstraint] { get }
 	
 }
 
-extension NSLayoutConstraint : LayoutActivatable {
+extension NSLayoutConstraint: LayoutConstraintContainer {
 	
 	public var constraints: [NSLayoutConstraint] {
 		return [self]
 	}
 	
-	public class func activate(_ items: LayoutActivatable) {
-		let constraints = items.constraints
-		NSLayoutConstraint.activate(constraints)
+	public class func activate(_ constraintContainer: LayoutConstraintContainer) {
+		self.activate(constraintContainer.constraints)
+	}
+	
+	public class func deactivate(_ constraintContainer: LayoutConstraintContainer) {
+		self.deactivate(constraintContainer.constraints)
 	}
 	
 }
 
-extension Array : LayoutActivatable where Element : LayoutActivatable {
+extension Array: LayoutConstraintContainer where Element: LayoutConstraintContainer {
 	
 	public var constraints: [NSLayoutConstraint] {
 		return flatMap { $0.constraints }

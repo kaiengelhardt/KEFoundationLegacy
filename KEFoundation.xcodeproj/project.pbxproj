@@ -33,17 +33,14 @@
 		5E1E0C122013AEFF0075629D /* UICollectionView+FetchedResultsUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E0C102013AEFF0075629D /* UICollectionView+FetchedResultsUpdater.swift */; };
 		5E1E0C142013AFDE0075629D /* UITableView+FetchedResultsUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E0C132013AFDE0075629D /* UITableView+FetchedResultsUpdater.swift */; };
 		5E1E0C152013AFDE0075629D /* UITableView+FetchedResultsUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E0C132013AFDE0075629D /* UITableView+FetchedResultsUpdater.swift */; };
-		5E233BB720BED03500E57B78 /* Layoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E233BB620BED03500E57B78 /* Layoutable.swift */; };
-		5E233BB820BED03500E57B78 /* Layoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E233BB620BED03500E57B78 /* Layoutable.swift */; };
-		5E233BB920BED0E100E57B78 /* Layoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E233BB620BED03500E57B78 /* Layoutable.swift */; };
+		5E233BB720BED03500E57B78 /* LayoutSurface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E233BB620BED03500E57B78 /* LayoutSurface.swift */; };
+		5E233BB820BED03500E57B78 /* LayoutSurface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E233BB620BED03500E57B78 /* LayoutSurface.swift */; };
+		5E233BB920BED0E100E57B78 /* LayoutSurface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E233BB620BED03500E57B78 /* LayoutSurface.swift */; };
 		5E233BBB20BED1D600E57B78 /* NSEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E233BBA20BED1D600E57B78 /* NSEdgeInsets.swift */; };
 		5E2653941FB66ECB00F3994F /* EmbeddableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2653931FB66ECB00F3994F /* EmbeddableTableView.swift */; };
 		5E2E37362087B164009803F9 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2E37352087B164009803F9 /* URLSession.swift */; };
 		5E2E37372087B164009803F9 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2E37352087B164009803F9 /* URLSession.swift */; };
 		5E2E37382087B164009803F9 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2E37352087B164009803F9 /* URLSession.swift */; };
-		5E3709F420BFEDD10040FC93 /* LayoutActivatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3709F320BFEDD10040FC93 /* LayoutActivatable.swift */; };
-		5E3709F520BFEDD10040FC93 /* LayoutActivatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3709F320BFEDD10040FC93 /* LayoutActivatable.swift */; };
-		5E3709F620BFEDD10040FC93 /* LayoutActivatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3709F320BFEDD10040FC93 /* LayoutActivatable.swift */; };
 		5E5E693E20406E4400B5E746 /* KELabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5E693D20406E4400B5E746 /* KELabel.swift */; };
 		5E5E693F20406E4400B5E746 /* KELabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5E693D20406E4400B5E746 /* KELabel.swift */; };
 		5E5E694120407C6500B5E746 /* UIEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5E694020407C6500B5E746 /* UIEdgeInsets.swift */; };
@@ -64,6 +61,9 @@
 		5EAB17A020222E08008A5369 /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB179D20222E08008A5369 /* NotificationObserver.swift */; };
 		5EAB17A820229DA5008A5369 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB17A720229DA5008A5369 /* ContainerView.swift */; };
 		5EAB17A920229DA5008A5369 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB17A720229DA5008A5369 /* ContainerView.swift */; };
+		5EC63FAB212F686E00DC92BE /* LayoutConstraintContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC63FAA212F686E00DC92BE /* LayoutConstraintContainer.swift */; };
+		5EC63FAC212F686E00DC92BE /* LayoutConstraintContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC63FAA212F686E00DC92BE /* LayoutConstraintContainer.swift */; };
+		5EC63FAD212F686E00DC92BE /* LayoutConstraintContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC63FAA212F686E00DC92BE /* LayoutConstraintContainer.swift */; };
 		5ECAA1F120056B3400AC4C6B /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECAA1F020056B3400AC4C6B /* ContainerViewController.swift */; };
 		5ECAA1F220056B3400AC4C6B /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECAA1F020056B3400AC4C6B /* ContainerViewController.swift */; };
 		5ECDE2182003F5CA005FB807 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECDE2172003F5CA005FB807 /* FileManager.swift */; };
@@ -147,11 +147,10 @@
 		5E16E2751F97BAA700D44BF4 /* CGRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5E1E0C102013AEFF0075629D /* UICollectionView+FetchedResultsUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+FetchedResultsUpdater.swift"; sourceTree = "<group>"; usesTabs = 1; };
 		5E1E0C132013AFDE0075629D /* UITableView+FetchedResultsUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+FetchedResultsUpdater.swift"; sourceTree = "<group>"; usesTabs = 1; };
-		5E233BB620BED03500E57B78 /* Layoutable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layoutable.swift; sourceTree = "<group>"; };
+		5E233BB620BED03500E57B78 /* LayoutSurface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutSurface.swift; sourceTree = "<group>"; };
 		5E233BBA20BED1D600E57B78 /* NSEdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSEdgeInsets.swift; sourceTree = "<group>"; };
 		5E2653931FB66ECB00F3994F /* EmbeddableTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddableTableView.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5E2E37352087B164009803F9 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
-		5E3709F320BFEDD10040FC93 /* LayoutActivatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutActivatable.swift; sourceTree = "<group>"; };
 		5E5E693D20406E4400B5E746 /* KELabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KELabel.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5E5E694020407C6500B5E746 /* UIEdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsets.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5E606CFE1FBB4BF900785D15 /* NSKeyValueObservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSKeyValueObservation.swift; sourceTree = "<group>"; usesTabs = 1; };
@@ -163,6 +162,7 @@
 		5EAB17952022166E008A5369 /* ContextWatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextWatcher.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5EAB179D20222E08008A5369 /* NotificationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationObserver.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5EAB17A720229DA5008A5369 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; usesTabs = 1; };
+		5EC63FAA212F686E00DC92BE /* LayoutConstraintContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstraintContainer.swift; sourceTree = "<group>"; };
 		5ECAA1F020056B3400AC4C6B /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5ECDE2172003F5CA005FB807 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5ED781D91F94F1F900400F17 /* NSPreciate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSPreciate.swift; sourceTree = "<group>"; usesTabs = 1; };
@@ -373,8 +373,8 @@
 		5EE7594A20C011CB00353163 /* Auto Layout */ = {
 			isa = PBXGroup;
 			children = (
-				5E233BB620BED03500E57B78 /* Layoutable.swift */,
-				5E3709F320BFEDD10040FC93 /* LayoutActivatable.swift */,
+				5E233BB620BED03500E57B78 /* LayoutSurface.swift */,
+				5EC63FAA212F686E00DC92BE /* LayoutConstraintContainer.swift */,
 				5E0A28141F91486D00B8EB5F /* TranslatesAutoResizingMaskIntoConstraints.swift */,
 				5E05301A1FB76E6700C2EE87 /* NSLayoutConstraint.swift */,
 				5E0D5AEC20176C08004E6949 /* NSLayoutAnchor.swift */,
@@ -589,11 +589,10 @@
 				5EA40A441F97FA3800E14552 /* KETextField.swift in Sources */,
 				5EF619ED2013E23E006BCD62 /* Managed.swift in Sources */,
 				5E2E37362087B164009803F9 /* URLSession.swift in Sources */,
-				5E3709F420BFEDD10040FC93 /* LayoutActivatable.swift in Sources */,
 				5E1150CD2091E3CD005C36F2 /* Throttler.swift in Sources */,
 				5EF20943209CE3D000151055 /* UISearchBar.swift in Sources */,
 				5E05301B1FB76E6700C2EE87 /* NSLayoutConstraint.swift in Sources */,
-				5E233BB720BED03500E57B78 /* Layoutable.swift in Sources */,
+				5E233BB720BED03500E57B78 /* LayoutSurface.swift in Sources */,
 				5EA40A4C1F9A497B00E14552 /* UIResponder+FirstResponder.m in Sources */,
 				5E1150D12092027F005C36F2 /* Result.swift in Sources */,
 				5ECDE2182003F5CA005FB807 /* FileManager.swift in Sources */,
@@ -605,6 +604,7 @@
 				5E1E0C112013AEFF0075629D /* UICollectionView+FetchedResultsUpdater.swift in Sources */,
 				5E5E694120407C6500B5E746 /* UIEdgeInsets.swift in Sources */,
 				5E5E693E20406E4400B5E746 /* KELabel.swift in Sources */,
+				5EC63FAB212F686E00DC92BE /* LayoutConstraintContainer.swift in Sources */,
 				5E8269522093A57800FFA69D /* ClosureValueTransformer.swift in Sources */,
 				5E0A28101F91476C00B8EB5F /* FetchedResultsUpdater.swift in Sources */,
 				5EAB179E20222E08008A5369 /* NotificationObserver.swift in Sources */,
@@ -628,13 +628,12 @@
 			files = (
 				5EEC3C111FDB5140003F8A73 /* CGSize.swift in Sources */,
 				5EEC3C201FDB5140003F8A73 /* FetchedResultsUpdater.swift in Sources */,
-				5E233BB820BED03500E57B78 /* Layoutable.swift in Sources */,
+				5E233BB820BED03500E57B78 /* LayoutSurface.swift in Sources */,
 				5EEC3C161FDB5140003F8A73 /* NSRange.swift in Sources */,
 				5EEC3C191FDB5140003F8A73 /* UIViewController.swift in Sources */,
 				5EEC3C181FDB5140003F8A73 /* TranslatesAutoResizingMaskIntoConstraints.swift in Sources */,
 				5EEC3C0E1FDB5140003F8A73 /* Int.swift in Sources */,
 				5EAB17972022166E008A5369 /* ContextWatcher.swift in Sources */,
-				5E3709F520BFEDD10040FC93 /* LayoutActivatable.swift in Sources */,
 				5EEC3C121FDB5140003F8A73 /* CGRect.swift in Sources */,
 				5EEC3C151FDB5140003F8A73 /* Date.swift in Sources */,
 				5EEC3C101FDB5140003F8A73 /* CGPoint.swift in Sources */,
@@ -658,6 +657,7 @@
 				5E1E0C152013AFDE0075629D /* UITableView+FetchedResultsUpdater.swift in Sources */,
 				5E1E0C122013AEFF0075629D /* UICollectionView+FetchedResultsUpdater.swift in Sources */,
 				5E5E694220407C6500B5E746 /* UIEdgeInsets.swift in Sources */,
+				5EC63FAC212F686E00DC92BE /* LayoutConstraintContainer.swift in Sources */,
 				5E5E693F20406E4400B5E746 /* KELabel.swift in Sources */,
 				5E8269532093A57800FFA69D /* ClosureValueTransformer.swift in Sources */,
 				5EEC3C1B1FDB5140003F8A73 /* UITableView.swift in Sources */,
@@ -680,14 +680,14 @@
 				5EEFB6081FE5C71B0028BEEA /* CGRect.swift in Sources */,
 				5EEFB60B1FE5C71B0028BEEA /* Date.swift in Sources */,
 				5EE7594B20C011E600353163 /* TranslatesAutoResizingMaskIntoConstraints.swift in Sources */,
+				5EC63FAD212F686E00DC92BE /* LayoutConstraintContainer.swift in Sources */,
 				5EEFB6061FE5C71B0028BEEA /* CGPoint.swift in Sources */,
 				5EEFB6051FE5C71B0028BEEA /* Array.swift in Sources */,
 				5EEFB60D1FE5C71B0028BEEA /* NSKeyValueObservation.swift in Sources */,
 				5EEFB6091FE5C71B0028BEEA /* NSPreciate.swift in Sources */,
 				5E8269542093A57800FFA69D /* ClosureValueTransformer.swift in Sources */,
 				5EAB17982022166E008A5369 /* ContextWatcher.swift in Sources */,
-				5E3709F620BFEDD10040FC93 /* LayoutActivatable.swift in Sources */,
-				5E233BB920BED0E100E57B78 /* Layoutable.swift in Sources */,
+				5E233BB920BED0E100E57B78 /* LayoutSurface.swift in Sources */,
 				5EEFB60A1FE5C71B0028BEEA /* NSSortDescriptor.swift in Sources */,
 				5EAB17A020222E08008A5369 /* NotificationObserver.swift in Sources */,
 				5EE7594C20C012B700353163 /* NSLayoutConstraint.swift in Sources */,
