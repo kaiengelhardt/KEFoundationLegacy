@@ -62,18 +62,30 @@ public enum SizeCategory: AdaptiveAttribute {
 	*/
 	public func generateTraitCollection() -> UITraitCollection {
 		switch self {
-		case .extraSmall: return UITraitCollection(preferredContentSizeCategory: .extraSmall)
-		case .small: return UITraitCollection(preferredContentSizeCategory: .small)
-		case .medium: return UITraitCollection(preferredContentSizeCategory: .medium)
-		case .large: return UITraitCollection(preferredContentSizeCategory: .large)
-		case .extraLarge: return UITraitCollection(preferredContentSizeCategory: .extraLarge)
-		case .extraExtraLarge: return UITraitCollection(preferredContentSizeCategory: .extraExtraLarge)
-		case .extraExtraExtraLarge: return UITraitCollection(preferredContentSizeCategory: .extraExtraExtraLarge)
-		case .accessibilityMedium: return UITraitCollection(preferredContentSizeCategory: .accessibilityMedium)
-		case .accessibilityLarge: return UITraitCollection(preferredContentSizeCategory: .accessibilityLarge)
-		case .accessibilityExtraLarge: return UITraitCollection(preferredContentSizeCategory: .accessibilityExtraLarge)
-		case .accessibilityExtraExtraLarge: return UITraitCollection(preferredContentSizeCategory: .accessibilityExtraExtraLarge)
-		case .accessibilityExtraExtraExtraLarge: return UITraitCollection(preferredContentSizeCategory: .accessibilityExtraExtraExtraLarge)
+		case .extraSmall:
+			return UITraitCollection(preferredContentSizeCategory: .extraSmall)
+		case .small:
+			return UITraitCollection(preferredContentSizeCategory: .small)
+		case .medium:
+			return UITraitCollection(preferredContentSizeCategory: .medium)
+		case .large:
+			return UITraitCollection(preferredContentSizeCategory: .large)
+		case .extraLarge:
+			return UITraitCollection(preferredContentSizeCategory: .extraLarge)
+		case .extraExtraLarge:
+			return UITraitCollection(preferredContentSizeCategory: .extraExtraLarge)
+		case .extraExtraExtraLarge:
+			return UITraitCollection(preferredContentSizeCategory: .extraExtraExtraLarge)
+		case .accessibilityMedium:
+			return UITraitCollection(preferredContentSizeCategory: .accessibilityMedium)
+		case .accessibilityLarge:
+			return UITraitCollection(preferredContentSizeCategory: .accessibilityLarge)
+		case .accessibilityExtraLarge:
+			return UITraitCollection(preferredContentSizeCategory: .accessibilityExtraLarge)
+		case .accessibilityExtraExtraLarge:
+			return UITraitCollection(preferredContentSizeCategory: .accessibilityExtraExtraLarge)
+		case .accessibilityExtraExtraExtraLarge:
+			return UITraitCollection(preferredContentSizeCategory: .accessibilityExtraExtraExtraLarge)
 		}
 	}
 	

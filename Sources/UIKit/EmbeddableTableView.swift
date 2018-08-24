@@ -31,19 +31,19 @@
 
 import UIKit
 
-public class EmbeddableTableView : UITableView {
+public class EmbeddableTableView: UITableView {
 	
-	public override var contentSize: CGSize {
+	override public var contentSize: CGSize {
 		didSet {
 			invalidateIntrinsicContentSize()
 		}
 	}
 	
-	public override var intrinsicContentSize: CGSize {
+	override public var intrinsicContentSize: CGSize {
 		return CGSize(width: UIViewNoIntrinsicMetric, height: contentSize.height)
 	}
 	
-	public override init(frame: CGRect, style: UITableViewStyle) {
+	override public init(frame: CGRect, style: UITableViewStyle) {
 		super.init(frame: frame, style: style)
 		setUp()
 	}

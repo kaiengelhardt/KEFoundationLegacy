@@ -1,8 +1,8 @@
 //
-//  CGRect_Tests.swift
+//  NSDateTests.swift
 //  KEFoundation
 //
-//  Created by Kai Engelhardt on 23.01.18
+//  Created by Kai Engelhardt on 24.01.18
 //  Copyright © 2018 Kai Engelhardt. All rights reserved.
 //
 //  Distributed under the permissive MIT license
@@ -29,16 +29,33 @@
 //  SOFTWARE.
 //
 
-import XCTest
 @testable import KEFoundation
+import XCTest
 
-class CGRect_Tests: XCTestCase {
-    
-	func testInsetBy() {
-		let rect = CGRect(x: 30, y: 0, width: 100, height: 80)
-		let insets = UIEdgeInsets(top: 10, left: 20, bottom: 30, right: 40)
-		let result = rect.insetBy(insets: insets)
-		XCTAssertEqual(result, CGRect(x: 50, y: 10, width: 40, height: 40))
+class NSDateTests: XCTestCase {
+	
+	func testNormalized() {
+		var calendar = Calendar(identifier: .gregorian)
+		calendar.timeZone = TimeZone(secondsFromGMT: 0)!
+		
+		var dateComponents = DateComponents()
+		dateComponents.year = 1_993
+		dateComponents.month = 1
+		dateComponents.day = 26
+		dateComponents.hour = 12
+		dateComponents.minute = 37
+		dateComponents.second = 15
+		
+		let date = calendar.date(from: dateComponents)!
+		let normalizedDate = date.normalized
+		let resultDateComponents = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: normalizedDate)
+		
+		XCTAssertEqual(resultDateComponents.year, 1_993)
+		XCTAssertEqual(resultDateComponents.month, 1)
+		XCTAssertEqual(resultDateComponents.day, 26)
+		XCTAssertEqual(resultDateComponents.hour, 0)
+		XCTAssertEqual(resultDateComponents.minute, 0)
+		XCTAssertEqual(resultDateComponents.second, 0)
 	}
-    
+	
 }

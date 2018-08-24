@@ -58,65 +58,103 @@ public extension UITraitCollection {
 		var attributes: [AdaptiveAttribute] = []
 		
 		switch userInterfaceIdiom {
-		case .pad: attributes.append(Idiom.pad)
-		case .phone: attributes.append(Idiom.phone)
-		case .tv: attributes.append(Idiom.tv)
-		case .carPlay: attributes.append(Idiom.carPlay)
-		case .unspecified: break
+		case .pad:
+			attributes.append(Idiom.pad)
+		case .phone:
+			attributes.append(Idiom.phone)
+		case .tv:
+			attributes.append(Idiom.tv)
+		case .carPlay:
+			attributes.append(Idiom.carPlay)
+		case .unspecified:
+			break
 		}
 		
 		switch displayScale {
-		case 1.0: attributes.append(Scale.oneX)
-		case 2.0: attributes.append(Scale.twoX)
-		case 3.0: attributes.append(Scale.threeX)
-		case 4.0: attributes.append(Scale.fourX)
-		default: break
+		case 1.0:
+			attributes.append(Scale.oneX)
+		case 2.0:
+			attributes.append(Scale.twoX)
+		case 3.0:
+			attributes.append(Scale.threeX)
+		case 4.0:
+			attributes.append(Scale.fourX)
+		default:
+			break
 		}
 		
 		switch horizontalSizeClass {
-		case .compact: attributes.append(SizeClass.horizontalCompact)
-		case .regular: attributes.append(SizeClass.horizontalRegular)
-		case .unspecified: break
+		case .compact:
+			attributes.append(SizeClass.horizontalCompact)
+		case .regular:
+			attributes.append(SizeClass.horizontalRegular)
+		case .unspecified:
+			break
 		}
 		
 		switch verticalSizeClass {
-		case .compact: attributes.append(SizeClass.verticalCompact)
-		case .regular: attributes.append(SizeClass.verticalRegular)
-		case .unspecified: break
+		case .compact:
+			attributes.append(SizeClass.verticalCompact)
+		case .regular:
+			attributes.append(SizeClass.verticalRegular)
+		case .unspecified:
+			break
 		}
 		
 		switch forceTouchCapability {
-		case .available: attributes.append(ForceTouch.available)
-		case .unavailable: attributes.append(ForceTouch.unavailable)
-		case .unknown: break
+		case .available:
+			attributes.append(ForceTouch.available)
+		case .unavailable:
+			attributes.append(ForceTouch.unavailable)
+		case .unknown:
+			break
 		}
 		
 		switch layoutDirection {
-		case .leftToRight: attributes.append(LayoutDirection.leftToRight)
-		case .rightToLeft: attributes.append(LayoutDirection.rightToLeft)
-		case .unspecified: break
+		case .leftToRight:
+			attributes.append(LayoutDirection.leftToRight)
+		case .rightToLeft:
+			attributes.append(LayoutDirection.rightToLeft)
+		case .unspecified:
+			break
 		}
 		
 		switch preferredContentSizeCategory {
-		case .extraSmall: attributes.append(SizeCategory.extraSmall)
-		case .small: attributes.append(SizeCategory.small)
-		case .medium: attributes.append(SizeCategory.medium)
-		case .large: attributes.append(SizeCategory.large)
-		case .extraLarge: attributes.append(SizeCategory.extraLarge)
-		case .extraExtraLarge: attributes.append(SizeCategory.extraExtraLarge)
-		case .extraExtraExtraLarge: attributes.append(SizeCategory.extraExtraExtraLarge)
-		case .accessibilityMedium: attributes.append(SizeCategory.accessibilityMedium)
-		case .accessibilityLarge: attributes.append(SizeCategory.accessibilityLarge)
-		case .accessibilityExtraLarge: attributes.append(SizeCategory.accessibilityExtraLarge)
-		case .accessibilityExtraExtraLarge: attributes.append(SizeCategory.accessibilityExtraExtraLarge)
-		case .accessibilityExtraExtraExtraLarge: attributes.append(SizeCategory.accessibilityExtraExtraExtraLarge)
-		default: break
+		case .extraSmall:
+			attributes.append(SizeCategory.extraSmall)
+		case .small:
+			attributes.append(SizeCategory.small)
+		case .medium:
+			attributes.append(SizeCategory.medium)
+		case .large:
+			attributes.append(SizeCategory.large)
+		case .extraLarge:
+			attributes.append(SizeCategory.extraLarge)
+		case .extraExtraLarge:
+			attributes.append(SizeCategory.extraExtraLarge)
+		case .extraExtraExtraLarge:
+			attributes.append(SizeCategory.extraExtraExtraLarge)
+		case .accessibilityMedium:
+			attributes.append(SizeCategory.accessibilityMedium)
+		case .accessibilityLarge:
+			attributes.append(SizeCategory.accessibilityLarge)
+		case .accessibilityExtraLarge:
+			attributes.append(SizeCategory.accessibilityExtraLarge)
+		case .accessibilityExtraExtraLarge:
+			attributes.append(SizeCategory.accessibilityExtraExtraLarge)
+		case .accessibilityExtraExtraExtraLarge:
+			attributes.append(SizeCategory.accessibilityExtraExtraExtraLarge)
+		default:
+			break
 		}
 		
 		switch displayGamut {
-		case .SRGB: attributes.append(DisplayGamut.SRGB)
-		case .P3: attributes.append(DisplayGamut.P3)
-		case .unspecified: break
+		case .SRGB:
+			attributes.append(DisplayGamut.SRGB)
+		case .P3:
+			attributes.append(DisplayGamut.P3)
+		case .unspecified:
+			break
 		}
 		
 		return attributes

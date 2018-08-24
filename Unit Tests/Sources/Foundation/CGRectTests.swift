@@ -1,5 +1,5 @@
 //
-//  NSLayoutConstraint_Tests.swift
+//  CGRectTests.swift
 //  KEFoundation
 //
 //  Created by Kai Engelhardt on 23.01.18
@@ -29,14 +29,16 @@
 //  SOFTWARE.
 //
 
-import XCTest
 @testable import KEFoundation
+import XCTest
 
-class NSLayoutConstraint_Tests: XCTestCase {
+class CGRectTests: XCTestCase {
     
-	func testConstraintWithPriority() {
-		let constraint = NSLayoutConstraint().with(priority: .defaultLow)
-		XCTAssertEqual(constraint.priority, .defaultLow)
+	func testInsetBy() {
+		let rect = CGRect(x: 30, y: 0, width: 100, height: 80)
+		let insets = UIEdgeInsets(top: 10, left: 20, bottom: 30, right: 40)
+		let result = rect.insetBy(insets: insets)
+		XCTAssertEqual(result, CGRect(x: 50, y: 10, width: 40, height: 40))
 	}
     
 }

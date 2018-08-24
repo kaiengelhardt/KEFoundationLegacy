@@ -175,7 +175,7 @@ private typealias View = NSView
 
 #endif
 
-extension View : LayoutSurface {
+extension View: LayoutSurface {
 	
 	#if canImport(UIKit)
 	
@@ -204,10 +204,10 @@ extension View : LayoutSurface {
 
 #if canImport(UIKit)
 
-extension UILayoutGuide : LayoutSurface {}
+extension UILayoutGuide: LayoutSurface {}
 
 #elseif canImport(AppKit)
 
-extension NSLayoutGuide : LayoutSurface {}
+extension NSLayoutGuide: LayoutSurface {}
 
 #endif

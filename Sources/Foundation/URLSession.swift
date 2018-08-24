@@ -38,7 +38,7 @@ extension URLSession {
 	
 	/// Based on this [blog post](https://oleb.net/blog/2018/03/making-illegal-states-unrepresentable/) by Ole Begemann.
 	public func dataTask(with url: URL, completionHandler: @escaping DataTaskCompletionHandler) -> URLSessionDataTask {
-		let task = dataTask(with: url) { (data, response, error) in
+		let task = dataTask(with: url) { data, response, error in
 			if let data = data, let response = response {
 				completionHandler(.success((data, response)))
 			} else if let error = error {
@@ -55,7 +55,7 @@ extension URLSession {
 	
 	/// Based on this [blog post](https://oleb.net/blog/2018/03/making-illegal-states-unrepresentable/) by Ole Begemann.
 	public func downloadTask(with url: URL, completionHandler: @escaping DownloadTaskCompletionHandler) -> URLSessionDownloadTask {
-		let task = downloadTask(with: url) { (url, response, error) in
+		let task = downloadTask(with: url) { url, response, error in
 			if let url = url, let response = response {
 				completionHandler(.success((url, response)))
 			} else if let error = error {

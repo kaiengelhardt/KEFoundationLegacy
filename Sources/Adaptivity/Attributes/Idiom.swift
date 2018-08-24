@@ -46,10 +46,14 @@ public enum Idiom: AdaptiveAttribute {
 	*/
 	public func generateTraitCollection() -> UITraitCollection {
 		switch self {
-		case .phone: return UITraitCollection(userInterfaceIdiom: .phone)
-		case .pad: return UITraitCollection(userInterfaceIdiom: .pad)
-		case .tv: return UITraitCollection(userInterfaceIdiom: .tv)
-		case .carPlay: return UITraitCollection(userInterfaceIdiom: .carPlay)
+		case .phone:
+			return UITraitCollection(userInterfaceIdiom: .phone)
+		case .pad:
+			return UITraitCollection(userInterfaceIdiom: .pad)
+		case .tv:
+			return UITraitCollection(userInterfaceIdiom: .tv)
+		case .carPlay:
+			return UITraitCollection(userInterfaceIdiom: .carPlay)
 		}
 	}
 	

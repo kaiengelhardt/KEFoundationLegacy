@@ -31,7 +31,7 @@
 
 import CoreData
 
-public protocol Managed : AnyObject, NSFetchRequestResult {
+public protocol Managed: AnyObject, NSFetchRequestResult {
 	
 	static var entityName: String { get }
 	
@@ -39,7 +39,7 @@ public protocol Managed : AnyObject, NSFetchRequestResult {
 	
 }
 
-public extension Managed where Self : NSManagedObject {
+public extension Managed where Self: NSManagedObject {
 	
 	public static var entityName: String {
 		return entity().name!
@@ -50,7 +50,7 @@ public extension Managed where Self : NSManagedObject {
 	}
 	
 	public static var sortedFetchRequest: NSFetchRequest<Self> {
-		let request = self.fetchRequest() as! NSFetchRequest<Self>
+		let request = self.fetchRequest() as! NSFetchRequest<Self> // swiftlint:disable:this force_cast
 		request.sortDescriptors = defaultSortDescriptors
 		return request
 	}
@@ -65,10 +65,10 @@ public extension Managed where Self : NSManagedObject {
 		return nil
 	}
 	
-	public static func fetch(in context: NSManagedObjectContext, configuration: (NSFetchRequest<Self>) -> () = { _ in }) -> [Self] {
+	public static func fetch(in context: NSManagedObjectContext, configuration: (NSFetchRequest<Self>) -> Void = { _ in }) -> [Self] {
 		let request = NSFetchRequest<Self>(entityName: Self.entityName)
 		configuration(request)
-		return try! context.fetch(request)
+		return try! context.fetch(request) // swiftlint:disable:this force_try
 	}
 	
 	public static func findOrFetch(in context: NSManagedObjectContext, matching predicate: NSPredicate) -> Self? {
@@ -79,7 +79,7 @@ public extension Managed where Self : NSManagedObject {
 				request.predicate = predicate
 				request.returnsObjectsAsFaults = false
 				request.fetchLimit = 1
-				}.first
+			}.first
 		}
 	}
 	
@@ -90,7 +90,7 @@ public extension Managed where Self : NSManagedObject {
 	///   - predicate: The predicate with which to search.
 	///   - configure: If no object was found this closure gets called with the newly created object passed in.
 	/// - Returns: The found or created object.
-	public static func findOrCreate(in context: NSManagedObjectContext, matching predicate: NSPredicate, configure: (Self) -> ()) -> Self {
+	public static func findOrCreate(in context: NSManagedObjectContext, matching predicate: NSPredicate, configure: (Self) -> Void) -> Self {
 		if let object = findOrFetch(in: context, matching: predicate) {
 			return object
 		} else {
@@ -100,7 +100,6 @@ public extension Managed where Self : NSManagedObject {
 		}
 	}
 	
-	
 	/// Searches for an object matching the predicate. If none was found, a new object is created. In both cases the `configure` closure is applied to it.
 	///
 	/// - Parameters:
@@ -109,7 +108,7 @@ public extension Managed where Self : NSManagedObject {
 	///   - configure: This closure gets called with the found or created object passed in.
 	/// - Returns: The found or created object.
 	@discardableResult
-	public static func updateOrCreate(in context: NSManagedObjectContext, matching predicate: NSPredicate, configure: (Self) -> ()) -> Self {
+	public static func updateOrCreate(in context: NSManagedObjectContext, matching predicate: NSPredicate, configure: (Self) -> Void) -> Self {
 		if let object = findOrFetch(in: context, matching: predicate) {
 			configure(object)
 			return object
@@ -121,7 +120,7 @@ public extension Managed where Self : NSManagedObject {
 	}
 	
 	public func fetched(in managedObjectContext: NSManagedObjectContext) -> Self {
-		let object = managedObjectContext.object(with: self.objectID) as! Self
+		let object = managedObjectContext.object(with: self.objectID) as! Self // swiftlint:disable:this force_cast
 		return object
 	}
 	

@@ -42,8 +42,10 @@ public enum DisplayGamut: AdaptiveAttribute {
 	*/
 	public func generateTraitCollection() -> UITraitCollection {
 		switch self {
-		case .SRGB: return UITraitCollection(displayGamut: .SRGB)
-		case .P3: return UITraitCollection(displayGamut: .P3)
+		case .SRGB:
+			return UITraitCollection(displayGamut: .SRGB)
+		case .P3:
+			return UITraitCollection(displayGamut: .P3)
 		}
 	}
 	

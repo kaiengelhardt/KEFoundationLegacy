@@ -31,7 +31,7 @@
 
 import UIKit
 
-public class KELabel : UILabel {
+public class KELabel: UILabel {
 	
 	public var textInsets: UIEdgeInsets = .zero {
 		didSet {
@@ -39,14 +39,14 @@ public class KELabel : UILabel {
 		}
 	}
 	
-	public override func textRect(forBounds bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
+	override public func textRect(forBounds bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
 		let insetRect = bounds.insetBy(insets: textInsets)
 		let textRect = super.textRect(forBounds: insetRect, limitedToNumberOfLines: numberOfLines)
 		let invertedInsets = -textInsets
 		return textRect.insetBy(insets: invertedInsets)
 	}
 	
-	public override func drawText(in rect: CGRect) {
+	override public func drawText(in rect: CGRect) {
 		super.drawText(in: UIEdgeInsetsInsetRect(rect, textInsets))
 	}
 	

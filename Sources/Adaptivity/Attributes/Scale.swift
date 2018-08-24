@@ -46,10 +46,14 @@ public enum Scale: AdaptiveAttribute {
 	*/
 	public func generateTraitCollection() -> UITraitCollection {
 		switch self {
-		case .oneX: return UITraitCollection(displayScale: 1.0)
-		case .twoX: return UITraitCollection(displayScale: 2.0)
-		case .threeX: return UITraitCollection(displayScale: 3.0)
-		case .fourX: return UITraitCollection(displayScale: 4.0)
+		case .oneX:
+			return UITraitCollection(displayScale: 1.0)
+		case .twoX:
+			return UITraitCollection(displayScale: 2.0)
+		case .threeX:
+			return UITraitCollection(displayScale: 3.0)
+		case .fourX:
+			return UITraitCollection(displayScale: 4.0)
 		}
 	}
 	

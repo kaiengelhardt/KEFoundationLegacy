@@ -42,8 +42,10 @@ public enum ForceTouch: AdaptiveAttribute {
 	*/
 	public func generateTraitCollection() -> UITraitCollection {
 		switch self {
-		case .unavailable: return UITraitCollection(forceTouchCapability: .unavailable)
-		case .available: return UITraitCollection(forceTouchCapability: .available)
+		case .unavailable:
+			return UITraitCollection(forceTouchCapability: .unavailable)
+		case .available:
+			return UITraitCollection(forceTouchCapability: .available)
 		}
 	}
 	

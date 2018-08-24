@@ -46,10 +46,14 @@ public enum SizeClass: AdaptiveAttribute {
 	*/
 	public func generateTraitCollection() -> UITraitCollection {
 		switch self {
-		case .horizontalCompact: return UITraitCollection(horizontalSizeClass: .compact)
-		case .horizontalRegular: return UITraitCollection(horizontalSizeClass: .regular)
-		case .verticalCompact: return UITraitCollection(verticalSizeClass: .compact)
-		case .verticalRegular: return UITraitCollection(verticalSizeClass: .regular)
+		case .horizontalCompact:
+			return UITraitCollection(horizontalSizeClass: .compact)
+		case .horizontalRegular:
+			return UITraitCollection(horizontalSizeClass: .regular)
+		case .verticalCompact:
+			return UITraitCollection(verticalSizeClass: .compact)
+		case .verticalRegular:
+			return UITraitCollection(verticalSizeClass: .regular)
 		}
 	}
 	

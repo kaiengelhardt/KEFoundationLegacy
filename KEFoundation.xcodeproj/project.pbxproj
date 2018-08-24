@@ -15,13 +15,13 @@
 		5E0A28231F915BDA00B8EB5F /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A28221F915BDA00B8EB5F /* CGSize.swift */; };
 		5E0A28251F9163EA00B8EB5F /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A28241F9163EA00B8EB5F /* CGPoint.swift */; };
 		5E0CE2D81F9DEF0600A58AA5 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0CE2D71F9DEF0600A58AA5 /* UITableView.swift */; };
-		5E0D5ADE20176573004E6949 /* CGPoint_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0D5ADD20176573004E6949 /* CGPoint_Tests.swift */; };
+		5E0D5ADE20176573004E6949 /* CGPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0D5ADD20176573004E6949 /* CGPointTests.swift */; };
 		5E0D5AE020176573004E6949 /* KEFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0A28001F91423800B8EB5F /* KEFoundation.framework */; };
-		5E0D5AE920176AF8004E6949 /* NSLayoutConstraint_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0D5AE820176AF8004E6949 /* NSLayoutConstraint_Tests.swift */; };
+		5E0D5AE920176AF8004E6949 /* NSLayoutConstraintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0D5AE820176AF8004E6949 /* NSLayoutConstraintTests.swift */; };
 		5E0D5AED20176C08004E6949 /* NSLayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0D5AEC20176C08004E6949 /* NSLayoutAnchor.swift */; };
 		5E0D5AEE20176C08004E6949 /* NSLayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0D5AEC20176C08004E6949 /* NSLayoutAnchor.swift */; };
-		5E0D5AF420176CFE004E6949 /* CGRect_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0D5AF320176CFE004E6949 /* CGRect_Tests.swift */; };
-		5E0D5AF620176E5C004E6949 /* NSDate_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0D5AF520176E5C004E6949 /* NSDate_Tests.swift */; };
+		5E0D5AF420176CFE004E6949 /* CGRectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0D5AF320176CFE004E6949 /* CGRectTests.swift */; };
+		5E0D5AF620176E5C004E6949 /* NSDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0D5AF520176E5C004E6949 /* NSDateTests.swift */; };
 		5E1150CD2091E3CD005C36F2 /* Throttler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1150CC2091E3CD005C36F2 /* Throttler.swift */; };
 		5E1150CE2091E3CD005C36F2 /* Throttler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1150CC2091E3CD005C36F2 /* Throttler.swift */; };
 		5E1150CF2091E3CD005C36F2 /* Throttler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1150CC2091E3CD005C36F2 /* Throttler.swift */; };
@@ -164,12 +164,12 @@
 		5E0A28241F9163EA00B8EB5F /* CGPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5E0CE2D71F9DEF0600A58AA5 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5E0D5ADB20176572004E6949 /* KEFoundation Unit Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KEFoundation Unit Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E0D5ADD20176573004E6949 /* CGPoint_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPoint_Tests.swift; sourceTree = "<group>"; usesTabs = 1; };
+		5E0D5ADD20176573004E6949 /* CGPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointTests.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5E0D5ADF20176573004E6949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5E0D5AE820176AF8004E6949 /* NSLayoutConstraint_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraint_Tests.swift; sourceTree = "<group>"; usesTabs = 1; };
+		5E0D5AE820176AF8004E6949 /* NSLayoutConstraintTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraintTests.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5E0D5AEC20176C08004E6949 /* NSLayoutAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutAnchor.swift; sourceTree = "<group>"; usesTabs = 1; };
-		5E0D5AF320176CFE004E6949 /* CGRect_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRect_Tests.swift; sourceTree = "<group>"; usesTabs = 1; };
-		5E0D5AF520176E5C004E6949 /* NSDate_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDate_Tests.swift; sourceTree = "<group>"; usesTabs = 1; };
+		5E0D5AF320176CFE004E6949 /* CGRectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectTests.swift; sourceTree = "<group>"; usesTabs = 1; };
+		5E0D5AF520176E5C004E6949 /* NSDateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDateTests.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5E1150CC2091E3CD005C36F2 /* Throttler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Throttler.swift; sourceTree = "<group>"; };
 		5E1150D02092027F005C36F2 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		5E16E2751F97BAA700D44BF4 /* CGRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; usesTabs = 1; };
@@ -382,9 +382,9 @@
 		5E0D5AEA20176B1A004E6949 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				5E0D5ADD20176573004E6949 /* CGPoint_Tests.swift */,
-				5E0D5AF320176CFE004E6949 /* CGRect_Tests.swift */,
-				5E0D5AF520176E5C004E6949 /* NSDate_Tests.swift */,
+				5E0D5ADD20176573004E6949 /* CGPointTests.swift */,
+				5E0D5AF320176CFE004E6949 /* CGRectTests.swift */,
+				5E0D5AF520176E5C004E6949 /* NSDateTests.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -392,7 +392,7 @@
 		5E0D5AEB20176B21004E6949 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				5E0D5AE820176AF8004E6949 /* NSLayoutConstraint_Tests.swift */,
+				5E0D5AE820176AF8004E6949 /* NSLayoutConstraintTests.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -499,6 +499,7 @@
 			buildConfigurationList = 5E0A28081F91423900B8EB5F /* Build configuration list for PBXNativeTarget "KEFoundation iOS" */;
 			buildPhases = (
 				5E0A27FB1F91423800B8EB5F /* Sources */,
+				5EC63FFC2130C91F00DC92BE /* SwiftLint */,
 				5E0A27FC1F91423800B8EB5F /* Frameworks */,
 				5E0A27FD1F91423800B8EB5F /* Headers */,
 				5E0A27FE1F91423800B8EB5F /* Resources */,
@@ -646,6 +647,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5EC63FFC2130C91F00DC92BE /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5E0A27FB1F91423800B8EB5F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -709,10 +727,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E0D5ADE20176573004E6949 /* CGPoint_Tests.swift in Sources */,
-				5E0D5AE920176AF8004E6949 /* NSLayoutConstraint_Tests.swift in Sources */,
-				5E0D5AF620176E5C004E6949 /* NSDate_Tests.swift in Sources */,
-				5E0D5AF420176CFE004E6949 /* CGRect_Tests.swift in Sources */,
+				5E0D5ADE20176573004E6949 /* CGPointTests.swift in Sources */,
+				5E0D5AE920176AF8004E6949 /* NSLayoutConstraintTests.swift in Sources */,
+				5E0D5AF620176E5C004E6949 /* NSDateTests.swift in Sources */,
+				5E0D5AF420176CFE004E6949 /* CGRectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

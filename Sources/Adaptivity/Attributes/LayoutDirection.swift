@@ -42,8 +42,10 @@ public enum LayoutDirection: AdaptiveAttribute {
 	*/
 	public func generateTraitCollection() -> UITraitCollection {
 		switch self {
-		case .leftToRight: return UITraitCollection(layoutDirection: .leftToRight)
-		case .rightToLeft: return UITraitCollection(layoutDirection: .rightToLeft)
+		case .leftToRight:
+			return UITraitCollection(layoutDirection: .leftToRight)
+		case .rightToLeft:
+			return UITraitCollection(layoutDirection: .rightToLeft)
 		}
 	}
 	
