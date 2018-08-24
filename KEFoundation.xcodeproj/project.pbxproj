@@ -66,8 +66,8 @@
 		5EC63FAD212F686E00DC92BE /* LayoutConstraintContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC63FAA212F686E00DC92BE /* LayoutConstraintContainer.swift */; };
 		5EC63FD92130C36B00DC92BE /* ForceTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC63FCB2130C36A00DC92BE /* ForceTouch.swift */; };
 		5EC63FDA2130C36B00DC92BE /* ForceTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC63FCB2130C36A00DC92BE /* ForceTouch.swift */; };
-		5EC63FDB2130C36B00DC92BE /* AdaptiveAttributeTraitCollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC63FCC2130C36A00DC92BE /* AdaptiveAttributeTraitCollectionExtension.swift */; };
-		5EC63FDC2130C36B00DC92BE /* AdaptiveAttributeTraitCollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC63FCC2130C36A00DC92BE /* AdaptiveAttributeTraitCollectionExtension.swift */; };
+		5EC63FDB2130C36B00DC92BE /* UITraitCollection+AdaptiveAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC63FCC2130C36A00DC92BE /* UITraitCollection+AdaptiveAttribute.swift */; };
+		5EC63FDC2130C36B00DC92BE /* UITraitCollection+AdaptiveAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC63FCC2130C36A00DC92BE /* UITraitCollection+AdaptiveAttribute.swift */; };
 		5EC63FDD2130C36B00DC92BE /* AdaptiveAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC63FCD2130C36A00DC92BE /* AdaptiveAttribute.swift */; };
 		5EC63FDE2130C36B00DC92BE /* AdaptiveAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC63FCD2130C36A00DC92BE /* AdaptiveAttribute.swift */; };
 		5EC63FDF2130C36B00DC92BE /* SizeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC63FCE2130C36A00DC92BE /* SizeCategory.swift */; };
@@ -192,7 +192,7 @@
 		5EAB17A720229DA5008A5369 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5EC63FAA212F686E00DC92BE /* LayoutConstraintContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstraintContainer.swift; sourceTree = "<group>"; };
 		5EC63FCB2130C36A00DC92BE /* ForceTouch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForceTouch.swift; sourceTree = "<group>"; };
-		5EC63FCC2130C36A00DC92BE /* AdaptiveAttributeTraitCollectionExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdaptiveAttributeTraitCollectionExtension.swift; sourceTree = "<group>"; };
+		5EC63FCC2130C36A00DC92BE /* UITraitCollection+AdaptiveAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITraitCollection+AdaptiveAttribute.swift"; sourceTree = "<group>"; };
 		5EC63FCD2130C36A00DC92BE /* AdaptiveAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdaptiveAttribute.swift; sourceTree = "<group>"; };
 		5EC63FCE2130C36A00DC92BE /* SizeCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeCategory.swift; sourceTree = "<group>"; };
 		5EC63FCF2130C36A00DC92BE /* AdaptiveBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdaptiveBehavior.swift; sourceTree = "<group>"; };
@@ -289,10 +289,10 @@
 		5E0A280C1F91473800B8EB5F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				5EC63FCA2130C33700DC92BE /* Adaptation */,
 				5E0A28211F915BCB00B8EB5F /* Foundation */,
 				5E0A28121F9147A400B8EB5F /* UIKit */,
 				5EE7594A20C011CB00353163 /* Auto Layout */,
+				5EC63FCA2130C33700DC92BE /* Adaptivity */,
 				5E0A280D1F91475C00B8EB5F /* Core Data */,
 				5E1150D4209202BD005C36F2 /* Result */,
 				5E8269492093863B00FFA69D /* Throttler */,
@@ -413,16 +413,20 @@
 			path = Throttler;
 			sourceTree = "<group>";
 		};
-		5EC63FCA2130C33700DC92BE /* Adaptation */ = {
+		5EC63FCA2130C33700DC92BE /* Adaptivity */ = {
+			isa = PBXGroup;
+			children = (
+				5EC63FD62130C36B00DC92BE /* AdaptiveInterface.swift */,
+				5EC63FF62130C41900DC92BE /* Elements */,
+				5EC63FF52130C3B800DC92BE /* Attributes */,
+			);
+			path = Adaptivity;
+			sourceTree = "<group>";
+		};
+		5EC63FF52130C3B800DC92BE /* Attributes */ = {
 			isa = PBXGroup;
 			children = (
 				5EC63FCD2130C36A00DC92BE /* AdaptiveAttribute.swift */,
-				5EC63FCC2130C36A00DC92BE /* AdaptiveAttributeTraitCollectionExtension.swift */,
-				5EC63FCF2130C36A00DC92BE /* AdaptiveBehavior.swift */,
-				5EC63FD52130C36B00DC92BE /* AdaptiveConstraintContainer.swift */,
-				5EC63FD22130C36B00DC92BE /* AdaptiveElement.swift */,
-				5EC63FD62130C36B00DC92BE /* AdaptiveInterface.swift */,
-				5EC63FD02130C36A00DC92BE /* AdaptiveViewContainer.swift */,
 				5EC63FD72130C36B00DC92BE /* DisplayGamut.swift */,
 				5EC63FCB2130C36A00DC92BE /* ForceTouch.swift */,
 				5EC63FD82130C36B00DC92BE /* Idiom.swift */,
@@ -430,8 +434,20 @@
 				5EC63FD32130C36B00DC92BE /* Scale.swift */,
 				5EC63FCE2130C36A00DC92BE /* SizeCategory.swift */,
 				5EC63FD42130C36B00DC92BE /* SizeClass.swift */,
+				5EC63FCC2130C36A00DC92BE /* UITraitCollection+AdaptiveAttribute.swift */,
 			);
-			path = Adaptation;
+			path = Attributes;
+			sourceTree = "<group>";
+		};
+		5EC63FF62130C41900DC92BE /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				5EC63FD22130C36B00DC92BE /* AdaptiveElement.swift */,
+				5EC63FD52130C36B00DC92BE /* AdaptiveConstraintContainer.swift */,
+				5EC63FCF2130C36A00DC92BE /* AdaptiveBehavior.swift */,
+				5EC63FD02130C36A00DC92BE /* AdaptiveViewContainer.swift */,
+			);
+			path = Elements;
 			sourceTree = "<group>";
 		};
 		5EE7594A20C011CB00353163 /* Auto Layout */ = {
@@ -683,7 +699,7 @@
 				5EC63FAB212F686E00DC92BE /* LayoutConstraintContainer.swift in Sources */,
 				5E8269522093A57800FFA69D /* ClosureValueTransformer.swift in Sources */,
 				5E0A28101F91476C00B8EB5F /* FetchedResultsUpdater.swift in Sources */,
-				5EC63FDB2130C36B00DC92BE /* AdaptiveAttributeTraitCollectionExtension.swift in Sources */,
+				5EC63FDB2130C36B00DC92BE /* UITraitCollection+AdaptiveAttribute.swift in Sources */,
 				5EAB179E20222E08008A5369 /* NotificationObserver.swift in Sources */,
 				5EC63FE52130C36B00DC92BE /* LayoutDirection.swift in Sources */,
 			);
@@ -713,7 +729,7 @@
 				5EC63FE62130C36B00DC92BE /* LayoutDirection.swift in Sources */,
 				5EC63FE02130C36B00DC92BE /* SizeCategory.swift in Sources */,
 				5EEC3C0E1FDB5140003F8A73 /* Int.swift in Sources */,
-				5EC63FDC2130C36B00DC92BE /* AdaptiveAttributeTraitCollectionExtension.swift in Sources */,
+				5EC63FDC2130C36B00DC92BE /* UITraitCollection+AdaptiveAttribute.swift in Sources */,
 				5EAB17972022166E008A5369 /* ContextWatcher.swift in Sources */,
 				5EC63FF22130C36B00DC92BE /* DisplayGamut.swift in Sources */,
 				5EEC3C121FDB5140003F8A73 /* CGRect.swift in Sources */,

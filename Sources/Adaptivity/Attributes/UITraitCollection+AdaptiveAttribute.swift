@@ -1,5 +1,5 @@
 //
-//  AdaptiveAttributeTraitCollectionExtension.swift
+//  UITraitCollection+AdaptiveAttribute.swift
 //  Briggs
 //
 //  Copyright (c) 2017 Ada Turner (https://github.com/auswahlaxiom)
