@@ -26,30 +26,31 @@
 import UIKit
 
 /**
- `AdaptiveAttribute` correlating to `UITraitCollection.init(horizontalSizeClass: UIUserInterfaceSizeClass)` and `UITraitCollection.init(verticalSizeClass: UIUserInterfaceSizeClass)`
- */
+`AdaptiveAttribute` correlating to `UITraitCollection.init(horizontalSizeClass: UIUserInterfaceSizeClass)` and `UITraitCollection.init(verticalSizeClass: UIUserInterfaceSizeClass)`
+*/
 public enum SizeClass: AdaptiveAttribute {
-
-    /// Corelates to `UITraitCollection(horizontalSizeClass: .compact)`
-    case horizontalCompact
-    /// Corelates to `UITraitCollection(horizontalSizeClass: .regular)`
-    case horizontalRegular
-    /// Corelates to `UITraitCollection(verticalSizeClass: .compact)`
-    case verticalCompact
-    /// Corelates to `UITraitCollection(verticalSizeClass: .regular)`
-    case verticalRegular
-
-    /**
-     Creates `UITraitCollection` with correlating `UIUserInterfaceSizeClass`
-
-     - returns: New `UITraitCollection` with correlating `horizontalSizeClass` or `verticalSizeClass`
-     */
-    public func generateTraitCollection() -> UITraitCollection {
-        switch self {
-        case .horizontalCompact: return UITraitCollection(horizontalSizeClass: .compact)
-        case .horizontalRegular: return UITraitCollection(horizontalSizeClass: .regular)
-        case .verticalCompact: return UITraitCollection(verticalSizeClass: .compact)
-        case .verticalRegular: return UITraitCollection(verticalSizeClass: .regular)
-        }
-    }
+	
+	/// Corelates to `UITraitCollection(horizontalSizeClass: .compact)`
+	case horizontalCompact
+	/// Corelates to `UITraitCollection(horizontalSizeClass: .regular)`
+	case horizontalRegular
+	/// Corelates to `UITraitCollection(verticalSizeClass: .compact)`
+	case verticalCompact
+	/// Corelates to `UITraitCollection(verticalSizeClass: .regular)`
+	case verticalRegular
+	
+	/**
+	Creates `UITraitCollection` with correlating `UIUserInterfaceSizeClass`
+	
+	- returns: New `UITraitCollection` with correlating `horizontalSizeClass` or `verticalSizeClass`
+	*/
+	public func generateTraitCollection() -> UITraitCollection {
+		switch self {
+		case .horizontalCompact: return UITraitCollection(horizontalSizeClass: .compact)
+		case .horizontalRegular: return UITraitCollection(horizontalSizeClass: .regular)
+		case .verticalCompact: return UITraitCollection(verticalSizeClass: .compact)
+		case .verticalRegular: return UITraitCollection(verticalSizeClass: .regular)
+		}
+	}
+	
 }

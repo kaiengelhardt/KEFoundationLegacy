@@ -26,30 +26,31 @@
 import UIKit
 
 /**
- `AdaptiveAttribute` correlating to `UITraitCollection.init(userInterfaceIdiom idiom: UIUserInterfaceIdiom)`
- */
+`AdaptiveAttribute` correlating to `UITraitCollection.init(userInterfaceIdiom idiom: UIUserInterfaceIdiom)`
+*/
 public enum Idiom: AdaptiveAttribute {
-
-    /// Corelates to `UITraitCollection(userInterfaceIdiom: .phone)`
-    case phone
-    /// Corelates to `UITraitCollection(userInterfaceIdiom: .pad)`
-    case pad
-    /// Corelates to `UITraitCollection(userInterfaceIdiom: .tv)`
-    case tv
-    /// Corelates to `UITraitCollection(userInterfaceIdiom: .carPlay)`
-    case carPlay
-
-    /**
-     Creates `UITraitCollection` with correlating `UIUserInterfaceIdiom`
-
-     - returns: New `UITraitCollection` with correlating `userInterfaceIdiom`
-     */
-    public func generateTraitCollection() -> UITraitCollection {
-        switch self {
-        case .phone: return UITraitCollection(userInterfaceIdiom: .phone)
-        case .pad: return UITraitCollection(userInterfaceIdiom: .pad)
-        case .tv: return UITraitCollection(userInterfaceIdiom: .tv)
-        case .carPlay: return UITraitCollection(userInterfaceIdiom: .carPlay)
-        }
-    }
+	
+	/// Corelates to `UITraitCollection(userInterfaceIdiom: .phone)`
+	case phone
+	/// Corelates to `UITraitCollection(userInterfaceIdiom: .pad)`
+	case pad
+	/// Corelates to `UITraitCollection(userInterfaceIdiom: .tv)`
+	case tv
+	/// Corelates to `UITraitCollection(userInterfaceIdiom: .carPlay)`
+	case carPlay
+	
+	/**
+	Creates `UITraitCollection` with correlating `UIUserInterfaceIdiom`
+	
+	- returns: New `UITraitCollection` with correlating `userInterfaceIdiom`
+	*/
+	public func generateTraitCollection() -> UITraitCollection {
+		switch self {
+		case .phone: return UITraitCollection(userInterfaceIdiom: .phone)
+		case .pad: return UITraitCollection(userInterfaceIdiom: .pad)
+		case .tv: return UITraitCollection(userInterfaceIdiom: .tv)
+		case .carPlay: return UITraitCollection(userInterfaceIdiom: .carPlay)
+		}
+	}
+	
 }

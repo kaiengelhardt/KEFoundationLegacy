@@ -26,24 +26,25 @@
 import UIKit
 
 /**
- `AdaptiveAttribute` correlating to `init(displayGamut: UIDisplayGamut)`
- */
+`AdaptiveAttribute` correlating to `init(displayGamut: UIDisplayGamut)`
+*/
 public enum DisplayGamut: AdaptiveAttribute {
-
-    /// Corelates to `UITraitCollection(displayGamut: .SRGB)`
-    case SRGB
-    /// Corelates to `UITraitCollection(displayGamut: .P3)`
-    case P3
-
-    /**
-     Creates `UITraitCollection` with correlating `UIUserInterfaceDisplayGamut`
-
-     - returns: New `UITraitCollection` with correlating `displayGamut`
-     */
-    public func generateTraitCollection() -> UITraitCollection {
-        switch self {
-        case .SRGB: return UITraitCollection(displayGamut: .SRGB)
-        case .P3: return UITraitCollection(displayGamut: .P3)
-        }
-    }
+	
+	/// Corelates to `UITraitCollection(displayGamut: .SRGB)`
+	case SRGB
+	/// Corelates to `UITraitCollection(displayGamut: .P3)`
+	case P3
+	
+	/**
+	Creates `UITraitCollection` with correlating `UIUserInterfaceDisplayGamut`
+	
+	- returns: New `UITraitCollection` with correlating `displayGamut`
+	*/
+	public func generateTraitCollection() -> UITraitCollection {
+		switch self {
+		case .SRGB: return UITraitCollection(displayGamut: .SRGB)
+		case .P3: return UITraitCollection(displayGamut: .P3)
+		}
+	}
+	
 }

@@ -26,24 +26,25 @@
 import UIKit
 
 /**
- `AdaptiveAttribute` correlating to `init(layoutDirection: UITraitEnvironmentLayoutDirection)`
- */
+`AdaptiveAttribute` correlating to `init(layoutDirection: UITraitEnvironmentLayoutDirection)`
+*/
 public enum LayoutDirection: AdaptiveAttribute {
-
-    /// Corelates to `UITraitCollection(layoutDirection: .leftToRight)`
-    case leftToRight
-    /// Corelates to `UITraitCollection(layoutDirection: .rightToLeft)`
-    case rightToLeft
-
-    /**
-     Creates `UITraitCollection` with correlating `UIUserInterfaceLayoutDirection`
-
-     - returns: New `UITraitCollection` with correlating `layoutDirection`
-     */
-    public func generateTraitCollection() -> UITraitCollection {
-        switch self {
-        case .leftToRight: return UITraitCollection(layoutDirection: .leftToRight)
-        case .rightToLeft: return UITraitCollection(layoutDirection: .rightToLeft)
-        }
-    }
+	
+	/// Corelates to `UITraitCollection(layoutDirection: .leftToRight)`
+	case leftToRight
+	/// Corelates to `UITraitCollection(layoutDirection: .rightToLeft)`
+	case rightToLeft
+	
+	/**
+	Creates `UITraitCollection` with correlating `UIUserInterfaceLayoutDirection`
+	
+	- returns: New `UITraitCollection` with correlating `layoutDirection`
+	*/
+	public func generateTraitCollection() -> UITraitCollection {
+		switch self {
+		case .leftToRight: return UITraitCollection(layoutDirection: .leftToRight)
+		case .rightToLeft: return UITraitCollection(layoutDirection: .rightToLeft)
+		}
+	}
+	
 }

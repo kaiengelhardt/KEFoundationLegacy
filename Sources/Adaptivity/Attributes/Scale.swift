@@ -26,30 +26,31 @@
 import UIKit
 
 /**
- `AdaptiveAttribute` correlating to `UITraitCollection.init(displayScale scale: CGFloat)`
- */
+`AdaptiveAttribute` correlating to `UITraitCollection.init(displayScale scale: CGFloat)`
+*/
 public enum Scale: AdaptiveAttribute {
-
-    /// Corelates to `UITraitCollection(displayScale: 1.0)`
-    case oneX
-    /// Corelates to `UITraitCollection(displayScale: 2.0)`
-    case twoX
-    /// Corelates to `UITraitCollection(displayScale: 3.0)`
-    case threeX
-    /// SO FUTURE!!! Corelates to `UITraitCollection(displayScale: 4.0)`
-    case fourX
-
-    /**
-     Creates `UITraitCollection` with correlating `CGFloat` scale
-
-     - returns: New `UITraitCollection` with correlating `displayScale`
-     */
-    public func generateTraitCollection() -> UITraitCollection {
-        switch self {
-        case .oneX: return UITraitCollection(displayScale: 1.0)
-        case .twoX: return UITraitCollection(displayScale: 2.0)
-        case .threeX: return UITraitCollection(displayScale: 3.0)
-        case .fourX: return UITraitCollection(displayScale: 4.0)
-        }
-    }
+	
+	/// Corelates to `UITraitCollection(displayScale: 1.0)`
+	case oneX
+	/// Corelates to `UITraitCollection(displayScale: 2.0)`
+	case twoX
+	/// Corelates to `UITraitCollection(displayScale: 3.0)`
+	case threeX
+	/// SO FUTURE!!! Corelates to `UITraitCollection(displayScale: 4.0)`
+	case fourX
+	
+	/**
+	Creates `UITraitCollection` with correlating `CGFloat` scale
+	
+	- returns: New `UITraitCollection` with correlating `displayScale`
+	*/
+	public func generateTraitCollection() -> UITraitCollection {
+		switch self {
+		case .oneX: return UITraitCollection(displayScale: 1.0)
+		case .twoX: return UITraitCollection(displayScale: 2.0)
+		case .threeX: return UITraitCollection(displayScale: 3.0)
+		case .fourX: return UITraitCollection(displayScale: 4.0)
+		}
+	}
+	
 }

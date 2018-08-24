@@ -26,54 +26,55 @@
 import UIKit
 
 /**
- `AdaptiveAttribute` correlating to `init(preferredContentSizeCategory: UIContentSizeCategory)`
- */
+`AdaptiveAttribute` correlating to `init(preferredContentSizeCategory: UIContentSizeCategory)`
+*/
 public enum SizeCategory: AdaptiveAttribute {
-
-    /// Corelates to `UITraitCollection(preferredContentSizeCategory: .extraSmall)
-    case extraSmall
-    /// Corelates to `UITraitCollection(preferredContentSizeCategory: .small)
-    case small
-    /// Corelates to `UITraitCollection(preferredContentSizeCategory: .medium)
-    case medium
-    /// Corelates to `UITraitCollection(preferredContentSizeCategory: .large)
-    case large
-    /// Corelates to `UITraitCollection(preferredContentSizeCategory: .extraLarge)
-    case extraLarge
-    /// Corelates to `UITraitCollection(preferredContentSizeCategory: .extraExtraLarge)
-    case extraExtraLarge
-    /// Corelates to `UITraitCollection(preferredContentSizeCategory: .extraExtraExtraLarge)
-    case extraExtraExtraLarge
-    /// Corelates to `UITraitCollection(preferredContentSizeCategory: .accessibilityMedium)
-    case accessibilityMedium
-    /// Corelates to `UITraitCollection(preferredContentSizeCategory: .accessibilityLarge)
-    case accessibilityLarge
-    /// Corelates to `UITraitCollection(preferredContentSizeCategory: .accessibilityExtraLarge)
-    case accessibilityExtraLarge
-    /// Corelates to `UITraitCollection(preferredContentSizeCategory: .accessibilityExtraExtraLarge)
-    case accessibilityExtraExtraLarge
-    /// Corelates to `UITraitCollection(preferredContentSizeCategory: .accessibilityExtraExtraExtraLarge)
-    case accessibilityExtraExtraExtraLarge
-
-    /**
-     Creates `UITraitCollection` with correlating `UIUserInterfaceSizeCategory`
-
-     - returns: New `UITraitCollection` with correlating `sizeCategory`
-     */
-    public func generateTraitCollection() -> UITraitCollection {
-        switch self {
-        case .extraSmall: return UITraitCollection(preferredContentSizeCategory: .extraSmall)
-        case .small: return UITraitCollection(preferredContentSizeCategory: .small)
-        case .medium: return UITraitCollection(preferredContentSizeCategory: .medium)
-        case .large: return UITraitCollection(preferredContentSizeCategory: .large)
-        case .extraLarge: return UITraitCollection(preferredContentSizeCategory: .extraLarge)
-        case .extraExtraLarge: return UITraitCollection(preferredContentSizeCategory: .extraExtraLarge)
-        case .extraExtraExtraLarge: return UITraitCollection(preferredContentSizeCategory: .extraExtraExtraLarge)
-        case .accessibilityMedium: return UITraitCollection(preferredContentSizeCategory: .accessibilityMedium)
-        case .accessibilityLarge: return UITraitCollection(preferredContentSizeCategory: .accessibilityLarge)
-        case .accessibilityExtraLarge: return UITraitCollection(preferredContentSizeCategory: .accessibilityExtraLarge)
-        case .accessibilityExtraExtraLarge: return UITraitCollection(preferredContentSizeCategory: .accessibilityExtraExtraLarge)
-        case .accessibilityExtraExtraExtraLarge: return UITraitCollection(preferredContentSizeCategory: .accessibilityExtraExtraExtraLarge)
-        }
-    }
+	
+	/// Corelates to `UITraitCollection(preferredContentSizeCategory: .extraSmall)
+	case extraSmall
+	/// Corelates to `UITraitCollection(preferredContentSizeCategory: .small)
+	case small
+	/// Corelates to `UITraitCollection(preferredContentSizeCategory: .medium)
+	case medium
+	/// Corelates to `UITraitCollection(preferredContentSizeCategory: .large)
+	case large
+	/// Corelates to `UITraitCollection(preferredContentSizeCategory: .extraLarge)
+	case extraLarge
+	/// Corelates to `UITraitCollection(preferredContentSizeCategory: .extraExtraLarge)
+	case extraExtraLarge
+	/// Corelates to `UITraitCollection(preferredContentSizeCategory: .extraExtraExtraLarge)
+	case extraExtraExtraLarge
+	/// Corelates to `UITraitCollection(preferredContentSizeCategory: .accessibilityMedium)
+	case accessibilityMedium
+	/// Corelates to `UITraitCollection(preferredContentSizeCategory: .accessibilityLarge)
+	case accessibilityLarge
+	/// Corelates to `UITraitCollection(preferredContentSizeCategory: .accessibilityExtraLarge)
+	case accessibilityExtraLarge
+	/// Corelates to `UITraitCollection(preferredContentSizeCategory: .accessibilityExtraExtraLarge)
+	case accessibilityExtraExtraLarge
+	/// Corelates to `UITraitCollection(preferredContentSizeCategory: .accessibilityExtraExtraExtraLarge)
+	case accessibilityExtraExtraExtraLarge
+	
+	/**
+	Creates `UITraitCollection` with correlating `UIUserInterfaceSizeCategory`
+	
+	- returns: New `UITraitCollection` with correlating `sizeCategory`
+	*/
+	public func generateTraitCollection() -> UITraitCollection {
+		switch self {
+		case .extraSmall: return UITraitCollection(preferredContentSizeCategory: .extraSmall)
+		case .small: return UITraitCollection(preferredContentSizeCategory: .small)
+		case .medium: return UITraitCollection(preferredContentSizeCategory: .medium)
+		case .large: return UITraitCollection(preferredContentSizeCategory: .large)
+		case .extraLarge: return UITraitCollection(preferredContentSizeCategory: .extraLarge)
+		case .extraExtraLarge: return UITraitCollection(preferredContentSizeCategory: .extraExtraLarge)
+		case .extraExtraExtraLarge: return UITraitCollection(preferredContentSizeCategory: .extraExtraExtraLarge)
+		case .accessibilityMedium: return UITraitCollection(preferredContentSizeCategory: .accessibilityMedium)
+		case .accessibilityLarge: return UITraitCollection(preferredContentSizeCategory: .accessibilityLarge)
+		case .accessibilityExtraLarge: return UITraitCollection(preferredContentSizeCategory: .accessibilityExtraLarge)
+		case .accessibilityExtraExtraLarge: return UITraitCollection(preferredContentSizeCategory: .accessibilityExtraExtraLarge)
+		case .accessibilityExtraExtraExtraLarge: return UITraitCollection(preferredContentSizeCategory: .accessibilityExtraExtraExtraLarge)
+		}
+	}
+	
 }
