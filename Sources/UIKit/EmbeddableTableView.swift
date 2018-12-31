@@ -31,7 +31,7 @@
 
 import UIKit
 
-public class EmbeddableTableView : UITableView {
+public class EmbeddableTableView: UITableView {
 	
 	public override var contentSize: CGSize {
 		didSet {

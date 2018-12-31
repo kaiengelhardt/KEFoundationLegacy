@@ -1,5 +1,5 @@
 //
-//  CGRect_Tests.swift
+//  CGRectTests.swift
 //  KEFoundation
 //
 //  Created by Kai Engelhardt on 23.01.18
@@ -29,10 +29,10 @@
 //  SOFTWARE.
 //
 
-import XCTest
 @testable import KEFoundation
+import XCTest
 
-class CGRect_Tests: XCTestCase {
+class CGRectTests: XCTestCase {
     
 	func testInsetBy() {
 		let rect = CGRect(x: 30, y: 0, width: 100, height: 80)

@@ -67,7 +67,8 @@ public class ContextWatcher {
 		masterPredicate = NSCompoundPredicate(orPredicateWithSubpredicates: [finalPredicate, currentMasterPredicate])
 	}
 	
-	@objc func managedObjectContextDidSave(notification: Notification) {
+	@objc
+	func managedObjectContextDidSave(notification: Notification) {
 		guard
 			let context = notification.object as? NSManagedObjectContext,
 			persistentStoreCoordinator == context.persistentStoreCoordinator
@@ -83,14 +84,14 @@ public class ContextWatcher {
 			updatedObjects = updatedObjects.filter(masterPredicate.evaluator)
 			deletedObjects = deletedObjects.filter(masterPredicate.evaluator)
 		}
-		if addedObjects.count + updatedObjects.count + deletedObjects.count > 0 {
+		if addedObjects.count + updatedObjects.count + deletedObjects.count > 0 { // swiftlint:disable:this empty_count
 			delegate?.contextWatcher(self, addedObjects: addedObjects, updatedObjects: updatedObjects, deletedObjects: deletedObjects)
 		}
 	}
 	
 }
 
-public protocol ContextWatcherDelegate : AnyObject {
+public protocol ContextWatcherDelegate: AnyObject {
 	
 	func contextWatcher(_ watcher: ContextWatcher, addedObjects: Set<NSManagedObject>, updatedObjects: Set<NSManagedObject>, deletedObjects: Set<NSManagedObject>)
 	

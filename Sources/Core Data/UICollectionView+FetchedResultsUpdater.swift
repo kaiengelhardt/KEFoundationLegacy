@@ -31,7 +31,7 @@
 
 import UIKit
 
-extension UICollectionView : FetchedResultsUpdaterDelegate {
+extension UICollectionView: FetchedResultsUpdaterDelegate {
 	
 	public func updater(_ updater: FetchedResultsUpdater, didUpdateWithSectionUpdates sectionUpdates: [FetchedResultsUpdater.SectionUpdate], rowUpdates: [FetchedResultsUpdater.RowUpdate]) {
 		performBatchUpdates({
@@ -52,7 +52,7 @@ extension UICollectionView : FetchedResultsUpdaterDelegate {
 					deleteItems(at: [indexPath])
 				case .update(let indexPath):
 					reloadItems(at: [indexPath])
-				case .move(let fromIndexPath, let toIndexPath):
+				case .move(let (fromIndexPath, toIndexPath)):
 					reloadItems(at: [fromIndexPath, toIndexPath])
 				}
 			}

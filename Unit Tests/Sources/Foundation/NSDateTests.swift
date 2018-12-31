@@ -1,8 +1,8 @@
 //
-//  CGPoint_Tests.swift
+//  NSDateTests.swift
 //  KEFoundation
 //
-//  Created by Kai Engelhardt on 23.01.18
+//  Created by Kai Engelhardt on 24.01.18
 //  Copyright © 2018 Kai Engelhardt. All rights reserved.
 //
 //  Distributed under the permissive MIT license
@@ -29,47 +29,33 @@
 //  SOFTWARE.
 //
 
-import XCTest
 @testable import KEFoundation
+import XCTest
 
-class CGPoint_Tests: XCTestCase {
+class NSDateTests: XCTestCase {
 	
-	func testInitWithSize() {
-		let result = CGPoint(size: CGSize(width: 10, height: 20))
-		XCTAssertEqual(result, CGPoint(x: 10, y: 20))
-	}
-	
-    func testAddition() {
-		let result = CGPoint(x: 10, y: 10) + CGPoint(x: 20, y: 20)
-		XCTAssertEqual(result, CGPoint(x: 30, y: 30))
-    }
-	
-	func testSubtraction() {
-		let result = CGPoint(x: 20, y: 20) - CGPoint(x: 10, y: 10)
-		XCTAssertEqual(result, CGPoint(x: 10, y: 10))
-	}
-	
-	func testScalarMultipliation() {
-		let result = CGPoint(x: 10, y: 10) * 20
-		XCTAssertEqual(result, CGPoint(x: 200, y: 200))
+	func testNormalized() {
+		var calendar = Calendar(identifier: .gregorian)
+		calendar.timeZone = TimeZone(secondsFromGMT: 0)!
 		
-		let result2 = 20 * CGPoint(x: 10, y: 10)
-		XCTAssertEqual(result2, CGPoint(x: 200, y: 200))
-	}
-	
-	func testElementWiseMultiplication() {
-		let result = CGPoint(x: 10, y: 20) * CGPoint(x: 5, y: 2)
-		XCTAssertEqual(result, CGPoint(x: 50, y: 40))
-	}
-	
-	func testScalarDivision() {
-		let result = CGPoint(x: 100, y: 200) / 20
-		XCTAssertEqual(result, CGPoint(x: 5, y: 10))
-	}
-	
-	func testElementWiseDivision() {
-		let result = CGPoint(x: 10, y: 20) / CGPoint(x: 5, y: 2)
-		XCTAssertEqual(result, CGPoint(x: 2, y: 10))
+		var dateComponents = DateComponents()
+		dateComponents.year = 1_993
+		dateComponents.month = 1
+		dateComponents.day = 26
+		dateComponents.hour = 12
+		dateComponents.minute = 37
+		dateComponents.second = 15
+		
+		let date = calendar.date(from: dateComponents)!
+		let normalizedDate = date.normalized
+		let resultDateComponents = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: normalizedDate)
+		
+		XCTAssertEqual(resultDateComponents.year, 1_993)
+		XCTAssertEqual(resultDateComponents.month, 1)
+		XCTAssertEqual(resultDateComponents.day, 26)
+		XCTAssertEqual(resultDateComponents.hour, 0)
+		XCTAssertEqual(resultDateComponents.minute, 0)
+		XCTAssertEqual(resultDateComponents.second, 0)
 	}
 	
 }

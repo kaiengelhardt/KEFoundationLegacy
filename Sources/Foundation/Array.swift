@@ -60,7 +60,7 @@ public extension Array {
 	
 }
 
-public extension Array where Element : Hashable {
+public extension Array where Element: Hashable {
 	
 	/// Returns an array containing the unique elements from the current array.
 	public func unique() -> [Element] {

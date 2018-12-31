@@ -31,7 +31,7 @@
 
 import UIKit
 
-public class ContainerView : UIView {
+public class ContainerView: UIView {
 	
 	public var embeddedView: UIView? {
 		didSet {

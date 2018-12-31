@@ -1,8 +1,8 @@
 //
-//  LayoutActivatable.swift
+//  NSLayoutConstraintTests.swift
 //  KEFoundation
 //
-//  Created by Kai Engelhardt on 31.05.18
+//  Created by Kai Engelhardt on 23.01.18
 //  Copyright © 2018 Kai Engelhardt. All rights reserved.
 //
 //  Distributed under the permissive MIT license
@@ -29,39 +29,14 @@
 //  SOFTWARE.
 //
 
-#if canImport(UIKit)
+@testable import KEFoundation
+import XCTest
 
-import UIKit
-
-#elseif canImport(AppKit)
-
-import AppKit
-
-#endif
-
-public protocol LayoutActivatable {
-	
-	var constraints: [NSLayoutConstraint] { get }
-	
-}
-
-extension NSLayoutConstraint : LayoutActivatable {
-	
-	public var constraints: [NSLayoutConstraint] {
-		return [self]
+class NSLayoutConstraintTests: XCTestCase {
+    
+	func testConstraintWithPriority() {
+		let constraint = NSLayoutConstraint().with(priority: .defaultLow)
+		XCTAssertEqual(constraint.priority, .defaultLow)
 	}
-	
-	public class func activate(_ item: LayoutActivatable) {
-		let constraints = item.constraints
-		NSLayoutConstraint.activate(constraints)
-	}
-	
-}
-
-extension Array : LayoutActivatable where Element : LayoutActivatable {
-	
-	public var constraints: [NSLayoutConstraint] {
-		return flatMap { $0.constraints }
-	}
-	
+    
 }

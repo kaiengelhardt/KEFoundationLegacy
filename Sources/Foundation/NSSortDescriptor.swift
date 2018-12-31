@@ -37,7 +37,7 @@ public extension NSSortDescriptor {
 	
 	public var order: Order {
 		return {
-			return self.compare($0, to: $1) == .orderedAscending
+			self.compare($0, to: $1) == .orderedAscending
 		}
 	}
 	

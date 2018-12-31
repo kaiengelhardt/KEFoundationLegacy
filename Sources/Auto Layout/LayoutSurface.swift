@@ -1,5 +1,5 @@
 //
-//  Layoutable.swift
+//  LayoutSurface.swift
 //  KEFoundation
 //
 //  Created by Kai Engelhardt on 29.05.18
@@ -39,7 +39,7 @@ import AppKit
 
 #endif
 
-public protocol Layoutable {
+public protocol LayoutSurface {
 	
 	var leadingAnchor: NSLayoutXAxisAnchor { get }
 	var trailingAnchor: NSLayoutXAxisAnchor { get }
@@ -54,7 +54,7 @@ public protocol Layoutable {
 	
 }
 
-public extension Layoutable {
+public extension LayoutSurface {
 	
 	#if canImport(UIKit)
 	
@@ -67,8 +67,8 @@ public extension Layoutable {
 	
 	#endif
 	
-	public func constraintsMatchingEdges(of layoutable: Layoutable?, insetBy inset: EdgeInsets = .zero, relation: NSLayoutConstraint.Relation = .equal) -> [NSLayoutConstraint] {
-		guard let layoutable = layoutable else {
+	public func constraintsMatchingEdges(of surface: LayoutSurface?, insetBy inset: EdgeInsets = .zero, relation: NSLayoutConstraint.Relation = .equal) -> [NSLayoutConstraint] {
+		guard let surface = surface else {
 			return []
 		}
 		
@@ -79,32 +79,32 @@ public extension Layoutable {
 		switch relation {
 		case .equal:
 			constraints = [
-				layoutable.leadingAnchor.constraint(equalTo: leadingAnchor, constant: invertedInset.left),
-				trailingAnchor.constraint(equalTo: layoutable.trailingAnchor, constant: invertedInset.right),
-				layoutable.topAnchor.constraint(equalTo: topAnchor, constant: invertedInset.top),
-				bottomAnchor.constraint(equalTo: layoutable.bottomAnchor, constant: invertedInset.bottom),
+				surface.leadingAnchor.constraint(equalTo: leadingAnchor, constant: invertedInset.left),
+				trailingAnchor.constraint(equalTo: surface.trailingAnchor, constant: invertedInset.right),
+				surface.topAnchor.constraint(equalTo: topAnchor, constant: invertedInset.top),
+				bottomAnchor.constraint(equalTo: surface.bottomAnchor, constant: invertedInset.bottom),
 			]
 		case .lessThanOrEqual:
 			constraints = [
-				layoutable.leadingAnchor.constraint(lessThanOrEqualTo: leadingAnchor, constant: invertedInset.left),
-				trailingAnchor.constraint(lessThanOrEqualTo: layoutable.trailingAnchor, constant: invertedInset.right),
-				layoutable.topAnchor.constraint(lessThanOrEqualTo: topAnchor, constant: invertedInset.top),
-				bottomAnchor.constraint(lessThanOrEqualTo: layoutable.bottomAnchor, constant: invertedInset.bottom),
+				surface.leadingAnchor.constraint(lessThanOrEqualTo: leadingAnchor, constant: invertedInset.left),
+				trailingAnchor.constraint(lessThanOrEqualTo: surface.trailingAnchor, constant: invertedInset.right),
+				surface.topAnchor.constraint(lessThanOrEqualTo: topAnchor, constant: invertedInset.top),
+				bottomAnchor.constraint(lessThanOrEqualTo: surface.bottomAnchor, constant: invertedInset.bottom),
 			]
 		case .greaterThanOrEqual:
 			constraints = [
-				layoutable.leadingAnchor.constraint(greaterThanOrEqualTo: leadingAnchor, constant: invertedInset.left),
-				trailingAnchor.constraint(greaterThanOrEqualTo: layoutable.trailingAnchor, constant: invertedInset.right),
-				layoutable.topAnchor.constraint(greaterThanOrEqualTo: topAnchor, constant: invertedInset.top),
-				bottomAnchor.constraint(greaterThanOrEqualTo: layoutable.bottomAnchor, constant: invertedInset.bottom),
+				surface.leadingAnchor.constraint(greaterThanOrEqualTo: leadingAnchor, constant: invertedInset.left),
+				trailingAnchor.constraint(greaterThanOrEqualTo: surface.trailingAnchor, constant: invertedInset.right),
+				surface.topAnchor.constraint(greaterThanOrEqualTo: topAnchor, constant: invertedInset.top),
+				bottomAnchor.constraint(greaterThanOrEqualTo: surface.bottomAnchor, constant: invertedInset.bottom),
 			]
 		}
 		
 		return constraints
 	}
 	
-	public func constraintsMatchingCenter(of layoutable: Layoutable?, offsetBy offset: CGSize = .zero, relation: NSLayoutConstraint.Relation = .equal) -> [NSLayoutConstraint] {
-		guard let layoutable = layoutable else {
+	public func constraintsMatchingCenter(of surface: LayoutSurface?, offsetBy offset: CGSize = .zero, relation: NSLayoutConstraint.Relation = .equal) -> [NSLayoutConstraint] {
+		guard let surface = surface else {
 			return []
 		}
 		
@@ -113,26 +113,26 @@ public extension Layoutable {
 		switch relation {
 		case .equal:
 			constraints = [
-				centerXAnchor.constraint(equalTo: layoutable.centerXAnchor, constant: offset.width),
-				centerYAnchor.constraint(equalTo: layoutable.centerYAnchor, constant: offset.height),
+				centerXAnchor.constraint(equalTo: surface.centerXAnchor, constant: offset.width),
+				centerYAnchor.constraint(equalTo: surface.centerYAnchor, constant: offset.height),
 			]
 		case .lessThanOrEqual:
 			constraints = [
-				centerXAnchor.constraint(lessThanOrEqualTo: layoutable.centerXAnchor, constant: offset.width),
-				centerYAnchor.constraint(lessThanOrEqualTo: layoutable.centerYAnchor, constant: offset.height),
+				centerXAnchor.constraint(lessThanOrEqualTo: surface.centerXAnchor, constant: offset.width),
+				centerYAnchor.constraint(lessThanOrEqualTo: surface.centerYAnchor, constant: offset.height),
 			]
 		case .greaterThanOrEqual:
 			constraints = [
-				centerXAnchor.constraint(greaterThanOrEqualTo: layoutable.centerXAnchor, constant: offset.width),
-				centerYAnchor.constraint(greaterThanOrEqualTo: layoutable.centerYAnchor, constant: offset.height),
+				centerXAnchor.constraint(greaterThanOrEqualTo: surface.centerXAnchor, constant: offset.width),
+				centerYAnchor.constraint(greaterThanOrEqualTo: surface.centerYAnchor, constant: offset.height),
 			]
 		}
 		
 		return constraints
 	}
 	
-	public func constraintsMatchingSize(of layoutable: Layoutable?, resizedBy size: CGSize = .zero, multipliedBy multiplier: CGSize = CGSize(width: 1, height: 1), relation: NSLayoutConstraint.Relation = .equal) -> [NSLayoutConstraint] {
-		guard let layoutable = layoutable else {
+	public func constraintsMatchingSize(of surface: LayoutSurface?, resizedBy size: CGSize = .zero, multipliedBy multiplier: CGSize = CGSize(width: 1, height: 1), relation: NSLayoutConstraint.Relation = .equal) -> [NSLayoutConstraint] {
+		guard let surface = surface else {
 			return []
 		}
 		
@@ -141,18 +141,18 @@ public extension Layoutable {
 		switch relation {
 		case .equal:
 			constraints = [
-				widthAnchor.constraint(equalTo: layoutable.widthAnchor, multiplier: multiplier.width, constant: size.width),
-				heightAnchor.constraint(equalTo: layoutable.heightAnchor, multiplier: multiplier.height, constant: size.height),
+				widthAnchor.constraint(equalTo: surface.widthAnchor, multiplier: multiplier.width, constant: size.width),
+				heightAnchor.constraint(equalTo: surface.heightAnchor, multiplier: multiplier.height, constant: size.height),
 			]
 		case .lessThanOrEqual:
 			constraints = [
-				widthAnchor.constraint(lessThanOrEqualTo: layoutable.widthAnchor, multiplier: multiplier.width, constant: size.width),
-				heightAnchor.constraint(lessThanOrEqualTo: layoutable.heightAnchor, multiplier: multiplier.height, constant: size.height),
+				widthAnchor.constraint(lessThanOrEqualTo: surface.widthAnchor, multiplier: multiplier.width, constant: size.width),
+				heightAnchor.constraint(lessThanOrEqualTo: surface.heightAnchor, multiplier: multiplier.height, constant: size.height),
 			]
 		case .greaterThanOrEqual:
 			constraints = [
-				widthAnchor.constraint(greaterThanOrEqualTo: layoutable.widthAnchor, multiplier: multiplier.width, constant: size.width),
-				heightAnchor.constraint(greaterThanOrEqualTo: layoutable.heightAnchor, multiplier: multiplier.height, constant: size.height),
+				widthAnchor.constraint(greaterThanOrEqualTo: surface.widthAnchor, multiplier: multiplier.width, constant: size.width),
+				heightAnchor.constraint(greaterThanOrEqualTo: surface.heightAnchor, multiplier: multiplier.height, constant: size.height),
 			]
 		}
 		
@@ -175,7 +175,7 @@ private typealias View = NSView
 
 #endif
 
-extension View : Layoutable {
+extension View: LayoutSurface {
 	
 	#if canImport(UIKit)
 	
@@ -204,10 +204,10 @@ extension View : Layoutable {
 
 #if canImport(UIKit)
 
-extension UILayoutGuide : Layoutable {}
+extension UILayoutGuide: LayoutSurface {}
 
 #elseif canImport(AppKit)
 
-extension NSLayoutGuide : Layoutable {}
+extension NSLayoutGuide: LayoutSurface {}
 
 #endif

@@ -31,7 +31,7 @@
 
 import UIKit
 
-public class KELabel : UILabel {
+public class KELabel: UILabel {
 	
 	public var textInsets: UIEdgeInsets = .zero {
 		didSet {

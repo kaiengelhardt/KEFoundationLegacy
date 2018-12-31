@@ -31,7 +31,7 @@
 
 import UIKit
 
-open class ContainerViewController : UIViewController {
+open class ContainerViewController: UIViewController {
 	
 	public var embeddedViewController: UIViewController? {
 		didSet {
@@ -49,7 +49,7 @@ open class ContainerViewController : UIViewController {
 		}
 	}
 	
-	convenience public init() {
+	public convenience init() {
 		self.init(nibName: nil, bundle: nil)
 	}
 	
@@ -57,6 +57,7 @@ open class ContainerViewController : UIViewController {
 		super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 	}
 	
+	@available(*, unavailable)
 	public required init?(coder aDecoder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
 	}

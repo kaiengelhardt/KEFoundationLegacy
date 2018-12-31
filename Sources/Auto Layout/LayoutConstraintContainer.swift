@@ -1,8 +1,8 @@
 //
-//  NSLayoutConstraint_Tests.swift
+//  LayoutConstraintContainer.swift
 //  KEFoundation
 //
-//  Created by Kai Engelhardt on 23.01.18
+//  Created by Kai Engelhardt on 24.08.18
 //  Copyright © 2018 Kai Engelhardt. All rights reserved.
 //
 //  Distributed under the permissive MIT license
@@ -29,14 +29,42 @@
 //  SOFTWARE.
 //
 
-import XCTest
-@testable import KEFoundation
+#if canImport(UIKit)
 
-class NSLayoutConstraint_Tests: XCTestCase {
-    
-	func testConstraintWithPriority() {
-		let constraint = NSLayoutConstraint().with(priority: .defaultLow)
-		XCTAssertEqual(constraint.priority, .defaultLow)
+import UIKit
+
+#elseif canImport(AppKit)
+
+import AppKit
+
+#endif
+
+public protocol LayoutConstraintContainer {
+	
+	var constraints: [NSLayoutConstraint] { get }
+	
+}
+
+extension NSLayoutConstraint: LayoutConstraintContainer {
+	
+	public var constraints: [NSLayoutConstraint] {
+		return [self]
 	}
-    
+	
+	public class func activate(_ constraintContainer: LayoutConstraintContainer) {
+		self.activate(constraintContainer.constraints)
+	}
+	
+	public class func deactivate(_ constraintContainer: LayoutConstraintContainer) {
+		self.deactivate(constraintContainer.constraints)
+	}
+	
+}
+
+extension Array: LayoutConstraintContainer where Element: LayoutConstraintContainer {
+	
+	public var constraints: [NSLayoutConstraint] {
+		return flatMap { $0.constraints }
+	}
+	
 }

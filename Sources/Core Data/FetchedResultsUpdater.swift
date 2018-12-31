@@ -31,7 +31,7 @@
 
 import CoreData
 
-public class FetchedResultsUpdater : NSObject {
+public class FetchedResultsUpdater: NSObject {
 	
 	public enum SectionUpdate {
 		case insert(Int)
@@ -62,7 +62,7 @@ public class FetchedResultsUpdater : NSObject {
 	
 }
 
-extension FetchedResultsUpdater : NSFetchedResultsControllerDelegate {
+extension FetchedResultsUpdater: NSFetchedResultsControllerDelegate {
 	
 	public func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
 		sectionUpdates = []
@@ -77,7 +77,7 @@ extension FetchedResultsUpdater : NSFetchedResultsControllerDelegate {
 		case .delete:
 			sectionUpdates.append(.delete(sectionIndex))
 		default:
-			break;
+			break
 		}
 	}
 	
@@ -116,7 +116,7 @@ extension FetchedResultsUpdater : NSFetchedResultsControllerDelegate {
 	
 }
 
-public protocol FetchedResultsUpdaterDelegate : AnyObject {
+public protocol FetchedResultsUpdaterDelegate: AnyObject {
 	
 	func updater(_ updater: FetchedResultsUpdater, didUpdateWithSectionUpdates sectionUpdates: [FetchedResultsUpdater.SectionUpdate], rowUpdates: [FetchedResultsUpdater.RowUpdate])
 	

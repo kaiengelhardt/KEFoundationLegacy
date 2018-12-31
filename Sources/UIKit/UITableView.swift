@@ -61,7 +61,7 @@ public extension UITableView {
 		let indexPath = indexPathForSelectedRow
 		if let indexPath = indexPath {
 			deselectRow(at: indexPath, animated: true)
-			transitionCoordinator?.notifyWhenInteractionChanges { [weak self] (context) in
+			transitionCoordinator?.notifyWhenInteractionChanges { [weak self] context in
 				if context.isCancelled {
 					self?.selectRow(at: indexPath, animated: false, scrollPosition: .none)
 				}
