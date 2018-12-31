@@ -64,6 +64,9 @@
 		5EAB17A020222E08008A5369 /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB179D20222E08008A5369 /* NotificationObserver.swift */; };
 		5EAB17A820229DA5008A5369 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB17A720229DA5008A5369 /* ContainerView.swift */; };
 		5EAB17A920229DA5008A5369 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB17A720229DA5008A5369 /* ContainerView.swift */; };
+		5EB0806521B31FBC00748781 /* FloatingPoint+AngleUnits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB0806421B31FBC00748781 /* FloatingPoint+AngleUnits.swift */; };
+		5EB0806621B31FBC00748781 /* FloatingPoint+AngleUnits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB0806421B31FBC00748781 /* FloatingPoint+AngleUnits.swift */; };
+		5EB0806721B31FBC00748781 /* FloatingPoint+AngleUnits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB0806421B31FBC00748781 /* FloatingPoint+AngleUnits.swift */; };
 		5ECAA1F120056B3400AC4C6B /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECAA1F020056B3400AC4C6B /* ContainerViewController.swift */; };
 		5ECAA1F220056B3400AC4C6B /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECAA1F020056B3400AC4C6B /* ContainerViewController.swift */; };
 		5ECDE2182003F5CA005FB807 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECDE2172003F5CA005FB807 /* FileManager.swift */; };
@@ -163,6 +166,7 @@
 		5EAB17952022166E008A5369 /* ContextWatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextWatcher.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5EAB179D20222E08008A5369 /* NotificationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationObserver.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5EAB17A720229DA5008A5369 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; usesTabs = 1; };
+		5EB0806421B31FBC00748781 /* FloatingPoint+AngleUnits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FloatingPoint+AngleUnits.swift"; sourceTree = "<group>"; };
 		5ECAA1F020056B3400AC4C6B /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5ECDE2172003F5CA005FB807 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5ED781D91F94F1F900400F17 /* NSPreciate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSPreciate.swift; sourceTree = "<group>"; usesTabs = 1; };
@@ -306,6 +310,7 @@
 				5EAB179D20222E08008A5369 /* NotificationObserver.swift */,
 				5E2E37352087B164009803F9 /* URLSession.swift */,
 				5E8269512093A57800FFA69D /* ClosureValueTransformer.swift */,
+				5EB0806421B31FBC00748781 /* FloatingPoint+AngleUnits.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -573,6 +578,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EB0806521B31FBC00748781 /* FloatingPoint+AngleUnits.swift in Sources */,
 				5E16E2761F97BAA700D44BF4 /* CGRect.swift in Sources */,
 				5ED781DA1F94F1F900400F17 /* NSPreciate.swift in Sources */,
 				5ED781E21F94FA9600400F17 /* Array.swift in Sources */,
@@ -654,6 +660,7 @@
 				5E1150D22092027F005C36F2 /* Result.swift in Sources */,
 				5ECDE2192003F5CA005FB807 /* FileManager.swift in Sources */,
 				5ECAA1F220056B3400AC4C6B /* ContainerViewController.swift in Sources */,
+				5EB0806621B31FBC00748781 /* FloatingPoint+AngleUnits.swift in Sources */,
 				5EEC3C1D1FDB5140003F8A73 /* UIResponder+FirstResponder.m in Sources */,
 				5EEC3C141FDB5140003F8A73 /* NSSortDescriptor.swift in Sources */,
 				5EEC3C1A1FDB5140003F8A73 /* UIAlertController.swift in Sources */,
@@ -679,6 +686,7 @@
 				5EEFB6041FE5C71B0028BEEA /* Int.swift in Sources */,
 				5E1150CF2091E3CD005C36F2 /* Throttler.swift in Sources */,
 				5E2E37382087B164009803F9 /* URLSession.swift in Sources */,
+				5EB0806721B31FBC00748781 /* FloatingPoint+AngleUnits.swift in Sources */,
 				5EEFB6081FE5C71B0028BEEA /* CGRect.swift in Sources */,
 				5EEFB60B1FE5C71B0028BEEA /* Date.swift in Sources */,
 				5EE7594B20C011E600353163 /* TranslatesAutoResizingMaskIntoConstraints.swift in Sources */,
