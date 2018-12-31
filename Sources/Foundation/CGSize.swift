@@ -37,6 +37,14 @@ public extension CGSize {
 		self.init(width: point.x, height: point.y)
 	}
 	
+	public var smallestSide: CGFloat {
+		return min(width, height)
+	}
+	
+	public var largestSide: CGFloat {
+		return max(width, height)
+	}
+	
 }
 
 public func +(lhs: CGSize, rhs: CGSize) -> CGSize {
