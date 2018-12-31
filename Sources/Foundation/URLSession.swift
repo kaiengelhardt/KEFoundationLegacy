@@ -42,7 +42,7 @@ extension URLSession {
 			if let data = data, let response = response {
 				completionHandler(.success((data, response)))
 			} else if let error = error {
-				completionHandler(.error((error, response)))
+				completionHandler(.failure((error, response)))
 			} else {
 				fatalError("Unexpected state in data task completion handler!")
 			}
@@ -59,7 +59,7 @@ extension URLSession {
 			if let url = url, let response = response {
 				completionHandler(.success((url, response)))
 			} else if let error = error {
-				completionHandler(.error((error, response)))
+				completionHandler(.failure((error, response)))
 			} else {
 				fatalError("Unexpected state in download task completion handler!")
 			}

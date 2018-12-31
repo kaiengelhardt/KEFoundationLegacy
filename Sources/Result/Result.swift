@@ -34,6 +34,6 @@ import Foundation
 public enum Result<Value, Error> {
 	
 	case success(Value)
-	case error(Error)
+	case failure(Error)
 	
 }
