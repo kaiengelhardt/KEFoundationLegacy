@@ -487,6 +487,7 @@
 			buildConfigurationList = 5EEC3C0A1FDB50B7003F8A73 /* Build configuration list for PBXNativeTarget "KEFoundation tvOS" */;
 			buildPhases = (
 				5EEC3C001FDB50B6003F8A73 /* Sources */,
+				5EFE0BF2226F779A0063ABD8 /* SwiftLint */,
 				5EEC3C011FDB50B6003F8A73 /* Frameworks */,
 				5EEC3C021FDB50B6003F8A73 /* Headers */,
 				5EEC3C031FDB50B6003F8A73 /* Resources */,
@@ -505,6 +506,7 @@
 			buildConfigurationList = 5EEFB6031FE5BD540028BEEA /* Build configuration list for PBXNativeTarget "KEFoundation macOS" */;
 			buildPhases = (
 				5EEFB5F71FE5BD540028BEEA /* Sources */,
+				5EFE0BF3226F77C30063ABD8 /* SwiftLint */,
 				5EEFB5F81FE5BD540028BEEA /* Frameworks */,
 				5EEFB5F91FE5BD540028BEEA /* Headers */,
 				5EEFB5FA1FE5BD540028BEEA /* Resources */,
@@ -530,7 +532,7 @@
 				TargetAttributes = {
 					5E0A27FF1F91423800B8EB5F = {
 						CreatedOnToolsVersion = 9.1;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					5E0D5ADA20176572004E6949 = {
@@ -555,6 +557,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 5E0A27F61F91423800B8EB5F;
 			productRefGroup = 5E0A28011F91423800B8EB5F /* Products */;
@@ -613,7 +616,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		5EFE0BF2226F779A0063ABD8 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		5EFE0BF3226F77C30063ABD8 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -810,6 +849,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -865,6 +905,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -893,7 +934,7 @@
 				PRODUCT_NAME = KEFoundation;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -916,7 +957,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KaiKit-iOS";
 				PRODUCT_NAME = KEFoundation;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -971,6 +1012,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Debug;
 		};
@@ -994,6 +1036,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Release;
 		};
@@ -1013,6 +1056,7 @@
 				INFOPLIST_FILE = "Resources/Info-macOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KaiKit-macOS";
 				PRODUCT_NAME = KEFoundation;
 				SDKROOT = macosx;
@@ -1037,6 +1081,7 @@
 				INFOPLIST_FILE = "Resources/Info-macOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KaiKit-macOS";
 				PRODUCT_NAME = KEFoundation;
 				SDKROOT = macosx;

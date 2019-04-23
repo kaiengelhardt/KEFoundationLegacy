@@ -33,15 +33,15 @@ import Foundation
 
 public extension CGSize {
 	
-	public init(point: CGPoint) {
+	init(point: CGPoint) {
 		self.init(width: point.x, height: point.y)
 	}
 	
-	public var smallestSide: CGFloat {
+	var smallestSide: CGFloat {
 		return min(width, height)
 	}
 	
-	public var largestSide: CGFloat {
+	var largestSide: CGFloat {
 		return max(width, height)
 	}
 	

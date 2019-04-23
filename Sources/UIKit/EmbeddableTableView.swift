@@ -43,12 +43,12 @@ public class EmbeddableTableView: UITableView {
 		return CGSize(width: UIView.noIntrinsicMetric, height: contentSize.height)
 	}
 	
-	public override init(frame: CGRect, style: UITableView.Style) {
+	override init(frame: CGRect, style: UITableView.Style) {
 		super.init(frame: frame, style: style)
 		setUp()
 	}
 	
-	public required init?(coder aDecoder: NSCoder) {
+	required init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 		setUp()
 	}

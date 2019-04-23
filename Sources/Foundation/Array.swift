@@ -36,7 +36,7 @@ public extension Array {
 	/// Returns an array containing the same items with their positions shuffled.
 	///
 	/// - Returns: The shuffled array.
-	public func shuffled() -> [Element] {
+	func shuffled() -> [Element] {
 		var shuffledArray: [Element] = []
 		shuffledArray.reserveCapacity(count)
 		for item in self {
@@ -50,7 +50,7 @@ public extension Array {
 	///
 	/// - Parameter index: The position of the item which should be first in the resulting array.
 	/// - Returns: The shuffled array.
-	public func shuffledBeginningWithItem(at index: Int) -> [Element] {
+	func shuffledBeginningWithItem(at index: Int) -> [Element] {
 		var array = self
 		let item = array.remove(at: index)
 		var shuffledArray = array.shuffled()
@@ -63,7 +63,7 @@ public extension Array {
 public extension Array where Element: Hashable {
 	
 	/// Returns an array containing the unique elements from the current array.
-	public func unique() -> [Element] {
+	func unique() -> [Element] {
 		var result: [Element] = []
 		var memory: Set<Element> = []
 		

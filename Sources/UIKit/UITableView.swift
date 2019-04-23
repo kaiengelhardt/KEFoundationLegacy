@@ -33,7 +33,7 @@ import UIKit
 
 public extension UITableView {
     
-    public struct StaticSection {
+    struct StaticSection {
         public var headerTitle: String?
         public var footerTitle: String?
         public var cells: [UITableViewCell]
@@ -49,7 +49,7 @@ public extension UITableView {
 
 public extension Array where Element == UITableView.StaticSection {
     
-    public subscript(indexPath: IndexPath) -> UITableViewCell {
+    subscript(indexPath: IndexPath) -> UITableViewCell {
         return self[indexPath.section].cells[indexPath.row]
     }
     
@@ -57,7 +57,7 @@ public extension Array where Element == UITableView.StaticSection {
 
 public extension UITableView {
 	
-	public func deselectCurrentlySelectRow(with transitionCoordinator: UIViewControllerTransitionCoordinator?) {
+	func deselectCurrentlySelectRow(with transitionCoordinator: UIViewControllerTransitionCoordinator?) {
 		let indexPath = indexPathForSelectedRow
 		if let indexPath = indexPath {
 			deselectRow(at: indexPath, animated: true)

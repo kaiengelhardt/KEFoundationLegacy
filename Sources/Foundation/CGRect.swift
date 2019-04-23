@@ -33,16 +33,16 @@ import Foundation
 
 public extension CGRect {
 	
-	public var smallestSide: CGFloat {
+	var smallestSide: CGFloat {
 		return size.smallestSide
 	}
 	
-	public var largestSide: CGFloat {
+	var largestSide: CGFloat {
 		return size.largestSide
 	}
 	
 	#if os(iOS) || os(tvOS) || os(watchOS)
-	public func insetBy(insets: UIEdgeInsets) -> CGRect {
+	func insetBy(insets: UIEdgeInsets) -> CGRect {
 		return CGRect(x: origin.x + insets.left, y: origin.y + insets.top, width: width - (insets.left + insets.right), height: height - (insets.top + insets.bottom))
 	}
 	#endif

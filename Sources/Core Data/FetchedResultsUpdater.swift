@@ -104,6 +104,8 @@ extension FetchedResultsUpdater: NSFetchedResultsControllerDelegate {
 			rowUpdates.append(.update(indexPath!))
 		case .move:
 			rowUpdates.append(.move(indexPath!, newIndexPath!))
+		@unknown default:
+			fatalError("Unexpected case")
 		}
 	}
 	

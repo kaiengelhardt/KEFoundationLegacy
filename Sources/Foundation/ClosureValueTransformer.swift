@@ -51,19 +51,19 @@ public class ClosureValueTransformer<Source: AnyObject, Destination: AnyObject> 
 		Foundation.ValueTransformer.setValueTransformer(vt, forName: NSValueTransformerName(rawValue: name))
 	}
 	
-	override public class func transformedValueClass() -> AnyClass {
+	public override class func transformedValueClass() -> AnyClass {
 		return Destination.self
 	}
 	
-	override public class func allowsReverseTransformation() -> Bool {
+	public override class func allowsReverseTransformation() -> Bool {
 		return true
 	}
 	
-	override public func transformedValue(_ value: Any?) -> Any? {
+	public override func transformedValue(_ value: Any?) -> Any? {
 		return transform(value as? Source)
 	}
 	
-	override public func reverseTransformedValue(_ value: Any?) -> Any? {
+	public override func reverseTransformedValue(_ value: Any?) -> Any? {
 		return reverseTransform(value as? Destination)
 	}
 	

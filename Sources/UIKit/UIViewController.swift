@@ -34,7 +34,7 @@ import UIKit
 public extension UIViewController {
 	
 	/// A Boolean value indicating wether the view controller *or any of its parent view controllers* are being presented.
-	public var isBeingPresentedRegardlessOfParentViewController: Bool {
+	var isBeingPresentedRegardlessOfParentViewController: Bool {
 		var isBeingPresented = false
 		var viewController: UIViewController? = self
 		while let current = viewController {
@@ -45,7 +45,7 @@ public extension UIViewController {
 	}
 	
 	/// A Boolean value indicating wether the view controller *or any of its parent view controllers* are being dismissed.
-	public var isBeingDismissedRegardlessOfParentViewController: Bool {
+	var isBeingDismissedRegardlessOfParentViewController: Bool {
 		var isBeingDismissed = false
 		var viewController: UIViewController? = self
 		while let current = viewController {
@@ -61,7 +61,7 @@ public extension UIViewController {
 	///   - viewController: The view controller to be added as a child.
 	/// 
 	/// Discussion: This method calls 'didMove(toParentViewController:)' immediately after the view is added as a subview.
-	public func addChild(viewController: UIViewController) {
+	func addChild(viewController: UIViewController) {
 		addChild(viewController)
 		view.addSubview(viewController.view)
 		viewController.didMove(toParent: self)
@@ -73,7 +73,7 @@ public extension UIViewController {
 	///   - viewController: The view controller to be removed.
 	/// 
 	/// Discussion: This method calls 'willMove(toParentViewController:)' before the view is removed.
-	public func removeChild(viewController: UIViewController) {
+	func removeChild(viewController: UIViewController) {
 		viewController.willMove(toParent: nil)
 		viewController.view.removeFromSuperview()
 		viewController.removeFromParent()

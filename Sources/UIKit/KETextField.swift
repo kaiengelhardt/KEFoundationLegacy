@@ -54,22 +54,22 @@ public class KETextField: UITextField {
 		}
 	}
 	
-	override public func textRect(forBounds bounds: CGRect) -> CGRect {
+	public override func textRect(forBounds bounds: CGRect) -> CGRect {
 		let textRect = super.textRect(forBounds: bounds)
 		return textRect.insetBy(insets: textInsets)
 	}
 	
-	override public func editingRect(forBounds bounds: CGRect) -> CGRect {
+	public override func editingRect(forBounds bounds: CGRect) -> CGRect {
 		let textRect = super.textRect(forBounds: bounds)
 		return textRect.insetBy(insets: textInsets)
 	}
 	
-	override public func leftViewRect(forBounds bounds: CGRect) -> CGRect {
+	public override func leftViewRect(forBounds bounds: CGRect) -> CGRect {
 		let leftViewRect = super.leftViewRect(forBounds: bounds)
 		return leftViewRect.offsetBy(dx: leftViewOffset.width, dy: leftViewOffset.height)
 	}
 	
-	override public func rightViewRect(forBounds bounds: CGRect) -> CGRect {
+	public override func rightViewRect(forBounds bounds: CGRect) -> CGRect {
 		let rightViewRect = super.rightViewRect(forBounds: bounds)
 		return rightViewRect.offsetBy(dx: -rightViewOffset.width, dy: rightViewOffset.height)
 	}

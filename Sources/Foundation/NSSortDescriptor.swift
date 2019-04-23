@@ -33,9 +33,9 @@ import Foundation
 
 public extension NSSortDescriptor {
 	
-	public typealias Order = (AnyObject, AnyObject) -> Bool
+	typealias Order = (AnyObject, AnyObject) -> Bool
 	
-	public var order: Order {
+	var order: Order {
 		return {
 			self.compare($0, to: $1) == .orderedAscending
 		}
@@ -45,9 +45,9 @@ public extension NSSortDescriptor {
 
 public extension Array where Element: NSSortDescriptor {
 	
-	public typealias Order = (AnyObject, AnyObject) -> Bool
+	typealias Order = (AnyObject, AnyObject) -> Bool
 	
-	public var order: Order {
+	var order: Order {
 		return {
 			var comparisonResult: ComparisonResult = .orderedSame
 			for sortDescriptor in self {

@@ -33,7 +33,7 @@ import Foundation
 
 public extension CGPoint {
 	
-	public init(size: CGSize) {
+	init(size: CGSize) {
 		self.init(x: size.width, y: size.height)
 	}
 	

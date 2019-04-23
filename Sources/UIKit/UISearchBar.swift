@@ -33,7 +33,7 @@ import UIKit
 
 public extension UISearchBar {
 	
-	public var textColor: UIColor? {
+	var textColor: UIColor? {
 		get {
 			return searchField?.textColor
 		}
@@ -42,7 +42,7 @@ public extension UISearchBar {
 		}
 	}
 	
-	public var searchField: UITextField? {
+	var searchField: UITextField? {
 		return value(forKey: "searchField") as? UITextField
 	}
 	

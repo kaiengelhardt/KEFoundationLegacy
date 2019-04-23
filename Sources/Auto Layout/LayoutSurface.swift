@@ -58,16 +58,16 @@ public extension LayoutSurface {
 	
 	#if canImport(UIKit)
 	
-	public typealias EdgeInsets = UIEdgeInsets
+	typealias EdgeInsets = UIEdgeInsets
 	
 	#elseif canImport(AppKit)
 	
-	public typealias EdgeInsets = NSEdgeInsets
-	public typealias NSLayoutRelation = NSLayoutConstraint.Relation
+	typealias EdgeInsets = NSEdgeInsets
+	typealias NSLayoutRelation = NSLayoutConstraint.Relation
 	
 	#endif
 	
-	public func constraintsMatchingEdges(of surface: LayoutSurface?, insetBy inset: EdgeInsets = .zero, relation: NSLayoutConstraint.Relation = .equal) -> [NSLayoutConstraint] {
+	func constraintsMatchingEdges(of surface: LayoutSurface?, insetBy inset: EdgeInsets = .zero, relation: NSLayoutConstraint.Relation = .equal) -> [NSLayoutConstraint] {
 		guard let surface = surface else {
 			return []
 		}
@@ -98,12 +98,14 @@ public extension LayoutSurface {
 				surface.topAnchor.constraint(greaterThanOrEqualTo: topAnchor, constant: invertedInset.top),
 				bottomAnchor.constraint(greaterThanOrEqualTo: surface.bottomAnchor, constant: invertedInset.bottom),
 			]
+		@unknown default:
+			fatalError("Unexpected case")
 		}
 		
 		return constraints
 	}
 	
-	public func constraintsMatchingCenter(of surface: LayoutSurface?, offsetBy offset: CGSize = .zero, relation: NSLayoutConstraint.Relation = .equal) -> [NSLayoutConstraint] {
+	func constraintsMatchingCenter(of surface: LayoutSurface?, offsetBy offset: CGSize = .zero, relation: NSLayoutConstraint.Relation = .equal) -> [NSLayoutConstraint] {
 		guard let surface = surface else {
 			return []
 		}
@@ -126,12 +128,14 @@ public extension LayoutSurface {
 				centerXAnchor.constraint(greaterThanOrEqualTo: surface.centerXAnchor, constant: offset.width),
 				centerYAnchor.constraint(greaterThanOrEqualTo: surface.centerYAnchor, constant: offset.height),
 			]
+		@unknown default:
+			fatalError("Unexpected case")
 		}
 		
 		return constraints
 	}
 	
-	public func constraintsMatchingSize(of surface: LayoutSurface?, resizedBy size: CGSize = .zero, multipliedBy multiplier: CGSize = CGSize(width: 1, height: 1), relation: NSLayoutConstraint.Relation = .equal) -> [NSLayoutConstraint] {
+	func constraintsMatchingSize(of surface: LayoutSurface?, resizedBy size: CGSize = .zero, multipliedBy multiplier: CGSize = CGSize(width: 1, height: 1), relation: NSLayoutConstraint.Relation = .equal) -> [NSLayoutConstraint] {
 		guard let surface = surface else {
 			return []
 		}
@@ -154,12 +158,14 @@ public extension LayoutSurface {
 				widthAnchor.constraint(greaterThanOrEqualTo: surface.widthAnchor, multiplier: multiplier.width, constant: size.width),
 				heightAnchor.constraint(greaterThanOrEqualTo: surface.heightAnchor, multiplier: multiplier.height, constant: size.height),
 			]
+		@unknown default:
+			fatalError("Unexpected case")
 		}
 		
 		return constraints
 	}
 	
-	public func aspectRationConstraint() -> NSLayoutConstraint {
+	func aspectRationConstraint() -> NSLayoutConstraint {
 		return widthAnchor.constraint(equalTo: heightAnchor, multiplier: 1, constant: 0)
 	}
 	

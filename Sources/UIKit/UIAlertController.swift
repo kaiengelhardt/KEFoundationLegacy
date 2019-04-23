@@ -33,9 +33,9 @@ import UIKit
 
 public extension UIAlertController {
 	
-	public typealias Action = () -> Void
+	typealias Action = () -> Void
 	
-	public static func simpleAlertWithTitle(_ title: String, message: String, action: Action? = nil) -> UIAlertController {
+	static func simpleAlertWithTitle(_ title: String, message: String, action: Action? = nil) -> UIAlertController {
 		let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
 		alertController.addAction(UIAlertAction(title: "OK", style: .default) { alertAction in
 			action?()

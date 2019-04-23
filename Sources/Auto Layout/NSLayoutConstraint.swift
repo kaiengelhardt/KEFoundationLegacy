@@ -51,7 +51,7 @@ public extension NSLayoutConstraint {
 	
 	#endif
 	
-	public func with(priority: LayoutPriority) -> NSLayoutConstraint {
+	func with(priority: LayoutPriority) -> NSLayoutConstraint {
 		self.priority = priority
 		return self
 	}
@@ -70,7 +70,7 @@ public extension Array where Element == NSLayoutConstraint {
 	
 	#endif
 	
-	public func with(priority: LayoutPriority) -> [NSLayoutConstraint] {
+	func with(priority: LayoutPriority) -> [NSLayoutConstraint] {
 		for constraint in self {
 			constraint.priority = priority
 		}

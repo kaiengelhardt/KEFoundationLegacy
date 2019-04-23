@@ -33,9 +33,9 @@ import Foundation
 
 public extension NSPredicate {
 	
-	public typealias Evaluator = (AnyObject?) -> Bool
+	typealias Evaluator = (AnyObject?) -> Bool
 	
-	public var evaluator: Evaluator {
+	var evaluator: Evaluator {
 		return evaluate(with:)
 	}
 	

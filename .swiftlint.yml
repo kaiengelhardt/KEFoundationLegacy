@@ -106,3 +106,20 @@ trailing_comma:
 trailing_whitespace:
   ignores_comments: true
   ignores_empty_lines: true
+
+modifier_order:
+  preferred_modifier_order:
+    - acl
+    - setterACL
+    - override
+    - dynamic
+    - mutators
+    - lazy
+    - final
+    - required
+    - convenience
+    - typeMethods
+    - owned
+
+excluded:
+  - Resources

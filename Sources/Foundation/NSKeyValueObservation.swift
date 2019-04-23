@@ -35,7 +35,7 @@ public typealias KeyValueObservationBag = Set<NSKeyValueObservation>
 
 public extension NSKeyValueObservation {
 	
-	public func addTo(_ observationBag: inout KeyValueObservationBag) {
+	func addTo(_ observationBag: inout KeyValueObservationBag) {
 		observationBag.insert(self)
 	}
 	
