@@ -33,7 +33,7 @@ import Foundation
 
 public extension NSEdgeInsets {
 	
-	public static let zero: NSEdgeInsets = NSEdgeInsetsZero
+	static let zero: NSEdgeInsets = NSEdgeInsetsZero
 	
 }
 
