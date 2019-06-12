@@ -41,6 +41,8 @@
 		5E2E37362087B164009803F9 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2E37352087B164009803F9 /* URLSession.swift */; };
 		5E2E37372087B164009803F9 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2E37352087B164009803F9 /* URLSession.swift */; };
 		5E2E37382087B164009803F9 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2E37352087B164009803F9 /* URLSession.swift */; };
+		5E55576F2279903600F06200 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E55576E2279903600F06200 /* StackViewController.swift */; };
+		5E5557702279903600F06200 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E55576E2279903600F06200 /* StackViewController.swift */; };
 		5E5E693E20406E4400B5E746 /* KELabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5E693D20406E4400B5E746 /* KELabel.swift */; };
 		5E5E693F20406E4400B5E746 /* KELabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5E693D20406E4400B5E746 /* KELabel.swift */; };
 		5E5E694120407C6500B5E746 /* UIEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5E694020407C6500B5E746 /* UIEdgeInsets.swift */; };
@@ -154,6 +156,7 @@
 		5E233BBA20BED1D600E57B78 /* NSEdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSEdgeInsets.swift; sourceTree = "<group>"; };
 		5E2653931FB66ECB00F3994F /* EmbeddableTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddableTableView.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5E2E37352087B164009803F9 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
+		5E55576E2279903600F06200 /* StackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		5E5E693D20406E4400B5E746 /* KELabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KELabel.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5E5E694020407C6500B5E746 /* UIEdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsets.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5E606CFE1FBB4BF900785D15 /* NSKeyValueObservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSKeyValueObservation.swift; sourceTree = "<group>"; usesTabs = 1; };
@@ -286,6 +289,7 @@
 		5E0A28121F9147A400B8EB5F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				5E55576E2279903600F06200 /* StackViewController.swift */,
 				5E0A28131F91486D00B8EB5F /* UIViewController.swift */,
 				5ED781DD1F94F9B200400F17 /* UIAlertController.swift */,
 				5E0CE2D71F9DEF0600A58AA5 /* UITableView.swift */,
@@ -674,6 +678,7 @@
 				5E0A28231F915BDA00B8EB5F /* CGSize.swift in Sources */,
 				5E2653941FB66ECB00F3994F /* EmbeddableTableView.swift in Sources */,
 				5ED781DE1F94F9B200400F17 /* UIAlertController.swift in Sources */,
+				5E55576F2279903600F06200 /* StackViewController.swift in Sources */,
 				5E0D5AED20176C08004E6949 /* NSLayoutAnchor.swift in Sources */,
 				5EAB17A820229DA5008A5369 /* ContainerView.swift in Sources */,
 				5EE270FC1F96579F00A6A7A1 /* Date.swift in Sources */,
@@ -755,6 +760,7 @@
 				5E8269532093A57800FFA69D /* ClosureValueTransformer.swift in Sources */,
 				5EEC3C1B1FDB5140003F8A73 /* UITableView.swift in Sources */,
 				5EAB179F20222E08008A5369 /* NotificationObserver.swift in Sources */,
+				5E5557702279903600F06200 /* StackViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
