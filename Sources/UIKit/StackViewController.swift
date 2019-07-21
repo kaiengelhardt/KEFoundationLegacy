@@ -107,8 +107,8 @@ public class StackViewController: UIViewController {
 		let stackView = UIStackView()
 		self.stackView = stackView
 		
-		widthConstraint = stackView.widthAnchor.constraint(equalTo: scrollView.layoutMarginsGuide.widthAnchor)
-		heightConstraint = stackView.heightAnchor.constraint(equalTo: scrollView.layoutMarginsGuide.heightAnchor)
+		widthConstraint = stackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
+		heightConstraint = stackView.heightAnchor.constraint(equalTo: scrollView.heightAnchor)
 		
 		super.init(nibName: nil, bundle: nil)
 		
@@ -143,6 +143,8 @@ public class StackViewController: UIViewController {
 			case .vertical:
 				heightConstraint.isActive = false
 				widthConstraint.isActive = true
+			@unknown default:
+				break
 			}
 		}
 	}
