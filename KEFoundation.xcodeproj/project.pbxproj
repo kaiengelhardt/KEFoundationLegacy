@@ -41,6 +41,9 @@
 		5E2E37362087B164009803F9 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2E37352087B164009803F9 /* URLSession.swift */; };
 		5E2E37372087B164009803F9 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2E37352087B164009803F9 /* URLSession.swift */; };
 		5E2E37382087B164009803F9 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2E37352087B164009803F9 /* URLSession.swift */; };
+		5E3C420C22EC16DC003DA04F /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3C420B22EC16DC003DA04F /* URL.swift */; };
+		5E3C420D22EC16F3003DA04F /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3C420B22EC16DC003DA04F /* URL.swift */; };
+		5E3C420E22EC16F3003DA04F /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3C420B22EC16DC003DA04F /* URL.swift */; };
 		5E55576F2279903600F06200 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E55576E2279903600F06200 /* StackViewController.swift */; };
 		5E5557702279903600F06200 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E55576E2279903600F06200 /* StackViewController.swift */; };
 		5E5E693E20406E4400B5E746 /* KELabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5E693D20406E4400B5E746 /* KELabel.swift */; };
@@ -156,6 +159,7 @@
 		5E233BBA20BED1D600E57B78 /* NSEdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSEdgeInsets.swift; sourceTree = "<group>"; };
 		5E2653931FB66ECB00F3994F /* EmbeddableTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddableTableView.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5E2E37352087B164009803F9 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
+		5E3C420B22EC16DC003DA04F /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		5E55576E2279903600F06200 /* StackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		5E5E693D20406E4400B5E746 /* KELabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KELabel.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5E5E694020407C6500B5E746 /* UIEdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsets.swift; sourceTree = "<group>"; usesTabs = 1; };
@@ -325,6 +329,7 @@
 				5E2E37352087B164009803F9 /* URLSession.swift */,
 				5E8269512093A57800FFA69D /* ClosureValueTransformer.swift */,
 				5EB0806421B31FBC00748781 /* FloatingPoint+AngleUnits.swift */,
+				5E3C420B22EC16DC003DA04F /* URL.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -681,6 +686,7 @@
 				5E55576F2279903600F06200 /* StackViewController.swift in Sources */,
 				5E0D5AED20176C08004E6949 /* NSLayoutAnchor.swift in Sources */,
 				5EAB17A820229DA5008A5369 /* ContainerView.swift in Sources */,
+				5E3C420C22EC16DC003DA04F /* URL.swift in Sources */,
 				5EE270FC1F96579F00A6A7A1 /* Date.swift in Sources */,
 				5E0CE2D81F9DEF0600A58AA5 /* UITableView.swift in Sources */,
 				5EA40A441F97FA3800E14552 /* KETextField.swift in Sources */,
@@ -728,6 +734,7 @@
 				5E233BB820BED03500E57B78 /* LayoutSurface.swift in Sources */,
 				5EEC3C161FDB5140003F8A73 /* NSRange.swift in Sources */,
 				5EEC3C191FDB5140003F8A73 /* UIViewController.swift in Sources */,
+				5E3C420E22EC16F3003DA04F /* URL.swift in Sources */,
 				5EEC3C181FDB5140003F8A73 /* TranslatesAutoResizingMaskIntoConstraints.swift in Sources */,
 				5EEC3C0E1FDB5140003F8A73 /* Int.swift in Sources */,
 				5EAB17972022166E008A5369 /* ContextWatcher.swift in Sources */,
@@ -791,6 +798,7 @@
 				5EEFB60A1FE5C71B0028BEEA /* NSSortDescriptor.swift in Sources */,
 				5EAB17A020222E08008A5369 /* NotificationObserver.swift in Sources */,
 				5EE7594C20C012B700353163 /* NSLayoutConstraint.swift in Sources */,
+				5E3C420D22EC16F3003DA04F /* URL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
