@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5E05301B1FB76E6700C2EE87 /* NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E05301A1FB76E6700C2EE87 /* NSLayoutConstraint.swift */; };
+		5E06B0DF22FD35D4001DDBD3 /* UIColor+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06B0DE22FD35D4001DDBD3 /* UIColor+Image.swift */; };
+		5E06B0E022FD35D4001DDBD3 /* UIColor+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06B0DE22FD35D4001DDBD3 /* UIColor+Image.swift */; };
 		5E0A28051F91423900B8EB5F /* KEFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E0A28031F91423800B8EB5F /* KEFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E0A28101F91476C00B8EB5F /* FetchedResultsUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A280E1F91476C00B8EB5F /* FetchedResultsUpdater.swift */; };
 		5E0A28151F91486D00B8EB5F /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A28131F91486D00B8EB5F /* UIViewController.swift */; };
@@ -136,6 +138,7 @@
 
 /* Begin PBXFileReference section */
 		5E05301A1FB76E6700C2EE87 /* NSLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraint.swift; sourceTree = "<group>"; usesTabs = 1; };
+		5E06B0DE22FD35D4001DDBD3 /* UIColor+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Image.swift"; sourceTree = "<group>"; };
 		5E0A28001F91423800B8EB5F /* KEFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KEFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E0A28031F91423800B8EB5F /* KEFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KEFoundation.h; sourceTree = "<group>"; };
 		5E0A28041F91423900B8EB5F /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
@@ -308,6 +311,7 @@
 				5E2653931FB66ECB00F3994F /* EmbeddableTableView.swift */,
 				5ECAA1F020056B3400AC4C6B /* ContainerViewController.swift */,
 				5EAB17A720229DA5008A5369 /* ContainerView.swift */,
+				5E06B0DE22FD35D4001DDBD3 /* UIColor+Image.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -704,6 +708,7 @@
 				5EA40A4C1F9A497B00E14552 /* UIResponder+FirstResponder.m in Sources */,
 				5E1150D12092027F005C36F2 /* Result.swift in Sources */,
 				5ECDE2182003F5CA005FB807 /* FileManager.swift in Sources */,
+				5E06B0DF22FD35D4001DDBD3 /* UIColor+Image.swift in Sources */,
 				5ECAA1F120056B3400AC4C6B /* ContainerViewController.swift in Sources */,
 				5E0A28251F9163EA00B8EB5F /* CGPoint.swift in Sources */,
 				5ED781DC1F94F27F00400F17 /* NSSortDescriptor.swift in Sources */,
@@ -734,6 +739,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E06B0E022FD35D4001DDBD3 /* UIColor+Image.swift in Sources */,
 				5EEC3C111FDB5140003F8A73 /* CGSize.swift in Sources */,
 				5EEC3C201FDB5140003F8A73 /* FetchedResultsUpdater.swift in Sources */,
 				5E233BB820BED03500E57B78 /* LayoutSurface.swift in Sources */,
