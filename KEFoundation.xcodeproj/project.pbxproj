@@ -48,6 +48,9 @@
 		5E3C420E22EC16F3003DA04F /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3C420B22EC16DC003DA04F /* URL.swift */; };
 		5E3C421022EC1732003DA04F /* UIImage+Preloading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3C420F22EC1732003DA04F /* UIImage+Preloading.swift */; };
 		5E3C421122EC1732003DA04F /* UIImage+Preloading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3C420F22EC1732003DA04F /* UIImage+Preloading.swift */; };
+		5E46DBE622FE9DA5006A68EC /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E46DBE522FE9DA5006A68EC /* Utilities.swift */; };
+		5E46DBE722FE9DA5006A68EC /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E46DBE522FE9DA5006A68EC /* Utilities.swift */; };
+		5E46DBE822FE9DA5006A68EC /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E46DBE522FE9DA5006A68EC /* Utilities.swift */; };
 		5E46DBF222FFC570006A68EC /* AspectPreservingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E46DBF122FFC570006A68EC /* AspectPreservingImageView.swift */; };
 		5E46DBF322FFC570006A68EC /* AspectPreservingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E46DBF122FFC570006A68EC /* AspectPreservingImageView.swift */; };
 		5E55576F2279903600F06200 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E55576E2279903600F06200 /* StackViewController.swift */; };
@@ -168,6 +171,7 @@
 		5E2E37352087B164009803F9 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
 		5E3C420B22EC16DC003DA04F /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		5E3C420F22EC1732003DA04F /* UIImage+Preloading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Preloading.swift"; sourceTree = "<group>"; };
+		5E46DBE522FE9DA5006A68EC /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		5E46DBF122FFC570006A68EC /* AspectPreservingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectPreservingImageView.swift; sourceTree = "<group>"; };
 		5E55576E2279903600F06200 /* StackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		5E5E693D20406E4400B5E746 /* KELabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KELabel.swift; sourceTree = "<group>"; usesTabs = 1; };
@@ -342,6 +346,7 @@
 				5EB0806421B31FBC00748781 /* FloatingPoint+AngleUnits.swift */,
 				5E3C420B22EC16DC003DA04F /* URL.swift */,
 				5E3C420F22EC1732003DA04F /* UIImage+Preloading.swift */,
+				5E46DBE522FE9DA5006A68EC /* Utilities.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -718,6 +723,7 @@
 				5E0A28251F9163EA00B8EB5F /* CGPoint.swift in Sources */,
 				5ED781DC1F94F27F00400F17 /* NSSortDescriptor.swift in Sources */,
 				5E606CFF1FBB4BF900785D15 /* NSKeyValueObservation.swift in Sources */,
+				5E46DBE622FE9DA5006A68EC /* Utilities.swift in Sources */,
 				5E1E0C142013AFDE0075629D /* UITableView+FetchedResultsUpdater.swift in Sources */,
 				5E1E0C112013AEFF0075629D /* UICollectionView+FetchedResultsUpdater.swift in Sources */,
 				5E5E694120407C6500B5E746 /* UIEdgeInsets.swift in Sources */,
@@ -775,6 +781,7 @@
 				5EB0806621B31FBC00748781 /* FloatingPoint+AngleUnits.swift in Sources */,
 				5EEC3C1D1FDB5140003F8A73 /* UIResponder+FirstResponder.m in Sources */,
 				5EEC3C141FDB5140003F8A73 /* NSSortDescriptor.swift in Sources */,
+				5E46DBE722FE9DA5006A68EC /* Utilities.swift in Sources */,
 				5EEC3C1A1FDB5140003F8A73 /* UIAlertController.swift in Sources */,
 				5E3C421122EC1732003DA04F /* UIImage+Preloading.swift in Sources */,
 				5E1E0C152013AFDE0075629D /* UITableView+FetchedResultsUpdater.swift in Sources */,
@@ -816,6 +823,7 @@
 				5EEFB60A1FE5C71B0028BEEA /* NSSortDescriptor.swift in Sources */,
 				5EAB17A020222E08008A5369 /* NotificationObserver.swift in Sources */,
 				5EE7594C20C012B700353163 /* NSLayoutConstraint.swift in Sources */,
+				5E46DBE822FE9DA5006A68EC /* Utilities.swift in Sources */,
 				5E3C420D22EC16F3003DA04F /* URL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
