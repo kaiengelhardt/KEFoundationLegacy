@@ -55,6 +55,7 @@ open class ContainerViewController: UIViewController {
 	
 	public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
 		super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+		view.preservesSuperviewLayoutMargins = true
 	}
 	
 	@available(*, unavailable)

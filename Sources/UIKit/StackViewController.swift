@@ -126,9 +126,11 @@ public class StackViewController: UIViewController {
 			stackView.translatesAutoresizingMaskIntoConstraints = false
 			scrollView.addSubview(stackView)
 			NSLayoutConstraint.activate(stackView.constraintsMatchingEdges(of: scrollView.contentLayoutGuide))
+			scrollView.preservesSuperviewLayoutMargins = true
 		} else {
 			view = stackView
 		}
+		stackView.preservesSuperviewLayoutMargins = true
 	}
 	
 	// MARK: - UIViewController
