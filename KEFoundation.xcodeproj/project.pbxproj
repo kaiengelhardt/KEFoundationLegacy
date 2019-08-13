@@ -48,6 +48,8 @@
 		5E3C420E22EC16F3003DA04F /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3C420B22EC16DC003DA04F /* URL.swift */; };
 		5E3C421022EC1732003DA04F /* UIImage+Preloading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3C420F22EC1732003DA04F /* UIImage+Preloading.swift */; };
 		5E3C421122EC1732003DA04F /* UIImage+Preloading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3C420F22EC1732003DA04F /* UIImage+Preloading.swift */; };
+		5E46DBF222FFC570006A68EC /* AspectPreservingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E46DBF122FFC570006A68EC /* AspectPreservingImageView.swift */; };
+		5E46DBF322FFC570006A68EC /* AspectPreservingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E46DBF122FFC570006A68EC /* AspectPreservingImageView.swift */; };
 		5E55576F2279903600F06200 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E55576E2279903600F06200 /* StackViewController.swift */; };
 		5E5557702279903600F06200 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E55576E2279903600F06200 /* StackViewController.swift */; };
 		5E5E693E20406E4400B5E746 /* KELabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5E693D20406E4400B5E746 /* KELabel.swift */; };
@@ -166,6 +168,7 @@
 		5E2E37352087B164009803F9 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
 		5E3C420B22EC16DC003DA04F /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		5E3C420F22EC1732003DA04F /* UIImage+Preloading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Preloading.swift"; sourceTree = "<group>"; };
+		5E46DBF122FFC570006A68EC /* AspectPreservingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectPreservingImageView.swift; sourceTree = "<group>"; };
 		5E55576E2279903600F06200 /* StackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		5E5E693D20406E4400B5E746 /* KELabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KELabel.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5E5E694020407C6500B5E746 /* UIEdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsets.swift; sourceTree = "<group>"; usesTabs = 1; };
@@ -312,6 +315,7 @@
 				5ECAA1F020056B3400AC4C6B /* ContainerViewController.swift */,
 				5EAB17A720229DA5008A5369 /* ContainerView.swift */,
 				5E06B0DE22FD35D4001DDBD3 /* UIColor+Image.swift */,
+				5E46DBF122FFC570006A68EC /* AspectPreservingImageView.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -704,6 +708,7 @@
 				5E1150CD2091E3CD005C36F2 /* Throttler.swift in Sources */,
 				5EF20943209CE3D000151055 /* UISearchBar.swift in Sources */,
 				5E05301B1FB76E6700C2EE87 /* NSLayoutConstraint.swift in Sources */,
+				5E46DBF222FFC570006A68EC /* AspectPreservingImageView.swift in Sources */,
 				5E233BB720BED03500E57B78 /* LayoutSurface.swift in Sources */,
 				5EA40A4C1F9A497B00E14552 /* UIResponder+FirstResponder.m in Sources */,
 				5E1150D12092027F005C36F2 /* Result.swift in Sources */,
@@ -750,6 +755,7 @@
 				5EEC3C0E1FDB5140003F8A73 /* Int.swift in Sources */,
 				5EAB17972022166E008A5369 /* ContextWatcher.swift in Sources */,
 				5EEC3C121FDB5140003F8A73 /* CGRect.swift in Sources */,
+				5E46DBF322FFC570006A68EC /* AspectPreservingImageView.swift in Sources */,
 				5EEC3C151FDB5140003F8A73 /* Date.swift in Sources */,
 				5EEC3C101FDB5140003F8A73 /* CGPoint.swift in Sources */,
 				5EEC3C1E1FDB5140003F8A73 /* EmbeddableTableView.swift in Sources */,
