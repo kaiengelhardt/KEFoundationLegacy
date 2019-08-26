@@ -1,5 +1,5 @@
 //
-//  Utilities.swift
+//  Comparable+Clamping.swift
 //  KEFoundation
 //
 //  Created by Kai Engelhardt on 09.08.19
@@ -31,12 +31,30 @@
 
 import Foundation
 
-public func clamp<T: Comparable>(_ value: T, min: T, max: T) -> T {
-	if (value < min) {
-		return min
+public extension Comparable {
+	
+	func clamped(to range: ClosedRange<Self>) -> Self {
+		return min(max(self, range.lowerBound), range.upperBound)
 	}
-	if (value > max) {
-		return max
+	
+	func clamped(to range: PartialRangeFrom<Self>) -> Self {
+		return max(self, range.lowerBound)
 	}
-	return value
+	
+	func clamped(to range: PartialRangeThrough<Self>) -> Self {
+		return min(self, range.upperBound)
+	}
+	
+}
+
+public extension Strideable where Stride: SignedInteger {
+	
+	func clamped(to range: CountableClosedRange<Self>) -> Self {
+        return min(max(self, range.lowerBound), range.upperBound)
+    }
+	
+	func clamped(to range: CountablePartialRangeFrom<Self>) -> Self {
+        return max(self, range.lowerBound)
+    }
+	
 }
