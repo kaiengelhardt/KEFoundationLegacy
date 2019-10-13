@@ -1,8 +1,8 @@
 //
-//  UIColor+Image.swift
+//  Comparable+Clamping.swift
 //  KEFoundation
 //
-//  Created by Kai Engelhardt on 08.08.19
+//  Created by Kai Engelhardt on 09.08.19
 //  Copyright © 2019 Kai Engelhardt. All rights reserved.
 //
 //  Distributed under the permissive MIT license
@@ -29,25 +29,52 @@
 //  SOFTWARE.
 //
 
-import UIKit
+import Foundation
 
-extension UIColor {
-    
-    func image(size: CGSize = CGSize(width: 1, height: 1)) -> UIImage? {
-		guard size.width != 0 && size.height != 0 else {
-			return nil
-		}
-        UIGraphicsBeginImageContextWithOptions(size, false, 0)
-		defer {
-			UIGraphicsEndImageContext()
-		}
-        var image: UIImage?
-        if let context = UIGraphicsGetCurrentContext() {
-            setFill()
-            context.fill(CGRect(origin: .zero, size: size))
-            image = UIGraphicsGetImageFromCurrentImageContext()
-        }
-        return image
+public extension Comparable {
+	
+	func clamped(to range: ClosedRange<Self>) -> Self {
+		return min(max(self, range.lowerBound), range.upperBound)
+	}
+	
+	mutating func clamp(to range: ClosedRange<Self>) {
+		self = min(max(self, range.lowerBound), range.upperBound)
+	}
+	
+	func clamped(to range: PartialRangeFrom<Self>) -> Self {
+		return max(self, range.lowerBound)
+	}
+	
+	mutating func clamp(to range: PartialRangeFrom<Self>) {
+		self = max(self, range.lowerBound)
+	}
+	
+	func clamped(to range: PartialRangeThrough<Self>) -> Self {
+		return min(self, range.upperBound)
+	}
+	
+	mutating func clamp(to range: PartialRangeThrough<Self>) {
+		self = min(self, range.upperBound)
+	}
+	
+}
+
+public extension Strideable where Stride: SignedInteger {
+	
+	func clamped(to range: CountableClosedRange<Self>) -> Self {
+        return min(max(self, range.lowerBound), range.upperBound)
     }
-    
+	
+	mutating func clamp(to range: CountableClosedRange<Self>) {
+        self = min(max(self, range.lowerBound), range.upperBound)
+    }
+	
+	func clamped(to range: CountablePartialRangeFrom<Self>) -> Self {
+        return max(self, range.lowerBound)
+    }
+	
+	mutating func clamp(to range: CountablePartialRangeFrom<Self>) {
+        self = max(self, range.lowerBound)
+    }
+	
 }

@@ -1,8 +1,8 @@
 //
-//  Comparable+Clamping.swift
+//  UILayoutPriority+Math.swift
 //  KEFoundation
 //
-//  Created by Kai Engelhardt on 09.08.19
+//  Created by Kai Engelhardt on 08.10.19
 //  Copyright © 2019 Kai Engelhardt. All rights reserved.
 //
 //  Distributed under the permissive MIT license
@@ -29,32 +29,44 @@
 //  SOFTWARE.
 //
 
-import Foundation
+import UIKit
 
-public extension Comparable {
-	
-	func clamped(to range: ClosedRange<Self>) -> Self {
-		return min(max(self, range.lowerBound), range.upperBound)
-	}
-	
-	func clamped(to range: PartialRangeFrom<Self>) -> Self {
-		return max(self, range.lowerBound)
-	}
-	
-	func clamped(to range: PartialRangeThrough<Self>) -> Self {
-		return min(self, range.upperBound)
-	}
-	
+public func +(lhs: UILayoutPriority, rhs: Float) -> UILayoutPriority {
+	return UILayoutPriority(lhs.rawValue + rhs)
 }
 
-public extension Strideable where Stride: SignedInteger {
-	
-	func clamped(to range: CountableClosedRange<Self>) -> Self {
-        return min(max(self, range.lowerBound), range.upperBound)
-    }
-	
-	func clamped(to range: CountablePartialRangeFrom<Self>) -> Self {
-        return max(self, range.lowerBound)
-    }
-	
+public func -(lhs: UILayoutPriority, rhs: Float) -> UILayoutPriority {
+	return UILayoutPriority(lhs.rawValue - rhs)
+}
+
+public func +(lhs: Float, rhs: UILayoutPriority) -> UILayoutPriority {
+	return UILayoutPriority(lhs + rhs.rawValue)
+}
+
+public func -(lhs: Float, rhs: UILayoutPriority) -> UILayoutPriority {
+	return UILayoutPriority(lhs - rhs.rawValue)
+}
+
+public func +(lhs: UILayoutPriority, rhs: Int) -> UILayoutPriority {
+	return lhs + Float(rhs)
+}
+
+public func -(lhs: UILayoutPriority, rhs: Int) -> UILayoutPriority {
+	return lhs - Float(rhs)
+}
+
+public func +(lhs: Int, rhs: UILayoutPriority) -> UILayoutPriority {
+	return Float(lhs) + rhs
+}
+
+public func -(lhs: Int, rhs: UILayoutPriority) -> UILayoutPriority {
+	return Float(lhs) - rhs
+}
+
+public func +(lhs: UILayoutPriority, rhs: UILayoutPriority) -> UILayoutPriority {
+	return UILayoutPriority(lhs.rawValue + rhs.rawValue)
+}
+
+public func -(lhs: UILayoutPriority, rhs: UILayoutPriority) -> UILayoutPriority {
+	return UILayoutPriority(lhs.rawValue - rhs.rawValue)
 }

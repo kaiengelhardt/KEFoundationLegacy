@@ -1,8 +1,8 @@
 //
-//  Int.swift
+//  UIEdgeInsets.swift
 //  KEFoundation
 //
-//  Created by Kai Engelhardt on 16.10.17
+//  Created by Kai Engelhardt on 23.02.18
 //  Copyright © 2018 Kai Engelhardt. All rights reserved.
 //
 //  Distributed under the permissive MIT license
@@ -29,18 +29,16 @@
 //  SOFTWARE.
 //
 
-import Foundation
+import UIKit
 
-public extension Int {
-	
-	/// Generates a random number between lowerBound and upperBound.
-	///
-	/// - Parameters:
-	///   - lowerBound: The minimum value (inclusive).
-	///   - upperBound: The maximum value (inclusive).
-	/// - Returns: A random number between lowerBound and upperBound.
-	static func randomNumber(between lowerBound: Int, and upperBound: Int) -> Int {
-		return Int(arc4random_uniform(UInt32(upperBound - lowerBound))) + lowerBound
-	}
-	
+public prefix func -(insets: UIEdgeInsets) -> UIEdgeInsets {
+	return UIEdgeInsets(top: -insets.top, left: -insets.left, bottom: -insets.bottom, right: -insets.right)
+}
+
+public func +(lhs: UIEdgeInsets, rhs: UIEdgeInsets) -> UIEdgeInsets {
+	return UIEdgeInsets(top: lhs.top + rhs.top, left: lhs.left + rhs.left, bottom: lhs.bottom + rhs.bottom, right: lhs.right + rhs.right)
+}
+
+public func -(lhs: UIEdgeInsets, rhs: UIEdgeInsets) -> UIEdgeInsets {
+	return UIEdgeInsets(top: lhs.top - rhs.top, left: lhs.left - rhs.left, bottom: lhs.bottom - rhs.bottom, right: lhs.right - rhs.right)
 }

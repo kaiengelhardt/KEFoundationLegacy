@@ -1,8 +1,8 @@
 //
-//  UIEdgeInsets.swift
+//  NSEdgeInsets.swift
 //  KEFoundation
 //
-//  Created by Kai Engelhardt on 23.02.18
+//  Created by Kai Engelhardt on 30.05.18
 //  Copyright © 2018 Kai Engelhardt. All rights reserved.
 //
 //  Distributed under the permissive MIT license
@@ -31,6 +31,20 @@
 
 import Foundation
 
-public prefix func -(insets: UIEdgeInsets) -> UIEdgeInsets {
-	return UIEdgeInsets(top: -insets.top, left: -insets.left, bottom: -insets.bottom, right: -insets.right)
+public extension NSEdgeInsets {
+	
+	static let zero: NSEdgeInsets = NSEdgeInsetsZero
+	
+}
+
+public prefix func -(insets: NSEdgeInsets) -> NSEdgeInsets {
+	return NSEdgeInsets(top: -insets.top, left: -insets.left, bottom: -insets.bottom, right: -insets.right)
+}
+
+public func +(lhs: NSEdgeInsets, rhs: NSEdgeInsets) -> NSEdgeInsets {
+	return UIEdgeInsets(top: lhs.top + rhs.top, left: lhs.left + rhs.left, bottom: lhs.bottom + rhs.bottom, right: lhs.right + rhs.right)
+}
+
+public func -(lhs: NSEdgeInsets, rhs: NSEdgeInsets) -> NSEdgeInsets {
+	return UIEdgeInsets(top: lhs.top - rhs.top, left: lhs.left - rhs.left, bottom: lhs.bottom - rhs.bottom, right: lhs.right - rhs.right)
 }

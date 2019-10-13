@@ -33,7 +33,13 @@ import Foundation
 
 extension URLSession {
 	
-	public typealias DataTaskResult = Result<(Data, URLResponse), (Error, URLResponse?)>
+	public enum TaskError: Error {
+		
+		case generic(Error, URLResponse?)
+		
+	}
+	
+	public typealias DataTaskResult = Result<(Data, URLResponse), TaskError>
 	public typealias DataTaskCompletionHandler = (DataTaskResult) -> Void
 	
 	/// Based on this [blog post](https://oleb.net/blog/2018/03/making-illegal-states-unrepresentable/) by Ole Begemann.
@@ -42,7 +48,7 @@ extension URLSession {
 			if let data = data, let response = response {
 				completionHandler(.success((data, response)))
 			} else if let error = error {
-				completionHandler(.failure((error, response)))
+				completionHandler(.failure(.generic(error, response)))
 			} else {
 				fatalError("Unexpected state in data task completion handler!")
 			}
@@ -50,7 +56,7 @@ extension URLSession {
 		return task
 	}
 	
-	public typealias DownloadTaskResult = Result<(URL, URLResponse), (Error, URLResponse?)>
+	public typealias DownloadTaskResult = Result<(URL, URLResponse), TaskError>
 	public typealias DownloadTaskCompletionHandler = (DownloadTaskResult) -> Void
 	
 	/// Based on this [blog post](https://oleb.net/blog/2018/03/making-illegal-states-unrepresentable/) by Ole Begemann.
@@ -59,7 +65,7 @@ extension URLSession {
 			if let url = url, let response = response {
 				completionHandler(.success((url, response)))
 			} else if let error = error {
-				completionHandler(.failure((error, response)))
+				completionHandler(.failure(.generic(error, response)))
 			} else {
 				fatalError("Unexpected state in download task completion handler!")
 			}

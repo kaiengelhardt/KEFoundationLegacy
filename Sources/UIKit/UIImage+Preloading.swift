@@ -29,8 +29,8 @@
 //  SOFTWARE.
 //
 
-import CoreGraphics
 import UIKit
+import CoreGraphics
 
 public extension UIImage {
 	
