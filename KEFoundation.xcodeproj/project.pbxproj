@@ -57,6 +57,30 @@
 		5E5E694120407C6500B5E746 /* UIEdgeInsets+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5E694020407C6500B5E746 /* UIEdgeInsets+Math.swift */; };
 		5E5E694220407C6500B5E746 /* UIEdgeInsets+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5E694020407C6500B5E746 /* UIEdgeInsets+Math.swift */; };
 		5E606CFF1FBB4BF900785D15 /* NSKeyValueObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E606CFE1FBB4BF900785D15 /* NSKeyValueObservation.swift */; };
+		5E673766235335EB0075F7BA /* FloatingPoint+AngleUnits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB0806421B31FBC00748781 /* FloatingPoint+AngleUnits.swift */; };
+		5E673767235335EB0075F7BA /* UIImage+Preloading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3C420F22EC1732003DA04F /* UIImage+Preloading.swift */; };
+		5E673768235335EB0075F7BA /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E16E2751F97BAA700D44BF4 /* CGRect.swift */; };
+		5E673769235335EB0075F7BA /* NSPreciate+Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED781D91F94F1F900400F17 /* NSPreciate+Evaluator.swift */; };
+		5E67376A235335EB0075F7BA /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED781E11F94FA9600400F17 /* Array+Extensions.swift */; };
+		5E67376D235335EB0075F7BA /* ContextWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB17952022166E008A5369 /* ContextWatcher.swift */; };
+		5E67376E235335EB0075F7BA /* NSRange+Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7DE2381F9BE56F0051B623 /* NSRange+Range.swift */; };
+		5E67376F235335EB0075F7BA /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A28221F915BDA00B8EB5F /* CGSize.swift */; };
+		5E673775235335EB0075F7BA /* URL+ResourceExists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3C420B22EC16DC003DA04F /* URL+ResourceExists.swift */; };
+		5E673776235335EB0075F7BA /* Date+Normalized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE270FB1F96579F00A6A7A1 /* Date+Normalized.swift */; };
+		5E673779235335EB0075F7BA /* Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF619EC2013E23E006BCD62 /* Managed.swift */; };
+		5E67377A235335EB0075F7BA /* URLSession+Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2E37352087B164009803F9 /* URLSession+Result.swift */; };
+		5E67377B235335EB0075F7BA /* Throttler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1150CC2091E3CD005C36F2 /* Throttler.swift */; };
+		5E673781235335EB0075F7BA /* FileManager+Directories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECDE2172003F5CA005FB807 /* FileManager+Directories.swift */; };
+		5E673782235335EB0075F7BA /* UIColor+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06B0DE22FD35D4001DDBD3 /* UIColor+Image.swift */; };
+		5E673784235335EB0075F7BA /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A28241F9163EA00B8EB5F /* CGPoint.swift */; };
+		5E673785235335EB0075F7BA /* NSSortDescriptor+Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED781DB1F94F27F00400F17 /* NSSortDescriptor+Order.swift */; };
+		5E673786235335EB0075F7BA /* NSKeyValueObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E606CFE1FBB4BF900785D15 /* NSKeyValueObservation.swift */; };
+		5E673787235335EB0075F7BA /* Clamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E46DBE522FE9DA5006A68EC /* Clamp.swift */; };
+		5E67378A235335EB0075F7BA /* UIEdgeInsets+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5E694020407C6500B5E746 /* UIEdgeInsets+Math.swift */; };
+		5E67378D235335EB0075F7BA /* ClosureValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8269512093A57800FFA69D /* ClosureValueTransformer.swift */; };
+		5E67378E235335EB0075F7BA /* FetchedResultsUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A280E1F91476C00B8EB5F /* FetchedResultsUpdater.swift */; };
+		5E673790235335EB0075F7BA /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB179D20222E08008A5369 /* NotificationObserver.swift */; };
+		5E673794235335EB0075F7BA /* KEFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E0A28031F91423800B8EB5F /* KEFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E7DE2391F9BE56F0051B623 /* NSRange+Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7DE2381F9BE56F0051B623 /* NSRange+Range.swift */; };
 		5E8269522093A57800FFA69D /* ClosureValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8269512093A57800FFA69D /* ClosureValueTransformer.swift */; };
 		5E8269532093A57800FFA69D /* ClosureValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8269512093A57800FFA69D /* ClosureValueTransformer.swift */; };
@@ -173,6 +197,8 @@
 		5E5E693D20406E4400B5E746 /* KELabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KELabel.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5E5E694020407C6500B5E746 /* UIEdgeInsets+Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Math.swift"; sourceTree = "<group>"; usesTabs = 1; };
 		5E606CFE1FBB4BF900785D15 /* NSKeyValueObservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSKeyValueObservation.swift; sourceTree = "<group>"; usesTabs = 1; };
+		5E67379A235335EB0075F7BA /* KEFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KEFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E67379B235335EB0075F7BA /* Info-watchOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
 		5E7DE2381F9BE56F0051B623 /* NSRange+Range.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSRange+Range.swift"; sourceTree = "<group>"; usesTabs = 1; };
 		5E8269512093A57800FFA69D /* ClosureValueTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureValueTransformer.swift; sourceTree = "<group>"; };
 		5EA40A431F97FA3800E14552 /* KETextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KETextField.swift; sourceTree = "<group>"; usesTabs = 1; };
@@ -183,15 +209,6 @@
 		5EAB17A720229DA5008A5369 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5EB0806421B31FBC00748781 /* FloatingPoint+AngleUnits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FloatingPoint+AngleUnits.swift"; sourceTree = "<group>"; };
 		5EC63FAA212F686E00DC92BE /* LayoutConstraintContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstraintContainer.swift; sourceTree = "<group>"; };
-		5EC63FCB2130C36A00DC92BE /* ForceTouch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForceTouch.swift; sourceTree = "<group>"; };
-		5EC63FCC2130C36A00DC92BE /* UITraitCollection+AdaptiveAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITraitCollection+AdaptiveAttribute.swift"; sourceTree = "<group>"; };
-		5EC63FCD2130C36A00DC92BE /* AdaptiveAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdaptiveAttribute.swift; sourceTree = "<group>"; };
-		5EC63FCE2130C36A00DC92BE /* SizeCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeCategory.swift; sourceTree = "<group>"; };
-		5EC63FD12130C36A00DC92BE /* LayoutDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutDirection.swift; sourceTree = "<group>"; };
-		5EC63FD32130C36B00DC92BE /* Scale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scale.swift; sourceTree = "<group>"; };
-		5EC63FD42130C36B00DC92BE /* SizeClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeClass.swift; sourceTree = "<group>"; };
-		5EC63FD72130C36B00DC92BE /* DisplayGamut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayGamut.swift; sourceTree = "<group>"; };
-		5EC63FD82130C36B00DC92BE /* Idiom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Idiom.swift; sourceTree = "<group>"; };
 		5ECAA1F020056B3400AC4C6B /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5ECDE2172003F5CA005FB807 /* FileManager+Directories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Directories.swift"; sourceTree = "<group>"; usesTabs = 1; };
 		5ED781D91F94F1F900400F17 /* NSPreciate+Evaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPreciate+Evaluator.swift"; sourceTree = "<group>"; usesTabs = 1; };
@@ -224,6 +241,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5E673792235335EB0075F7BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5EEC3C011FDB50B6003F8A73 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -248,7 +272,6 @@
 				5E0A280B1F91447800B8EB5F /* Resources */,
 				5E0D5ADC20176573004E6949 /* Unit Tests */,
 				5E0A28011F91423800B8EB5F /* Products */,
-				5E39061021DAAE9E00C6828B /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -259,6 +282,7 @@
 				5EEC3C051FDB50B6003F8A73 /* KEFoundation.framework */,
 				5EEFB5FC1FE5BD540028BEEA /* KEFoundation.framework */,
 				5E0D5ADB20176572004E6949 /* KEFoundation Unit Tests iOS.xctest */,
+				5E67379A235335EB0075F7BA /* KEFoundation.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -270,6 +294,7 @@
 				5E0A28041F91423900B8EB5F /* Info-iOS.plist */,
 				5EEC3C081FDB50B7003F8A73 /* Info-tvOS.plist */,
 				5EEFB5FF1FE5BD540028BEEA /* Info-macOS.plist */,
+				5E67379B235335EB0075F7BA /* Info-watchOS.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -397,22 +422,6 @@
 			path = "Core Graphics";
 			sourceTree = "<group>";
 		};
-		5E39061021DAAE9E00C6828B /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				5EC63FD82130C36B00DC92BE /* Idiom.swift */,
-				5EC63FD32130C36B00DC92BE /* Scale.swift */,
-				5EC63FCE2130C36A00DC92BE /* SizeCategory.swift */,
-				5EC63FCD2130C36A00DC92BE /* AdaptiveAttribute.swift */,
-				5EC63FD42130C36B00DC92BE /* SizeClass.swift */,
-				5EC63FD72130C36B00DC92BE /* DisplayGamut.swift */,
-				5EC63FCB2130C36A00DC92BE /* ForceTouch.swift */,
-				5EC63FCC2130C36A00DC92BE /* UITraitCollection+AdaptiveAttribute.swift */,
-				5EC63FD12130C36A00DC92BE /* LayoutDirection.swift */,
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
 		5EE7594A20C011CB00353163 /* Auto Layout */ = {
 			isa = PBXGroup;
 			children = (
@@ -435,6 +444,14 @@
 			files = (
 				5E0A28051F91423900B8EB5F /* KEFoundation.h in Headers */,
 				5EA40A4B1F9A497B00E14552 /* UIResponder+FirstResponder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E673793235335EB0075F7BA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E673794235335EB0075F7BA /* KEFoundation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +512,25 @@
 			productReference = 5E0D5ADB20176572004E6949 /* KEFoundation Unit Tests iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		5E673764235335EB0075F7BA /* KEFoundation watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E673797235335EB0075F7BA /* Build configuration list for PBXNativeTarget "KEFoundation watchOS" */;
+			buildPhases = (
+				5E673765235335EB0075F7BA /* Sources */,
+				5E673791235335EB0075F7BA /* SwiftLint */,
+				5E673792235335EB0075F7BA /* Frameworks */,
+				5E673793235335EB0075F7BA /* Headers */,
+				5E673796235335EB0075F7BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KEFoundation watchOS";
+			productName = KaiKit;
+			productReference = 5E67379A235335EB0075F7BA /* KEFoundation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		5EEC3C041FDB50B6003F8A73 /* KEFoundation tvOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EEC3C0A1FDB50B7003F8A73 /* Build configuration list for PBXNativeTarget "KEFoundation tvOS" */;
@@ -553,6 +589,9 @@
 						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
+					5E673764235335EB0075F7BA = {
+						ProvisioningStyle = Automatic;
+					};
 					5EEC3C041FDB50B6003F8A73 = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 1020;
@@ -581,6 +620,7 @@
 				5E0A27FF1F91423800B8EB5F /* KEFoundation iOS */,
 				5EEC3C041FDB50B6003F8A73 /* KEFoundation tvOS */,
 				5EEFB5FB1FE5BD540028BEEA /* KEFoundation macOS */,
+				5E673764235335EB0075F7BA /* KEFoundation watchOS */,
 				5E0D5ADA20176572004E6949 /* KEFoundation Unit Tests iOS */,
 			);
 		};
@@ -595,6 +635,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5E0D5AD920176572004E6949 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E673796235335EB0075F7BA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -618,6 +665,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5E673791235335EB0075F7BA /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		5EC63FFC2130C91F00DC92BE /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -729,6 +790,36 @@
 				5E0D5AE920176AF8004E6949 /* NSLayoutConstraintTests.swift in Sources */,
 				5E0D5AF620176E5C004E6949 /* NSDateTests.swift in Sources */,
 				5E0D5AF420176CFE004E6949 /* CGRectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E673765235335EB0075F7BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E673766235335EB0075F7BA /* FloatingPoint+AngleUnits.swift in Sources */,
+				5E673767235335EB0075F7BA /* UIImage+Preloading.swift in Sources */,
+				5E673768235335EB0075F7BA /* CGRect.swift in Sources */,
+				5E673769235335EB0075F7BA /* NSPreciate+Evaluator.swift in Sources */,
+				5E67376A235335EB0075F7BA /* Array+Extensions.swift in Sources */,
+				5E67376D235335EB0075F7BA /* ContextWatcher.swift in Sources */,
+				5E67376E235335EB0075F7BA /* NSRange+Range.swift in Sources */,
+				5E67376F235335EB0075F7BA /* CGSize.swift in Sources */,
+				5E673775235335EB0075F7BA /* URL+ResourceExists.swift in Sources */,
+				5E673776235335EB0075F7BA /* Date+Normalized.swift in Sources */,
+				5E673779235335EB0075F7BA /* Managed.swift in Sources */,
+				5E67377A235335EB0075F7BA /* URLSession+Result.swift in Sources */,
+				5E67377B235335EB0075F7BA /* Throttler.swift in Sources */,
+				5E673781235335EB0075F7BA /* FileManager+Directories.swift in Sources */,
+				5E673782235335EB0075F7BA /* UIColor+Image.swift in Sources */,
+				5E673784235335EB0075F7BA /* CGPoint.swift in Sources */,
+				5E673785235335EB0075F7BA /* NSSortDescriptor+Order.swift in Sources */,
+				5E673786235335EB0075F7BA /* NSKeyValueObservation.swift in Sources */,
+				5E673787235335EB0075F7BA /* Clamp.swift in Sources */,
+				5E67378A235335EB0075F7BA /* UIEdgeInsets+Math.swift in Sources */,
+				5E67378D235335EB0075F7BA /* ClosureValueTransformer.swift in Sources */,
+				5E67378E235335EB0075F7BA /* FetchedResultsUpdater.swift in Sources */,
+				5E673790235335EB0075F7BA /* NotificationObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -955,7 +1046,7 @@
 				INFOPLIST_FILE = "Resources/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KaiKit-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KEFoundation-iOS";
 				PRODUCT_NAME = KEFoundation;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -979,7 +1070,7 @@
 				INFOPLIST_FILE = "Resources/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KaiKit-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KEFoundation-iOS";
 				PRODUCT_NAME = KEFoundation;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1017,6 +1108,55 @@
 			};
 			name = Release;
 		};
+		5E673798235335EB0075F7BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2RZ5XH923S;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Resources/Info-watchOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KEFoundation-watchOS";
+				PRODUCT_NAME = KEFoundation;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		5E673799235335EB0075F7BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2RZ5XH923S;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Resources/Info-watchOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KEFoundation-watchOS";
+				PRODUCT_NAME = KEFoundation;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
 		5EEC3C0B1FDB50B7003F8A73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1031,7 +1171,7 @@
 				INFOPLIST_FILE = "Resources/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KaiKit-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KEFoundation-tvOS";
 				PRODUCT_NAME = KEFoundation;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -1055,7 +1195,7 @@
 				INFOPLIST_FILE = "Resources/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KaiKit-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KEFoundation-tvOS";
 				PRODUCT_NAME = KEFoundation;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -1082,7 +1222,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KaiKit-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KEFoundation-macOS";
 				PRODUCT_NAME = KEFoundation;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -1107,7 +1247,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KaiKit-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KEFoundation-macOS";
 				PRODUCT_NAME = KEFoundation;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -1141,6 +1281,15 @@
 			buildConfigurations = (
 				5E0D5AE420176573004E6949 /* Debug */,
 				5E0D5AE520176573004E6949 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E673797235335EB0075F7BA /* Build configuration list for PBXNativeTarget "KEFoundation watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E673798235335EB0075F7BA /* Debug */,
+				5E673799235335EB0075F7BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

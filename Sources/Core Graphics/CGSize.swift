@@ -30,6 +30,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 public extension CGSize {
 	
