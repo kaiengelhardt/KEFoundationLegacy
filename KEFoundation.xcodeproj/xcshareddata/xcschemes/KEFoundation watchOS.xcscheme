@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5E673764235335EB0075F7BA"
-               BuildableName = "KEFoundation watchOS.framework"
+               BuildableName = "KEFoundation.framework"
                BlueprintName = "KEFoundation watchOS"
                ReferencedContainer = "container:KEFoundation.xcodeproj">
             </BuildableReference>
@@ -51,7 +51,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5E673764235335EB0075F7BA"
-            BuildableName = "KEFoundation watchOS.framework"
+            BuildableName = "KEFoundation.framework"
             BlueprintName = "KEFoundation watchOS"
             ReferencedContainer = "container:KEFoundation.xcodeproj">
          </BuildableReference>
