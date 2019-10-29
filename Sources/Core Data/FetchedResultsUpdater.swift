@@ -54,6 +54,8 @@ public class FetchedResultsUpdater: NSObject {
 	
 	private var updatesEnabled: Bool = true
 	
+	public var animationsEnabled: Bool = true
+	
 	public func performWithoutUpdatesEnabled(_ closure: () -> Void) {
 		updatesEnabled = false
 		closure()
@@ -113,13 +115,13 @@ extension FetchedResultsUpdater: NSFetchedResultsControllerDelegate {
 		guard updatesEnabled else {
 			return
 		}
-		delegate?.updater(self, didUpdateWithSectionUpdates: sectionUpdates, rowUpdates: rowUpdates)
+		delegate?.updater(self, didUpdateWithSectionUpdates: sectionUpdates, rowUpdates: rowUpdates, animated: animationsEnabled)
 	}
 	
 }
 
 public protocol FetchedResultsUpdaterDelegate: AnyObject {
 	
-	func updater(_ updater: FetchedResultsUpdater, didUpdateWithSectionUpdates sectionUpdates: [FetchedResultsUpdater.SectionUpdate], rowUpdates: [FetchedResultsUpdater.RowUpdate])
+	func updater(_ updater: FetchedResultsUpdater, didUpdateWithSectionUpdates sectionUpdates: [FetchedResultsUpdater.SectionUpdate], rowUpdates: [FetchedResultsUpdater.RowUpdate], animated: Bool)
 	
 }

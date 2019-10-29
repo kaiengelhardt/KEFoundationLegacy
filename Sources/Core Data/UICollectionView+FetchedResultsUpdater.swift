@@ -33,7 +33,17 @@ import UIKit
 
 extension UICollectionView: FetchedResultsUpdaterDelegate {
 	
-	public func updater(_ updater: FetchedResultsUpdater, didUpdateWithSectionUpdates sectionUpdates: [FetchedResultsUpdater.SectionUpdate], rowUpdates: [FetchedResultsUpdater.RowUpdate]) {
+	public func updater(_ updater: FetchedResultsUpdater, didUpdateWithSectionUpdates sectionUpdates: [FetchedResultsUpdater.SectionUpdate], rowUpdates: [FetchedResultsUpdater.RowUpdate], animated: Bool) {
+		if animated {
+			self.updater(updater, didUpdateWithSectionUpdates: sectionUpdates, rowUpdates: rowUpdates)
+		} else {
+			UIView.performWithoutAnimation {
+				self.updater(updater, didUpdateWithSectionUpdates: sectionUpdates, rowUpdates: rowUpdates)
+			}
+		}
+	}
+	
+	private func updater(_ updater: FetchedResultsUpdater, didUpdateWithSectionUpdates sectionUpdates: [FetchedResultsUpdater.SectionUpdate], rowUpdates: [FetchedResultsUpdater.RowUpdate]) {
 		performBatchUpdates({
 			for update in sectionUpdates {
 				switch update {

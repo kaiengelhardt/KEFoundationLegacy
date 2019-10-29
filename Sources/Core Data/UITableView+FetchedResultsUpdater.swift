@@ -33,6 +33,16 @@ import UIKit
 
 extension UITableView: FetchedResultsUpdaterDelegate {
 	
+	public func updater(_ updater: FetchedResultsUpdater, didUpdateWithSectionUpdates sectionUpdates: [FetchedResultsUpdater.SectionUpdate], rowUpdates: [FetchedResultsUpdater.RowUpdate], animated: Bool) {
+		if animated {
+			self.updater(updater, didUpdateWithSectionUpdates: sectionUpdates, rowUpdates: rowUpdates)
+		} else {
+			UIView.performWithoutAnimation {
+				self.updater(updater, didUpdateWithSectionUpdates: sectionUpdates, rowUpdates: rowUpdates)
+			}
+		}
+	}
+	
 	public func updater(_ updater: FetchedResultsUpdater, didUpdateWithSectionUpdates sectionUpdates: [FetchedResultsUpdater.SectionUpdate], rowUpdates: [FetchedResultsUpdater.RowUpdate]) {
 		beginUpdates()
 		for update in sectionUpdates {
