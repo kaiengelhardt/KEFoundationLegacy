@@ -85,6 +85,10 @@
 		5E8269522093A57800FFA69D /* ClosureValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8269512093A57800FFA69D /* ClosureValueTransformer.swift */; };
 		5E8269532093A57800FFA69D /* ClosureValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8269512093A57800FFA69D /* ClosureValueTransformer.swift */; };
 		5E8269542093A57800FFA69D /* ClosureValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8269512093A57800FFA69D /* ClosureValueTransformer.swift */; };
+		5E8A2701238ACEA3001203D8 /* DispatchQueue+Once.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8A2700238ACEA3001203D8 /* DispatchQueue+Once.swift */; };
+		5E8A2702238ACEA3001203D8 /* DispatchQueue+Once.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8A2700238ACEA3001203D8 /* DispatchQueue+Once.swift */; };
+		5E8A2703238ACEA3001203D8 /* DispatchQueue+Once.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8A2700238ACEA3001203D8 /* DispatchQueue+Once.swift */; };
+		5E8A2704238ACEA3001203D8 /* DispatchQueue+Once.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8A2700238ACEA3001203D8 /* DispatchQueue+Once.swift */; };
 		5EA40A441F97FA3800E14552 /* KETextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA40A431F97FA3800E14552 /* KETextField.swift */; };
 		5EA40A4B1F9A497B00E14552 /* UIResponder+FirstResponder.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EA40A491F9A497B00E14552 /* UIResponder+FirstResponder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5EA40A4C1F9A497B00E14552 /* UIResponder+FirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA40A4A1F9A497B00E14552 /* UIResponder+FirstResponder.m */; };
@@ -201,6 +205,7 @@
 		5E67379B235335EB0075F7BA /* Info-watchOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
 		5E7DE2381F9BE56F0051B623 /* NSRange+Range.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSRange+Range.swift"; sourceTree = "<group>"; usesTabs = 1; };
 		5E8269512093A57800FFA69D /* ClosureValueTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureValueTransformer.swift; sourceTree = "<group>"; };
+		5E8A2700238ACEA3001203D8 /* DispatchQueue+Once.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Once.swift"; sourceTree = "<group>"; };
 		5EA40A431F97FA3800E14552 /* KETextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KETextField.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5EA40A491F9A497B00E14552 /* UIResponder+FirstResponder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+FirstResponder.h"; sourceTree = "<group>"; };
 		5EA40A4A1F9A497B00E14552 /* UIResponder+FirstResponder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+FirstResponder.m"; sourceTree = "<group>"; };
@@ -364,6 +369,7 @@
 				5E8269512093A57800FFA69D /* ClosureValueTransformer.swift */,
 				5EAB179D20222E08008A5369 /* NotificationObserver.swift */,
 				5E1150CC2091E3CD005C36F2 /* Throttler.swift */,
+				5E8A2700238ACEA3001203D8 /* DispatchQueue+Once.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -752,6 +758,7 @@
 				5E0D5AED20176C08004E6949 /* NSLayoutAnchor.swift in Sources */,
 				5EAB17A820229DA5008A5369 /* ContainerView.swift in Sources */,
 				5E3C420C22EC16DC003DA04F /* URL+ResourceExists.swift in Sources */,
+				5E8A2701238ACEA3001203D8 /* DispatchQueue+Once.swift in Sources */,
 				5EE270FC1F96579F00A6A7A1 /* Date+Normalized.swift in Sources */,
 				5E0CE2D81F9DEF0600A58AA5 /* UITableView+Extensions.swift in Sources */,
 				5EA40A441F97FA3800E14552 /* KETextField.swift in Sources */,
@@ -805,6 +812,7 @@
 				5E67376D235335EB0075F7BA /* ContextWatcher.swift in Sources */,
 				5E67376E235335EB0075F7BA /* NSRange+Range.swift in Sources */,
 				5E67376F235335EB0075F7BA /* CGSize.swift in Sources */,
+				5E8A2704238ACEA3001203D8 /* DispatchQueue+Once.swift in Sources */,
 				5E673775235335EB0075F7BA /* URL+ResourceExists.swift in Sources */,
 				5E673776235335EB0075F7BA /* Date+Normalized.swift in Sources */,
 				5E673779235335EB0075F7BA /* Managed.swift in Sources */,
@@ -850,6 +858,7 @@
 				5E2E37372087B164009803F9 /* URLSession+Result.swift in Sources */,
 				5E1150CE2091E3CD005C36F2 /* Throttler.swift in Sources */,
 				5EEC3C131FDB5140003F8A73 /* NSPreciate+Evaluator.swift in Sources */,
+				5E8A2702238ACEA3001203D8 /* DispatchQueue+Once.swift in Sources */,
 				5EEC3C1F1FDB5140003F8A73 /* NSLayoutConstraint.swift in Sources */,
 				5ECDE2192003F5CA005FB807 /* FileManager+Directories.swift in Sources */,
 				5ECAA1F220056B3400AC4C6B /* ContainerViewController.swift in Sources */,
@@ -888,6 +897,7 @@
 				5EEFB60B1FE5C71B0028BEEA /* Date+Normalized.swift in Sources */,
 				5EE7594B20C011E600353163 /* TranslatesAutoResizingMaskIntoConstraints.swift in Sources */,
 				5EC63FAD212F686E00DC92BE /* LayoutConstraintContainer.swift in Sources */,
+				5E8A2703238ACEA3001203D8 /* DispatchQueue+Once.swift in Sources */,
 				5EEFB6061FE5C71B0028BEEA /* CGPoint.swift in Sources */,
 				5EEFB6051FE5C71B0028BEEA /* Array+Extensions.swift in Sources */,
 				5EEFB60D1FE5C71B0028BEEA /* NSKeyValueObservation.swift in Sources */,
