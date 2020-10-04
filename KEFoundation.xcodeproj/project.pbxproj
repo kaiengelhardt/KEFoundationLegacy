@@ -50,6 +50,7 @@
 		5E46DBE822FE9DA5006A68EC /* Clamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E46DBE522FE9DA5006A68EC /* Clamp.swift */; };
 		5E46DBF222FFC570006A68EC /* AspectPreservingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E46DBF122FFC570006A68EC /* AspectPreservingImageView.swift */; };
 		5E46DBF322FFC570006A68EC /* AspectPreservingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E46DBF122FFC570006A68EC /* AspectPreservingImageView.swift */; };
+		5E4C95DA23EB6D410047F210 /* UIViewController+ContentMarginsGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4C95D923EB6D410047F210 /* UIViewController+ContentMarginsGuide.swift */; };
 		5E55576F2279903600F06200 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E55576E2279903600F06200 /* StackViewController.swift */; };
 		5E5557702279903600F06200 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E55576E2279903600F06200 /* StackViewController.swift */; };
 		5E5E693E20406E4400B5E746 /* KELabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5E693D20406E4400B5E746 /* KELabel.swift */; };
@@ -197,6 +198,7 @@
 		5E3C420F22EC1732003DA04F /* UIImage+Preloading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Preloading.swift"; sourceTree = "<group>"; };
 		5E46DBE522FE9DA5006A68EC /* Clamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clamp.swift; sourceTree = "<group>"; };
 		5E46DBF122FFC570006A68EC /* AspectPreservingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectPreservingImageView.swift; sourceTree = "<group>"; };
+		5E4C95D923EB6D410047F210 /* UIViewController+ContentMarginsGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ContentMarginsGuide.swift"; sourceTree = "<group>"; };
 		5E55576E2279903600F06200 /* StackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		5E5E693D20406E4400B5E746 /* KELabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KELabel.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5E5E694020407C6500B5E746 /* UIEdgeInsets+Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Math.swift"; sourceTree = "<group>"; usesTabs = 1; };
@@ -347,6 +349,7 @@
 				5EA40A431F97FA3800E14552 /* KETextField.swift */,
 				5E06B0DE22FD35D4001DDBD3 /* UIColor+Image.swift */,
 				5E3C420F22EC1732003DA04F /* UIImage+Preloading.swift */,
+				5E4C95D923EB6D410047F210 /* UIViewController+ContentMarginsGuide.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -760,6 +763,7 @@
 				5E3C420C22EC16DC003DA04F /* URL+ResourceExists.swift in Sources */,
 				5E8A2701238ACEA3001203D8 /* DispatchQueue+Once.swift in Sources */,
 				5EE270FC1F96579F00A6A7A1 /* Date+Normalized.swift in Sources */,
+				5E4C95DA23EB6D410047F210 /* UIViewController+ContentMarginsGuide.swift in Sources */,
 				5E0CE2D81F9DEF0600A58AA5 /* UITableView+Extensions.swift in Sources */,
 				5EA40A441F97FA3800E14552 /* KETextField.swift in Sources */,
 				5EF619ED2013E23E006BCD62 /* Managed.swift in Sources */,
