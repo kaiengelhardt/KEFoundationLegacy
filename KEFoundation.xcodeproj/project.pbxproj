@@ -152,6 +152,10 @@
 		5EEFB60D1FE5C71B0028BEEA /* NSKeyValueObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E606CFE1FBB4BF900785D15 /* NSKeyValueObservation.swift */; };
 		5EEFB60F1FE5C7400028BEEA /* KEFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E0A28031F91423800B8EB5F /* KEFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5EF20943209CE3D000151055 /* UISearchBar+SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF20942209CE3D000151055 /* UISearchBar+SearchField.swift */; };
+		5EF2C3742562B45D00871E25 /* Rswift+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF2C3732562B45D00871E25 /* Rswift+SwiftUI.swift */; };
+		5EF2C3752562B45D00871E25 /* Rswift+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF2C3732562B45D00871E25 /* Rswift+SwiftUI.swift */; };
+		5EF2C3762562B45D00871E25 /* Rswift+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF2C3732562B45D00871E25 /* Rswift+SwiftUI.swift */; };
+		5EF2C3772562B45D00871E25 /* Rswift+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF2C3732562B45D00871E25 /* Rswift+SwiftUI.swift */; };
 		5EF619ED2013E23E006BCD62 /* Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF619EC2013E23E006BCD62 /* Managed.swift */; };
 		5EF619EE2013E23E006BCD62 /* Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF619EC2013E23E006BCD62 /* Managed.swift */; };
 		5EF619EF2013E23E006BCD62 /* Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF619EC2013E23E006BCD62 /* Managed.swift */; };
@@ -229,6 +233,7 @@
 		5EEFB5FC1FE5BD540028BEEA /* KEFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KEFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EEFB5FF1FE5BD540028BEEA /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
 		5EF20942209CE3D000151055 /* UISearchBar+SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+SearchField.swift"; sourceTree = "<group>"; };
+		5EF2C3732562B45D00871E25 /* Rswift+SwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Rswift+SwiftUI.swift"; sourceTree = "<group>"; };
 		5EF619EC2013E23E006BCD62 /* Managed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Managed.swift; sourceTree = "<group>"; usesTabs = 1; };
 /* End PBXFileReference section */
 
@@ -311,6 +316,7 @@
 			children = (
 				5E0A28211F915BCB00B8EB5F /* Foundation */,
 				5E0A28121F9147A400B8EB5F /* UIKit */,
+				5EF2C3722562B43100871E25 /* SwiftUI */,
 				5EE7594A20C011CB00353163 /* Auto Layout */,
 				5E21E721234DE99D00BB40D0 /* Core Graphics */,
 				5E0A280D1F91475C00B8EB5F /* Core Data */,
@@ -442,6 +448,14 @@
 				5EDDAAD1234C766A00FB145B /* UILayoutPriority+Math.swift */,
 			);
 			path = "Auto Layout";
+			sourceTree = "<group>";
+		};
+		5EF2C3722562B43100871E25 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				5EF2C3732562B45D00871E25 /* Rswift+SwiftUI.swift */,
+			);
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -777,6 +791,7 @@
 				5ECDE2182003F5CA005FB807 /* FileManager+Directories.swift in Sources */,
 				5E06B0DF22FD35D4001DDBD3 /* UIColor+Image.swift in Sources */,
 				5ECAA1F120056B3400AC4C6B /* ContainerViewController.swift in Sources */,
+				5EF2C3742562B45D00871E25 /* Rswift+SwiftUI.swift in Sources */,
 				5E0A28251F9163EA00B8EB5F /* CGPoint.swift in Sources */,
 				5ED781DC1F94F27F00400F17 /* NSSortDescriptor+Order.swift in Sources */,
 				5E606CFF1FBB4BF900785D15 /* NSKeyValueObservation.swift in Sources */,
@@ -819,6 +834,7 @@
 				5E8A2704238ACEA3001203D8 /* DispatchQueue+Once.swift in Sources */,
 				5E673775235335EB0075F7BA /* URL+ResourceExists.swift in Sources */,
 				5E673776235335EB0075F7BA /* Date+Normalized.swift in Sources */,
+				5EF2C3772562B45D00871E25 /* Rswift+SwiftUI.swift in Sources */,
 				5E673779235335EB0075F7BA /* Managed.swift in Sources */,
 				5E67377A235335EB0075F7BA /* URLSession+Result.swift in Sources */,
 				5E67377B235335EB0075F7BA /* Throttler.swift in Sources */,
@@ -871,6 +887,7 @@
 				5EEC3C141FDB5140003F8A73 /* NSSortDescriptor+Order.swift in Sources */,
 				5E46DBE722FE9DA5006A68EC /* Clamp.swift in Sources */,
 				5EEC3C1A1FDB5140003F8A73 /* UIAlertController.swift in Sources */,
+				5EF2C3752562B45D00871E25 /* Rswift+SwiftUI.swift in Sources */,
 				5E3C421122EC1732003DA04F /* UIImage+Preloading.swift in Sources */,
 				5E1E0C152013AFDE0075629D /* UITableView+FetchedResultsUpdater.swift in Sources */,
 				5E1E0C122013AEFF0075629D /* UICollectionView+FetchedResultsUpdater.swift in Sources */,
@@ -895,6 +912,7 @@
 				5EEFB60C1FE5C71B0028BEEA /* NSRange+Range.swift in Sources */,
 				5E1150CF2091E3CD005C36F2 /* Throttler.swift in Sources */,
 				5EDDAAD4234C766A00FB145B /* UILayoutPriority+Math.swift in Sources */,
+				5EF2C3762562B45D00871E25 /* Rswift+SwiftUI.swift in Sources */,
 				5E2E37382087B164009803F9 /* URLSession+Result.swift in Sources */,
 				5EB0806721B31FBC00748781 /* FloatingPoint+AngleUnits.swift in Sources */,
 				5EEFB6081FE5C71B0028BEEA /* CGRect.swift in Sources */,
