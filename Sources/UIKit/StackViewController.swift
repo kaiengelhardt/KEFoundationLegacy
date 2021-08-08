@@ -81,10 +81,10 @@ public class StackViewController: UIViewController {
 	
 	public var isLayoutMarginsRelativeArrangement: Bool {
 		get {
-			return stackView.isBaselineRelativeArrangement
+			return stackView.isLayoutMarginsRelativeArrangement
 		}
 		set {
-			stackView.isBaselineRelativeArrangement = newValue
+			stackView.isLayoutMarginsRelativeArrangement = newValue
 		}
 	}
 	
